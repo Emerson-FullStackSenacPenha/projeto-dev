@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- extensão do arquivo -->
+<html lang="pt-br">
+<!-- Configuração do site para idiomas -->
+<head>
+    <meta charset="UTF-8"> 
+    <!-- conjunto de caracteres mundial -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Site responsivo = Se ajusta de acordo com o dispositivo -->
+
+    <!-- Tags 
+     Title = Titulo que aparece na aba do navegador
+     H1 = Titulo em destaque no site
+     P = Paragrafo com texto 
+     H2, H3, H4, H5 e H6 = Subtitulos
+      -->
+
+    <title>UC2 - Listas</title>
+</head>
+<body>
+    
+    <p> <a href="projeto_fullstack_home.html">Home</a> > <a href="projeto_fullstack_uc2.html">UC2</a> > Trabalhando com listas</p>
+    
+    <hr>
+
+    <h1 id="topo">Trabalhando com listas</h1>
+    <p>Listas são estruturas para representação de conteúdo na forma de relação de itens.</p>
+
+    <hr>
+
+    <div>
+    <h2>Listas não-ordenada UL </h2>
+    <p>Relação de itens em que a sequência não importa.</p>
+
+    <h3>Exemplos:</h3>
+
+    <!-- Não use <ul>(marcador com bolinha) ou <li> sozinho -->
+        <ul>
+            <li>Teclados</li>
+            <li>Mouse</li>
+            <li>Webcam</li>
+            <li>Monitor</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div>
+    <h2>Listas ordenadas OL</h2>
+    <p>Relação de itens em que a sequência importa.</p>
+
+    <h3>Exemplos:</h3>
+
+        <!-- Não use <ol>(marcador com números) ou <li> sozinho -->
+        <ol>
+            <li>Andressa</li>
+            <li>Bruno</li>
+            <li>Carla</li>
+            <li>Mônica</li>
+            <li>Tiago</li>
+        </ol>
+    </div>
+    
+    <hr>
+
+    <div>
+
+    <h2>Listas aninhadas (listas dentro de listas)</h2>
+    <p>Podemos misturar listas de diferentes tipos e também colocar listas dentro de outras listas.</p>
+
+    <h3>Exemplos:</h3>
+    <!-- Cardápio de doces e salgados -->
+
+    <!-- Lista não ordenada, com bolinhas -->
+    <ul>
+        <!-- Aninhado👇-->
+        <li>Doces
+            <ul>
+                <li>Brigadeiro</li>
+                <li>Torta de limão</li>
+                <!-- 2ª nível de aninhar, muda o ícone -->
+                <li>Paçoca
+                    <ul>
+                    <li>Zero</li>
+                    <li>Integral</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    
+    </div>
+
+    <hr>
+
+    <div>
+    <h2>Lista de Difinição</h2>
+    <p>Lista usada para estruturas de itens baseados em <b>termo</b> e <b>descrição</b>. Muito útil para conteúdos do tipo: glossários, FAQs, ou apresentação de dados com algum conceito, etc.</p>
+
+    <h3>Exemplos:</h3>
+
+    <!-- Tags usadas para definição -->
+<!-- Dl (Lista de dedinicição) -->
+    <dl>
+        <!--DT = 
+            DD = -->
+        <dt>Processador</dt>
+        <dd>É uma unidade de processamento computacional...</dd>
+        <dd>Peça essencial em qualquer equipamento digital.</dd>
+
+        <dt>Memória RAM</dt>
+        <dd>Espaço de armazenamento volátil</dd>
+    </dl>
+    </div>
+    
+    <hr>
+    <a href="#topo">Subir</a>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- extensão do arquivo -->
+<html lang="pt-br">
+<!-- Configuração do site para idiomas -->
+<head>
+    <meta charset="UTF-8"> 
+    <!-- conjunto de caracteres mundial -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Site responsivo = Se ajusta de acordo com o dispositivo -->
+
+    <!-- Tags 
+     Title = Titulo que aparece na aba do navegador
+     H1 = Titulo em destaque no site
+     P = Paragrafo com texto 
+     H2, H3, H4, H5 e H6 = Subtitulos
+      -->
+
+    <title>UC2 - Links</title>
+</head>
+<body>
+    
+    <p> <a href="projeto_fullstack_home.html">Home</a> > <a href="projeto_fullstack_uc2.html">UC2</a> > Trabalhando com Links</p>
+    
+    <hr>
+
+    <h1 id="topo">Trabalhando com Links (ou hiperlink) </h1>
+    <p>A tag < <b>a</b> > (de anchor, âncora) é usada para criar links clicáveis que levam a outras páginas, seções ou arquivos. <b>href</b> é o atributo que define o destino do link, otexto entre as tags é o que aparece clicável.</p>
+
+    <hr>
+
+    <div>
+    
+        <ul>
+            <li>
+                <h2>Link externo</h2>
+                <p><a href="https://google.com" target="_blank">Google</a></p>
+            </li>
+            
+            <li>
+                <h2>Link interno (para outra página do mesmo site):</h2>
+                <p><a href="projeto_fullstack_uc1.html" target="_blank">Full-Stack UC 1</a></p>
+            </li>
+            
+            <li>
+                <h2>Link para parte da mesma página (âncora/vertical):</h2>
+                <a href="#topo">Subir</a>
+            </li>
+
+            <li>
+                <h2>Link para download:</h2>
+                <a href="images/html5.png" download>Baixar imagem</a>
+            </li>
+
+            <li>
+                <h2>link que abre um aplicativo específico</h2>
+                <p>O método depende do tipo de aplicativo e da plataforma (web, desktop ou mobile), alguns navegadores podem bloquear links de apps por segurança, e em dispositivos móveis, esse tipo de link geralmente funciona melhor. Abaixo estão os exemplos mais comuns:</p>
+
+                <ul>
+                    <li>
+                        <h3>App de e-mail</h3>
+                        <a href="mailto:emerson.agomes1@senacsp.edu.br">Enviar e-mail</a>
+                    </li>
+
+                    <li>
+                        <h3>App de telefone</h3>
+                        <a href="tel:+55156">Ligar agora</a>
+                    </li>
+
+                    <li>
+                        <h3>App Whatsapp</h3>
+                        <a href="https://wa.me/5511940646240">WhatsApp</a>
+                        <p>Abre o app do WhatsApp (ou versão web se estiver no PC).</p>
+                    </li>
+
+                    <li>
+                        <h3>Link para abrir um app* específico (Mobile)</h3>
+                        <a href="spotify:track:slipknot">Abrir Slipknot no Spotify</a>
+                        <p>Isso só funciona se o app estiver instalado.</p>
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+        
+
+    </div>
+
+    <hr>
+    <a href="#topo">Subir</a>
+
+</body>
+</html>

@@ -15,7 +15,7 @@
      H2, H3, H4, H5 e H6 = Subtitulos
       -->
 
-    <title>UC2 - Elementos Textuais</title>
+    <title>UC2 - Textos</title>
 </head>
 <body>
     
@@ -23,57 +23,64 @@
     
     <hr>
 
-    <h1>Exemplos de elementos para textos em geral</h1>
-    <p>Trabalhando com desenvolvimento web e brincando com a linguagem HTML.</p>
-    <p>Front-End é a área para construção da interface de páginas web.</p>
-
-    <h2>HTML</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, culpa. Est veniam id vel, dolorem doloribus illum adipisci optio similique obcaecati eveniet corrupti consequuntur officiis soluta unde reiciendis voluptas natus.</p>
-
-        <h3>XHTML</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, ducimus!</p>
-
-        <h3>HTML5</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nostrum.</p>
-
-    <h2>CSS</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, maxime minima atque placeat delectus cumque pariatur architecto. Saepe unde consequatur mollitia autem ea, nisi maxime earum dolores alias deserunt? Magnam deserunt, eveniet nihil consequuntur sit tempora blanditiis dolorem veritatis. Deleniti nostrum rem facilis! Blanditiis velit, beatae iusto autem dolore nam.</p>
-
-    <h2>JS</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatem quod omnis nisi rerum delectus pariatur sint asperiores expedita esse. Pariatur, dicta. Ullam incidunt laboriosam et labore perspiciatis non id, molestiae officiis?</p>
+    <h1 id="topo">Elementos textuais</h1>
+    <p>Neste conteúdo, aprendemos os conceitos iniciais do desenvolvimento web voltado ao Front-End, que é a parte visual dos sites, feita para interagir com os usuários.</p>
 
     <hr>
 
-    <h2>Outros exemplos</h2>
-    <p>Estamos no Senac Penha fazendo o curso de <b>Fullstack</b></p>
-    <p>O objetivo é atuar profissionalmente com a <i>web</i></p>
-    <p>É importante se <u>dedicar</u> aos estudos</p>
-    <p> <b><i><u>Tudo junto</u></i></b> </p>
+    <!-- Titulos e Subtitulos -->
+    <div>
+        <h2>Títulos e subtítulos</h2>
+        <p>As tags < <b>h1</b> > até < <b>h6</b> > são usadas para definir títulos e subtítulos em uma página HTML. Elas indicam a hierarquia de importância dos conteúdos.
+        < <b>h1</b> > é o título mais importante, geralmente usado para o título principal da página.
+        < <b>h2</b> > a < <b>h6</b> > são usados como subtítulos, com importância decrescente, essas tags ajudam na organização do conteúdo, melhoram a acessibilidade e são muito importantes para o SEO (otimização para mecanismos de busca).</p>
+        <p><h1>h1</h1> <h2>h2</h2> <h3>h3</h3> <h4>h4</h4><h5>h5</h5><h6>h6</h6></p>
+    </div>
 
     <hr>
 
-    <h2>Sei lá</h2>
+    <!-- Estilos de Texto -->
+    <div>
+        <h2>Estilos de texto</h2>
+        <p><b>Negrito:</b> Destaca um texto com ênfase forte. < b ></p>
+        <p><i>Itálico:</i> Dá ênfase ou indica algo especial como nomes ou termos estrangeiros. < i > <p>
+        <p><u>Sublinhado:</u> Sublinha o texto, geralmente usado para chamar atenção (com moderação). < u > </p>
+        <p><s>Riscado:</s> Indica algo removido ou inválido. < s > </p>
 
-    <h2>Sobre negrito/strong e itálico/em </em></h2>
-    <p>Exemplo <strong>negrito</strong></p>
-    <p>Exemplo <em>itálico</em></p>
     <!-- ao invés de b, strong da emfase a palavra para robos e pesquisa -->
-
     <!-- ctrl+; Informações sobre o código, ou comentários sobre o projeto. -->
 
-    <hr>
-
-    <p> <abbr title="HyperText Markup Language">HTML</abbr>  é a principal linguagem da web. </p>
-            <!--Title é um atributo, que aparece quando passa o mouse em cima da palavra dentro do tag-->
+    </div>
 
     <hr>
 
-    <details>
-        <summary>Surpresa!</summary>
+    <!-- Abreviações -->
+    <div>
+        <h2>Abreviações</h2>
+        <p>A tag < abbr > é usada para marcar abreviações ou siglas, permitindo que o navegador exiba o significado completo ao passar o mouse sobre o texto.</p>
+        <p> <abbr title="Desse jeito!">Exemplo</abbr></p>
+        <!--Title é um atributo, que aparece quando passa o mouse em cima da palavra dentro do tag-->
+    </div>
+
+    <hr>
+
+    <!-- Conteúdo expansivel -->
+    <div>
+        <h2>Conteúdo Expansível</h2>
+        <p>A tag < details > é usada para esconder e revelar conteúdo quando o usuário clica em um resumo ou título. É muito útil para criar abas, perguntas frequentes (FAQ), ou informações extras sem deixar a página poluída.</p>
+
+        <details>
+        <summary>Exemplo</summary>
         <!-- Menu interativo -->
-        <p>Oie sumido(a)! 😎 </p>
+        <p>Desse jeito!</p>
         <!-- windows + . para abrir emoticons -->
-    </details>
+        </details>
+        
+        <p>Obs.: Se você usar apenas < <b>details</b> > sem < <b>summary</b> >, o conteúdo ainda pode ser expandido, mas não haverá um título visível para o usuário clicar.</p>
+    </div>
+
+    <hr>
+    <a href="#topo">Subir</a>
 
 </body>
 </html>
