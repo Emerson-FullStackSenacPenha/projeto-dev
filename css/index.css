@@ -8,11 +8,7 @@
 
 header{
 
-    
     background-image: linear-gradient(rgb(238, 115, 1), rgb(253, 166, 3));
-
-    
-    
 
 }
 
@@ -37,7 +33,10 @@ header{
 
 #sinopse1{
 
-    padding: 0px 65px 10px 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     
 
 }
@@ -46,7 +45,7 @@ header{
 
     color: white;
     
-    font-size: 15px;
+    font-size: 78.1%;
     font-weight: 700;
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,6 +64,8 @@ main{
 
     background-image: radial-gradient(blue, rgb(0, 4, 43));
     
+    
+    
 }
 
 #arte1{
@@ -82,7 +83,7 @@ main{
     height: 15vh;
     width: 95vw;
     padding: 10px;
-
+    border-radius: 30px;
 }
 
 section{
@@ -91,8 +92,8 @@ section{
     display: flex;
     justify-content: space-around  ;
     
-
-    height: 50vh;
+    height: 54.2vh;
+    min-height: 350px;
 
 }
 
@@ -109,14 +110,39 @@ article{
 
 footer{
 
-    
-
-}
-
-span{
+    background-color: rgb(255, 255, 255);
 
     display: flex;
-    justify-content: center;
-    
+    justify-content: space-around;
+    align-items: center;
+ 
+    height: 40px;
 }
+
+#bola2{
+
+    background-color: rgb(238, 115, 1);
+
+   height: 7vw;
+   width: 7vw;
+   border-radius: 50%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+#bola{
+
+   background-color: blue;
+
+   height: 6vw;
+   width: 6vw;
+   border-radius: 50%;
+
+}
+
+
+
 
