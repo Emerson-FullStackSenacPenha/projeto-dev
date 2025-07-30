@@ -62,7 +62,7 @@ header{
 
 main{
 
-    background-image: radial-gradient(blue, rgb(0, 4, 43));
+    background-image: radial-gradient(rgb(12, 87, 230), rgb(0, 7, 27));
     
     
     
@@ -135,14 +135,24 @@ footer{
 
 #bola{
 
-   background-color: blue;
+   background-color: rgb(8, 50, 145);
 
    height: 6vw;
    width: 6vw;
    border-radius: 50%;
 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
 }
 
 
+#logos{
 
+    height: 80%;
+    width: 80%;
+
+}
 
