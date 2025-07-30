@@ -76,7 +76,8 @@ main{
 
     display: flex;
     justify-content: center;
-    
+
+    padding: 15px 0px 0px 0px;
 
 }
 
@@ -87,7 +88,9 @@ main{
     min-height: 100px;
     height: 15vh;
     width: 95vw;
-    padding: 10px;
+    
+    
+
     border-radius: 30px;
 }
 
@@ -106,12 +109,24 @@ section{
 
 article{
 
-    background-color: white;
+    background-image: radial-gradient(white, rgb(158, 157, 157));
 
     height: 70px;
     width: 70px;
 
-    padding: 25px 10px;
+    margin: 15px;
+    
+
+    border-radius: 10%;
+
+}
+
+a{
+
+
+    color: black;
+    
+    
 
 }
 
