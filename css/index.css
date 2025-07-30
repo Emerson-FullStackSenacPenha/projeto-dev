@@ -10,6 +10,8 @@ header{
 
     background-image: linear-gradient(rgb(238, 115, 1), rgb(253, 166, 3));
 
+    width: 100%;
+    height: 20vh;
 }
 
 
@@ -23,13 +25,8 @@ header{
 
 #titulo2{
 
-    height: 60px;
-    
-    
-    min-height: 70px;
-
-    padding: 10px 0px  0px  0px;
-
+    width: 95%;
+    margin: 5px;
 }
 
 
@@ -40,7 +37,6 @@ header{
     align-items: center;
     padding: 10px;
     
-
 }
 
 
@@ -48,19 +44,10 @@ header{
 
     color: white;
     
-    font-size: 78.1%;
-    font-weight: 700;
-    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    font-size: 80%;
     text-align: left;
     
-    
-    
-    
-    
-    
-
 }
 
 
@@ -68,8 +55,10 @@ main{
 
     background-image: radial-gradient(rgb(12, 87, 230), rgb(0, 7, 27));
     
+    width: 100%;
+    height: 70vh;
+    
 }
-
 
 
 #arte1{
@@ -77,49 +66,38 @@ main{
     display: flex;
     justify-content: center;
 
-    padding: 15px 0px 0px 0px;
-
 }
 
 
 #arte2{
 
     /* limitar o tamanho ao diminuir */
-    min-height: 100px;
-    height: 15vh;
-    width: 95vw;
     
-    
+    width: 90%;
+    height: 40%;
 
-    border-radius: 30px;
+    border-radius: 6px;
+
+    margin-top: 10px;
+
 }
 
 
 section{
     
-    
     display: flex;
     justify-content: space-around  ;
     
-    height: 54.2vh;
-    min-height: 350px;
-
 }
 
 
 article{
 
-    background-image: radial-gradient(white, rgb(158, 157, 157));
-
-    height: 70px;
-    width: 70px;
-
-    margin: 15px;
-    
-
+    background-color: white;
     border-radius: 10%;
 
 }
+
 
 a{
 
@@ -139,28 +117,38 @@ footer{
     justify-content: space-around;
     align-items: center;
  
-    height: 40px;
+    width: 100%;
+    height: 10vh;
 }
 
+#botons{
 
-#bola2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+
+}
+
+#bola1{
 
     background-color: rgb(238, 115, 1);
 
-   height: 7vw;
-   width: 7vw;
+   height: 8vw;
+   width: 8vw;
    border-radius: 50%;
-
-    
 
    display: flex;
    justify-content: center;
    align-items: center;
+   
 
 }
 
 
-#bola{
+#bola2{
 
    background-color: rgb(8, 50, 145);
 
@@ -169,8 +157,8 @@ footer{
    border-radius: 50%;
 
    display: flex;
-   justify-content: center;
    align-items: center;
+   justify-content: center;
 
 
 }
@@ -178,8 +166,7 @@ footer{
 
 #logos{
 
-    height: 80%;
-    width: 80%;
-
+    height: 75%;
+    width: 75%;
+    
 }
-
