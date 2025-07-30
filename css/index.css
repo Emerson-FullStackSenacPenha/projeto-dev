@@ -12,12 +12,14 @@ header{
 
 }
 
+
 #titulo1{
 
     display: flex;
     justify-content: center;
     
 }
+
 
 #titulo2{
 
@@ -41,6 +43,7 @@ header{
 
 }
 
+
 #sinopse2{
 
     color: white;
@@ -60,6 +63,7 @@ header{
 
 }
 
+
 main{
 
     background-image: radial-gradient(rgb(12, 87, 230), rgb(0, 7, 27));
@@ -68,6 +72,7 @@ main{
     
 }
 
+
 #arte1{
 
     display: flex;
@@ -75,6 +80,7 @@ main{
     
 
 }
+
 
 #arte2{
 
@@ -85,6 +91,7 @@ main{
     padding: 10px;
     border-radius: 30px;
 }
+
 
 section{
     
@@ -97,6 +104,7 @@ section{
 
 }
 
+
 article{
 
     background-color: white;
@@ -107,6 +115,7 @@ article{
     padding: 25px 10px;
 
 }
+
 
 footer{
 
@@ -119,6 +128,7 @@ footer{
     height: 40px;
 }
 
+
 #bola2{
 
     background-color: rgb(238, 115, 1);
@@ -127,11 +137,14 @@ footer{
    width: 7vw;
    border-radius: 50%;
 
+    
+
    display: flex;
    justify-content: center;
    align-items: center;
 
 }
+
 
 #bola{
 
