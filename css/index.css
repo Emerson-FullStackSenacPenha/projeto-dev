@@ -6,6 +6,12 @@
 
 }
 
+body{
+
+    background-image: radial-gradient(rgb(12, 87, 230), rgb(0, 7, 27));
+    
+}
+
 header{
 
     background-image: linear-gradient(rgb(238, 115, 1), rgb(253, 166, 3));
@@ -23,19 +29,14 @@ header{
 
 }
 
-
 #titulo1{
 
     display: flex;
     justify-content: center;
     
-    
 }
 
-
 #titulo2{
-
-    
 
     width: 90%;
     max-width: 1700px;
@@ -43,7 +44,6 @@ header{
     min-height: 50px;
    
 }
-
 
 #sinopse1{
 
@@ -57,7 +57,6 @@ header{
 
 }
 
-
 #sinopse2{
 
     color: white;
@@ -66,17 +65,22 @@ header{
     font-size: 80%;
     font-weight: 700;
 
-    
-    
-    
-    
-    
 }
-
 
 main{
 
-    background-image: radial-gradient(rgb(12, 87, 230), rgb(0, 7, 27));
+    /* Localizar a imagem de fundo */
+    background-image: url(../images/fundo.png);
+    
+    /* O tamanho da imagem */
+    background-size: 80px;
+    
+    /* Espaço da imagem na tela */
+    height: 100%;
+
+    /* Opacidade */
+    opacity: 100%;
+
     
     width: 100%;
     min-width: 300px;
@@ -86,14 +90,12 @@ main{
 
 }
 
-
 #arte1{
 
     display: flex;
     justify-content: center;
 
 }
-
 
 #arte2{
 
@@ -112,7 +114,6 @@ main{
 
 }
 
-
 section{
     
     display: flex;
@@ -124,14 +125,12 @@ section{
 
 }
 
-
 article{
 
     background-color: white;
     border-radius: 10%;
 
 }
-
 
 a{
 
@@ -142,10 +141,9 @@ a{
 
 }
 
-
 footer{
 
-    background-color: rgb(163, 24, 24);
+    background-color: rgb(255, 255, 255);
 
     display: flex;
     justify-content: space-around;
@@ -189,7 +187,6 @@ footer{
 
 }
 
-
 #bola2{
 
    background-color: rgb(8, 50, 145);
@@ -204,7 +201,6 @@ footer{
 
 
 }
-
 
 #logos{
 
