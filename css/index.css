@@ -30,41 +30,29 @@ header{
 
 }
 
-#titulo1{
+#img_topo{
 
-    display: flex;
-    justify-content: center;
     
-}
-
-#titulo2{
-
-    width: 90%;
-    max-width: 1700px;
-
-    min-height: 50px;
-   
-}
-
-#sinopse1{
-
-    max-width: 1200px;
-    min-width: 300px;
-    margin: 5px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 80%;
+    max-width: 1500px;
+    
 
 }
 
-#sinopse2{
+
+#sinopse{
 
     color: white;
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80%;
+    
+    text-align: center;
+    text-shadow: 1px 1px 8px black;
+
+    font-size: 16px;
     font-weight: 700;
+    margin: 2px;
+    
 
 }
 
