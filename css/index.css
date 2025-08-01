@@ -146,12 +146,27 @@ article{
 }
 
 
-#textomenu{
+#aga1{
 
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 40px;
+
+}
+
+#aga2{
+
+    text-align: center;
+    font-size: 15px;
+}
+
+#aga3{
+
+    text-align: center;
+    font-size: 13px;
     
 }
+
 
 button{
 
