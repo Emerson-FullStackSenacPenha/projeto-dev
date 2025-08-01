@@ -12,6 +12,11 @@ body{
     
 }
 
+
+/* Cabeçalho 
+Imagem de topo
+Texto de sinopse
+*/
 header{
 
     background-image: linear-gradient(rgb(238, 115, 1), rgb(253, 166, 3));
@@ -34,39 +39,39 @@ header{
 
     
     width: 80%;
-    max-width: 1500px;
+    max-width: 1000px;
     
 
 }
-
 
 #sinopse{
 
     color: white;
     
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
     
     text-align: center;
     text-shadow: 1px 1px 8px black;
 
-    font-size: 16px;
+    font-size: 15px;
+    max-width: 1000px;
+
     font-weight: 700;
     margin: 2px;
     
 
 }
 
+/* Main (menu principal)
+Gif Full-Stack
+Menus de UC's
+*/
 main{
 
-    /* Aplicar a imagem de fundo */
     background-image: url(../images/fundo.png);
-    
-    /* O tamanho da imagem */
     background-size: 80px;
     
-    /* Espaço da imagem na tela */
-    height: 100%;
-
+    
     width: 100dvw;
     min-width: 300px;
     
@@ -75,102 +80,84 @@ main{
 
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     
 }
 
-#arte1{
+#gif{
 
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#arte2{
-
-    /* limitar o tamanho ao diminuir */
-    width: 90%;
-    max-width: 1000px;
-    
-    height: 70%;
-    max-height: 100px;
-
-
-    border-radius: 6px;
-
-    
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 20px;
 
 }
 
 section{
     
     width: 100%;
+    max-width: 1200px;
     height: 100%;
 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     
+    
+
 }
 
 article{
 
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px white;
     border-radius: 10%;
     
-
-    height: 100px;
-    width: 110px;
-    margin: 1%;
+    height: 80px;
+    width: 130px;
 
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
 
-}
-
-
-#aga1{
-
-    text-align: center;
-    font-weight: 600;
-    font-size: 40px;
-
-}
-
-#aga2{
-
-    text-align: center;
-    font-size: 15px;
-}
-
-#aga3{
-
-    text-align: center;
-    font-size: 13px;
     
-}
-
-
-button{
-
-    align-self: center;
-    background-color: aqua;
 
 }
 
 a{
 
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 
-    color: black;
-    
-    
+#aga1{
+
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
 
 }
+
+#aga2{
+
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+
+#aga3{
+
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 10px;
+    
+}
+
+
+
+
+
 
 footer{
 
