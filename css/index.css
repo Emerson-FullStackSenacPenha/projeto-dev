@@ -12,7 +12,6 @@ body{
     
 }
 
-
 /* Cabeçalho 
 Imagem de topo
 Texto de sinopse
@@ -103,8 +102,6 @@ section{
     align-items: center;
     flex-wrap: wrap;
     
-    
-
 }
 
 article{
@@ -119,8 +116,6 @@ article{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
 
 }
 
@@ -155,10 +150,6 @@ a{
 }
 
 
-
-
-
-
 footer{
 
     background-color: rgb(255, 255, 255);
@@ -172,6 +163,9 @@ footer{
 
     height: 10dvh;
     min-height: 50px;
+
+    
+
 }
 
 #botons{
@@ -186,7 +180,7 @@ footer{
 
     height: 100%;
     
-    
+    gap: 4px;
 
 }
 
