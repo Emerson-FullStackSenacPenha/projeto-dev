@@ -43,28 +43,29 @@ header{
     
 }
 
-#sinopse{
 
-    color: white;
-    
-    font-family: sans-serif;
-    
-    text-align: center;
-    text-shadow: 1px 1px 8px black;
+nav{
 
-    font-size: 15px;
-    max-width: 1000px;
 
-    font-weight: 700;
-    margin: 2px;
+    background-color: aliceblue;
+    width: 100dvw;    
     
 
 }
 
-/* Main (menu principal)
-Gif Full-Stack
-Menus de UC's
-*/
+#menu{
+    
+    display: flex;
+    align-items: center;
+    
+    list-style: none;
+    
+    gap: 10px;
+    
+
+}
+
+
 
 main{
 
@@ -86,8 +87,6 @@ main{
     gap: 20px;
     
 }
-
-
 
 section{
     
@@ -121,7 +120,6 @@ section{
 
 .indis{
 
-
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10%;
     
@@ -132,15 +130,7 @@ section{
     align-items: center;
     justify-content: center;
 
-
 }
-
-a{
-
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
 
 footer{
 
@@ -167,20 +157,16 @@ footer{
    justify-content: space-around;
    align-items: center;
     
-    
     max-width: 900px;
     min-width: 300px;
 
     gap: 5px;
-    
-
-    
 
 }
 
 #bola1{
 
-    background-color: rgb(238, 115, 1);
+   background-color: rgb(238, 115, 1);
 
    height: 50px;
    width: 50px;
@@ -190,7 +176,6 @@ footer{
    justify-content: center;
    align-items: center;
    
-
 }
 
 #bola2{
@@ -204,7 +189,6 @@ footer{
    display: flex;
    align-items: center;
    justify-content: center;
-
 
 }
 
