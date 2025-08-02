@@ -47,16 +47,17 @@ header{
     
 }
 
-
 nav{
 
-
-    background-color: aliceblue;
     width: 100dvw;    
-    
+    max-width: 1000px;
+
     display: flex;    
-    
     flex-grow: 1;
+
+    padding: 0px 10px;
+
+    flex-direction: column;
 
 }
 
@@ -64,17 +65,11 @@ nav{
     
     display: flex;
     
-    justify-self: center;
-    align-self: flex-end;
-    
     list-style: none;
     
     gap: 10px;
     
-
 }
-
-
 
 main{
 
