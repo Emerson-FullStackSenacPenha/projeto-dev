@@ -25,14 +25,16 @@ header{
     width: 100dvw;
     min-width: 300px;
     
-    height: 20dvh;
-    min-height: 110px;
+    
+    
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    
 
 }
 
@@ -40,6 +42,8 @@ header{
 
     width: 95%;
     max-width: 1200px;
+
+    margin: 10px;
     
 }
 
@@ -50,13 +54,18 @@ nav{
     background-color: aliceblue;
     width: 100dvw;    
     
+    display: flex;    
+    
+    flex-grow: 1;
 
 }
 
 #menu{
     
     display: flex;
-    align-items: center;
+    
+    justify-self: center;
+    align-self: flex-end;
     
     list-style: none;
     
