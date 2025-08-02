@@ -25,17 +25,12 @@ header{
     width: 100dvw;
     min-width: 300px;
     
-    
-    
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
-    
-
 }
 
 #img_topo{
@@ -75,15 +70,12 @@ nav{
     font-weight: 700;
     text-shadow: 1px 1px 8px black;
 
-    
-
 }
 
 #acesso{
     text-decoration: none;
     color: white;
 }
-
 
 section{
 
@@ -133,38 +125,6 @@ section{
 
 }
 
-
-
-
-.dis{
-
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 0px 10px white;
-    border-radius: 10%;
-    
-    height: 80px;
-    width: 130px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.indis{
-
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10%;
-    
-    height: 80px;
-    width: 130px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
 footer{
 
     background-color: rgb(255, 255, 255);
@@ -180,16 +140,14 @@ footer{
     height: 10dvh;
     min-height: 50px;
 
-    
-
 }
 
 #botons{
 
     display: flex;
-   justify-content: space-around;
-   align-items: center;
-    
+    justify-content: space-around;
+    align-items: center;
+        
     max-width: 900px;
     min-width: 300px;
 
@@ -199,29 +157,29 @@ footer{
 
 #bola1{
 
-   background-color: rgb(238, 115, 1);
+    background-color: rgb(238, 115, 1);
 
-   height: 50px;
-   width: 50px;
-   border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 
 #bola2{
 
-   background-color: rgb(8, 50, 145);
+    background-color: rgb(8, 50, 145);
 
-   height: 85%;
-   width: 85%;
-   border-radius: 50%;
+    height: 85%;
+    width: 85%;
+    border-radius: 50%;
 
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
