@@ -44,11 +44,9 @@ header{
 
 #img_topo{
 
+    width: 95%;
+    max-width: 1200px;
     
-    width: 80%;
-    max-width: 1000px;
-    
-
 }
 
 #sinopse{
@@ -91,17 +89,18 @@ main{
     flex-direction: column;
     align-items: center;
     
+    gap: 20px;
     
 }
 
 #gif{
 
-    width: 60%;
-    max-width: 800px;
-    max-height: 59px;
+    width: 79%;
+    max-width: 1000px;
 
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
+
 }
 
 section{
