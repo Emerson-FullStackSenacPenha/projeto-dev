@@ -65,6 +65,7 @@ nav{
     display: flex;
     
     list-style: none;
+    color:rgb(8, 50, 145);
     
     gap: 10px;
     padding-bottom: 10px;
