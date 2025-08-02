@@ -45,7 +45,7 @@ header{
 nav{
 
     width: 100dvw;    
-    max-width: 1000px;
+    max-width: 1200px;
 
     display: flex;    
     flex-direction: column;
@@ -104,11 +104,54 @@ section{
     border-radius: 10px;
 
     width: 97dvw;
-    max-width: 1500px;
-    height: 100px;
+    max-width: 1200px;
     
     margin-top: 20px;
 
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: end;
+    align-items: center;
+    
+}
+
+#infouc{
+
+    margin: 10px;
+    
+    text-align: left;
+    flex: 1;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+#fotoprof{
+
+    height: 60%;
+    width: 60%;
+    
+    border-radius: 50%;
+
+    margin: 10px 10px 0px 0px;
+
+}
+
+#textoprof{
+
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+    width: 60%;
+
+}
+
+#espaço{
+
+    margin-bottom: 10px;
+    
 }
 
 #conteudo{
@@ -117,7 +160,7 @@ section{
     border-radius: 10px;
 
     width: 97dvw;
-    max-width: 1500px;
+    max-width: 1200px;
 
     margin-bottom: 20px;
 
