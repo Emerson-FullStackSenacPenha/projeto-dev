@@ -84,7 +84,7 @@ nav{
 }
 
 
-main{
+section{
 
     background-image: url(../../images/fundo.png);
     background-size: 80px;
@@ -105,20 +105,24 @@ main{
     
 }
 
-article{
+#info{
     
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    flex: 1;
+    background-color: white;
+    height: 100px;
+    width: 100px;
 
 }
+
+#conteudo{
+    
+    background-color: white;
+    height: 100px;
+    width: 100px;
+
+}
+
+
+
 
 .dis{
 
