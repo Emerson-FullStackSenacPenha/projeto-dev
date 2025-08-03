@@ -95,14 +95,13 @@ article{
     width: 97vw;
     max-width: 1200px;
 
-
     padding: 10px;
         
     text-align: left;
         
     color: white;
     text-shadow: 1px 1px 1px black;
-    font-size: 15px;
+    font-size: 1rem;
     font-family: sans-serif;
 
 }
@@ -207,7 +206,7 @@ footer{
 
 #logos{
 
-    height: 100%;
+    height: auto;
     width: 100%;
     
 }
