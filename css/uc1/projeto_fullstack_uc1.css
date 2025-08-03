@@ -156,13 +156,11 @@ footer{
 
     background-color: rgb(8, 50, 145);
     border: 5px solid rgb(238, 115, 1);
-
+    border-radius: 50%;
+    
     height: 50px;
     width: 50px;
-
     margin: 5px;
-
-    border-radius: 50%;
 
     display: flex;
     align-items: center;
@@ -172,7 +170,7 @@ footer{
 
 .logo{
 
-    height: 30px;
-    width: auto;
+    height: auto;
+    width: 30px;
     
 }
