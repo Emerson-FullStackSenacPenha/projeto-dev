@@ -155,12 +155,12 @@ footer{
 .bola{
 
     background-color: rgb(8, 50, 145);
-    border: 5px solid rgb(238, 115, 1);
+    border: 3.5px solid rgb(238, 115, 1);
     border-radius: 50%;
     
     height: 50px;
     width: 50px;
-    margin: 5px;
+    margin: 4px;
 
     display: flex;
     align-items: center;
@@ -170,7 +170,6 @@ footer{
 
 .logo{
 
-    height: auto;
-    width: 30px;
-    
+    height: 30px;
+    width: 25px;
 }
