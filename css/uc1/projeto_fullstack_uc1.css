@@ -127,14 +127,20 @@ article{
 
 }
 
+#foto{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 #fotoprof{
 
-    height: 60%;
+    height: auto;
     width: 60%;
     
     border-radius: 50%;
-
-    margin: 10px 10px 0px 0px;
 
 }
 
