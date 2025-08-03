@@ -9,6 +9,8 @@ Resumo: Organização para garantir que tudo seja feito no tempo certo.
 Figma, HTML, CSS, JavaScript, PHP, SQL
 Resumo: Ferramentas e linguagens usadas para planejar, montar e programar o site.
 
+-------------------------------------------------------------
+
 O que é um Site?
 
 Cliente:
@@ -23,10 +25,14 @@ Desenvolvedores:
 Profissionais que criam o site com códigos e arquivos visuais.
 Resumo: São os responsáveis por montar e manter o site funcionando.
 
+-------------------------------------------------------------
+
 Papel do Desenvolvedor Full Stack
 
 Compreender o negócio, as pessoas que usarão o site e criar soluções acessíveis e eficientes.
 Resumo: Une conhecimento técnico com visão de usuário e negócio.
+
+-------------------------------------------------------------
 
 Gestão de Projetos
 
@@ -139,6 +145,9 @@ Contrato: Acordo formal com direitos e deveres das partes.
 
 Profissional: Pessoa qualificada e responsável pela execução do serviço.
 
+-------------------------------------------------------------
+
+
 Apresentação de proposta
 
 É o momento onde o profissional detalha o que será desenvolvido. Serve para alinhar as expectativas com o cliente, demonstrar profissionalismo e facilitar a aprovação do projeto antes de firmar o contrato. Uma estrutura ideal de proposta seria a seguinte:
@@ -154,6 +163,8 @@ Serviços incluídos: Detalha o que será feito e o que pode ser ampliado (como 
 Cronograma: Define o tempo estimado para cada etapa e a entrega final.
 
 Preço: Informa o valor do investimento total e possíveis formas de pagamento.
+
+-------------------------------------------------------------
 
 Formalização de contrato
 
