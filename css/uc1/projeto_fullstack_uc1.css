@@ -24,7 +24,6 @@ header{
     background-image: linear-gradient(rgb(238, 115, 1), rgb(253, 166, 3));
 
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -85,79 +84,63 @@ section{
     padding: 10px;
 
     flex: 1;
+
 }
 
 article{
 
-   padding: 10px;
-    
-    text-align: left;
-    
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    font-size: 15px;
-
-}
-
-#info{
-    
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 
     width: 97vw;
     max-width: 1200px;
-    
-    
+
+
+    padding: 10px;
+        
+    text-align: left;
+        
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+#info_uc{
 
     display: flex;
     flex-wrap: wrap;
-    
-    justify-content: end;
-    align-items: center;
-    
-}
-
-#infouc{
-
-    margin: 10px;
-    
-    text-align: left;
-    flex: 1;
-    color: white;
-    text-shadow: 1px 1px 1px black;
+    justify-content: space-around;
 
 }
 
-#foto{
+#infopro{
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
+    flex: 1;
+
+    width: 150px;
+    margin: 10px;
+    
 }
 
-#fotoprof{
+#foto{
 
-    height: auto;
-    width: 60%;
+    height: 100px;
+    width: 100px;
     
     border-radius: 50%;
 
 }
 
-.artigo_uc1{
-    
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-
-    width: 97vw;
-    max-width: 1200px;
-
-}
-
 .lista{
 
-   padding: 0px 0px 0px 10px ; 
+   padding-left: 10px; 
 
 }
 
