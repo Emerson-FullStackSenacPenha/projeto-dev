@@ -12,18 +12,18 @@ body{
     
     display: flex;
     flex-direction: column;
-   
-    min-height: 100dvh;
+    
 
+    height: 100vh;
+    min-height: 100dvh;
+    min-width: 300px;
+    
 }
 
 header{
 
     background-image: linear-gradient(rgb(238, 115, 1), rgb(253, 166, 3));
 
-    width: 100vw;
-    min-width: 300px;
-    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -52,31 +52,20 @@ header{
     font-weight: 700;
     
     margin: 2px;
-    display: flex;    
+    display: flex; 
     
-    flex-grow: 1;
-
+    max-width: 1200px;
+    
 }
-
-/* Main (menu principal)
-Gif Full-Stack
-Menus de UC's
-*/
 
 main{
 
     background-image: url(../images/fundo.png);
     background-size: 80px;
     
+    display: flex;
     flex: 1;
 
-    width: 100dvw;
-    min-width: 300px;
-    
-    height: 70dvh;
-    min-height: 350px;
-
-    display: flex;
     flex-direction: column;
     align-items: center;
     
@@ -96,47 +85,37 @@ main{
 
 section{
     
-    width: 100%;
     max-width: 1200px;
-    height: 100%;
-
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+
+    padding: 10px;
+    gap: 10px;
+    
     flex: 1;
 
 }
 
 .dis{
 
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
     border-radius: 10%;
     
-    height: 80px;
-    width: 130px;
+    height: 150px;
+    width: 150px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-}
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1rem;
 
-.indis{
-
-
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10%;
-    
-    height: 80px;
-    width: 130px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    padding: 5px;
 
 }
 
@@ -144,101 +123,65 @@ a{
 
     text-decoration: none;
     color: rgb(255, 255, 255);
+
+}
+
+.indis{
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10%;
+    
+    height: 150px;
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: rgba(255, 255, 255, 0.3);
+
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1rem;
+
+    padding: 5px;
+
 }
 
 #aga1{
 
-    font-family: sans-serif;
-    text-align: center;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 2rem;
 
-}
-
-#aga2{
-
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 10px;
-}
-
-#aga3{
-
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 10px;
-    
 }
 
 footer{
 
     background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+
+}
+
+.bola{
+
+    background-color: rgb(8, 50, 145);
+    border: 5px solid rgb(238, 115, 1);
+    border-radius: 50%;
+    
+    height: 50px;
+    width: 50px;
+    margin: 5px;
 
     display: flex;
-    justify-content: space-around;
     align-items: center;
- 
-    width: 100dvw;
-    min-width: 300px;
-
-    height: 10dvh;
-    min-height: 50px;
-
-    
-
+    justify-content: center;
 }
 
-#botons{
+.logo{
 
-    display: flex;
-   
-    justify-content: space-around;
-    align-items: center;
-    
-    
-    max-width: 900px;
-    min-width: 300px;
+    height: auto;
+    width: 30px;
 
-    gap: 5px;
-    
-
-    
-
-}
-
-#bola1{
-
-    background-color: rgb(238, 115, 1);
-
-   height: 50px;
-   width: 50px;
-   border-radius: 50%;
-
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   
-
-}
-
-#bola2{
-
-   background-color: rgb(8, 50, 145);
-
-   height: 85%;
-   width: 85%;
-   border-radius: 50%;
-
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
-
-}
-
-#logos{
-
-    height: 75%;
-    width: 75%;
-    
 }
