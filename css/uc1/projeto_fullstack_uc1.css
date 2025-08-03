@@ -10,11 +10,12 @@ body{
 
     background-image: radial-gradient(rgb(12, 87, 230), rgb(0, 7, 27));
     
+    height: 100vh;
+    min-height: 100dvh;
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
-   
-    height: 100%;
-    min-height: 100dvh;
 
 }
 
@@ -22,9 +23,6 @@ header{
 
     background-image: linear-gradient(rgb(238, 115, 1), rgb(253, 166, 3));
 
-    width: 100dvw;
-    min-width: 300px;
-    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -44,13 +42,9 @@ header{
 
 nav{
 
-    width: 100dvw;    
+    width: 100%;    
     max-width: 1200px;
 
-    display: flex;    
-    flex-direction: column;
-    flex-grow: 1;
-    
     padding: 0px 10px;
 
 }
@@ -72,8 +66,10 @@ nav{
 }
 
 #acesso{
+
     text-decoration: none;
     color: white;
+
 }
 
 section{
@@ -81,20 +77,25 @@ section{
     background-image: url(../../images/fundo.png);
     background-size: 80px;
     
-    flex: 1;
-
-    width: 100dvw;
-    min-width: 300px;
-    
-    height: 70dvh;
-    min-height: 350px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    gap: 10px;
+
+    flex: 1;
+}
+
+article{
+
+   padding: 10px;
     
-    gap: 20px;
+    text-align: left;
     
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 15px;
+
 }
 
 #info{
@@ -102,7 +103,7 @@ section{
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 
-    width: 97dvw;
+    width: 97vw;
     max-width: 1200px;
     
     margin-top: 20px;
@@ -137,33 +138,19 @@ section{
 
 }
 
-#textoprof{
-
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-
-    width: 60%;
-
-}
-
-#espaço{
-
-    margin-bottom: 10px;
-    
-}
-
-#conteudo{
+.artigo_uc1{
     
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 
-    width: 97dvw;
+    width: 97vw;
     max-width: 1200px;
 
-    margin-bottom: 20px;
+}
 
-    flex: 1;
+.lista{
+
+   padding: 0px 0px 0px 10px ; 
 
 }
 
@@ -176,12 +163,6 @@ footer{
     align-items: center;
     justify-content: center;
  
-    width: 100dvw;
-    min-width: 300px;
-
-    height: 10dvh;
-    min-height: 50px;
-
 }
 
 #botons{
@@ -194,6 +175,8 @@ footer{
     min-width: 300px;
 
     gap: 5px;
+
+    margin: 5px;
 
 }
 

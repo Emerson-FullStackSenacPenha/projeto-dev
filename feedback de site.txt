@@ -1,0 +1,161 @@
+Seu código HTML e CSS está **muito bem estruturado**, especialmente para alguém que está só no **primeiro mês de estudos**. Parabéns por já organizar bem as partes do site, usar semântica (`header`, `section`, `footer`) e aplicar Flexbox com lógica!
+
+Mas dá pra **melhorar e corrigir algumas coisinhas** que podem causar problemas agora ou mais pra frente. Aqui vão as observações e sugestões:
+
+---
+
+### ✅ FUNCIONA, MAS TEM AJUSTES
+
+#### 1. `width: 97dvw;` (linha do `#info`)
+
+```css
+#info {
+    width: 97dvw;
+}
+```
+
+* **Problema:** `dvw` não é recomendado nesse caso.
+* **Por quê:** `dvw` é **viewport width dinâmica**, que **não considera scrollbars** em alguns navegadores e pode causar **vazamento lateral**.
+* ✅ **Use**:
+
+  ```css
+  width: 97vw;
+  ```
+
+  ou, melhor ainda:
+
+  ```css
+  width: 100%;
+  padding: 0 10px;
+  ```
+
+---
+
+#### 2. `section` com `flex: 1;`
+
+```css
+section {
+    flex: 1;
+}
+```
+
+* **Isso está certo**, porque o `body` está com `display: flex` e `flex-direction: column`.
+* Mas o ideal é garantir que o `footer` **nunca suba**. Então o `body` deve ter:
+
+  ```css
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  ```
+
+  **Você já fez isso!** Está tudo certinho.
+
+---
+
+#### 3. `height: 60%` e `width: 60%` no `#fotoprof` (imagem)
+
+```css
+#fotoprof {
+    height: 60%;
+    width: 60%;
+}
+```
+
+* ⚠ **Problema comum:** `60%` de quê? Se o pai da imagem não tiver altura definida, **isso não funciona direito**.
+* ✅ Melhor:
+
+  ```css
+  width: 120px;
+  height: 120px;
+  ```
+
+  Ou, se quiser manter responsivo:
+
+  ```css
+  width: 60%;
+  height: auto;
+  ```
+
+---
+
+#### 4. `article#conteudo` está vazio
+
+```html
+<article id="conteudo"></article>
+```
+
+* Sem problema técnico, mas se for ficar vazio, adicione um `min-height` para ele **empurrar o footer pra baixo** mesmo sem conteúdo:
+
+  ```css
+  #conteudo {
+      min-height: 200px;
+  }
+  ```
+
+---
+
+#### 5. `nav` dentro do `header`
+
+* Está tudo certo, mas poderia ser um pouco mais estruturado assim:
+
+  ```html
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">UC1</a></li>
+    </ul>
+  </nav>
+  ```
+* E aí estilizar o `ul` com `display: flex;` e gap, ao invés de aplicar tudo em `#menu`.
+
+---
+
+#### 6. Estilos repetitivos e fixos
+
+Por exemplo:
+
+```css
+#acesso2 {
+    height: 75%;
+    width: 75%;
+}
+#logos {
+    height: 100%;
+    width: 100%;
+}
+```
+
+Isso funciona, mas pode virar confuso. Você poderia usar `object-fit: contain` na imagem para manter o tamanho proporcional dentro dos botões, assim:
+
+```css
+#logos {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+```
+
+---
+
+## 🧼 MELHORIAS GERAIS (boas práticas)
+
+* ✅ Separe a lógica do layout dos estilos visuais (ex: cores, sombras).
+* ✅ Use `rem` em vez de `px` em fontes para acessibilidade.
+* ✅ Agrupe estilos parecidos para facilitar manutenção.
+* ✅ Padronize espaçamentos (ex: sempre `margin: 10px 0` ou `gap: 10px`).
+
+---
+
+## 🧪 Teste final
+
+Abra seu site em:
+
+* ✅ Uma janela pequena (tipo celular).
+* ✅ Uma tela bem larga.
+* ✅ Com muito conteúdo em `<article id="conteudo">` e com nenhum conteúdo.
+
+Se o **footer** estiver sempre lá embaixo e nada estiver vazando pro lado... tá top! 💪
+
+---
+
+Se quiser, posso **reescrever seu CSS com boas práticas** mantendo o visual idêntico — ou até preparar uma versão comentada linha por linha pra estudo. Quer que eu faça isso?
