@@ -3,6 +3,7 @@
 <html lang="pt-br">
 <!-- Configuração do site para idiomas -->
 <head>
+
     <meta charset="UTF-8"> 
     <!-- conjunto de caracteres mundial -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,74 +15,124 @@
      P = Paragrafo com texto 
      H2, H3, H4, H5 e H6 = Subtitulos
       -->
+    <link rel="icon" href="../images/logo_aba.png">
+    <link rel="stylesheet" href="../css/uc2/projeto_fullstack_uc2_textos.css">
 
     <title>UC2 - Textos</title>
-    <link rel="icon" href="../images/logo_aba.png">
+
 </head>
 <body>
     
-    <p id="topo"> <a href="../index.html">Home</a> > <a href="projeto_fullstack_uc2.html">UC2</a> > Elementos textuais</p>
+    <header id="topo">
+
+        <img id="img_topo" src="../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
+
+        <nav>
+
+            <ul>
+
+                <li id="menu">
+                    <a id="acesso" href="../index.html">HOME</a>
+                    <a id="acesso" href="../uc2/projeto_fullstack_uc2.html">UC2</a>
+                    <p>ELEMENTOS TEXTUAIS</p>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section>
+
+        <article>
+
+            <h1>Elementos textuais</h1>
+            <br>
+            <p>Neste conteúdo, aprendemos os conceitos iniciais do desenvolvimento web voltado ao Front-End, que é a parte visual dos sites, feita para interagir com os usuários.</p>  
+
+        </article>
     
-    <hr>
+        <article>
 
-    <h1>Elementos textuais</h1>
-    <p>Neste conteúdo, aprendemos os conceitos iniciais do desenvolvimento web voltado ao Front-End, que é a parte visual dos sites, feita para interagir com os usuários.</p>
+            <h2>Títulos e subtítulos</h2>
+            <br>
+            <p>As tags < <b>h1</b> > até < <b>h6</b> > são usadas para definir títulos e subtítulos em uma página HTML. Elas indicam a hierarquia de importância dos conteúdos.
+            < <b>h1</b> > é o título mais importante, geralmente usado para o título principal da página.
+            < <b>h2</b> > a < <b>h6</b> > são usados como subtítulos, com importância decrescente, essas tags ajudam na organização do conteúdo, melhoram a acessibilidade e são muito importantes para o SEO (otimização para mecanismos de busca).</p>
+            <br>
+            <p><h1>h1</h1> <h2>h2</h2> <h3>h3</h3> <h4>h4</h4><h5>h5</h5><h6>h6</h6></p>  
 
-    <hr>
+        </article>
+       
+        <article>
 
-    <!-- Titulos e Subtitulos -->
-    <div>
-        <h2>Títulos e subtítulos</h2>
-        <p>As tags < <b>h1</b> > até < <b>h6</b> > são usadas para definir títulos e subtítulos em uma página HTML. Elas indicam a hierarquia de importância dos conteúdos.
-        < <b>h1</b> > é o título mais importante, geralmente usado para o título principal da página.
-        < <b>h2</b> > a < <b>h6</b> > são usados como subtítulos, com importância decrescente, essas tags ajudam na organização do conteúdo, melhoram a acessibilidade e são muito importantes para o SEO (otimização para mecanismos de busca).</p>
-        <p><h1>h1</h1> <h2>h2</h2> <h3>h3</h3> <h4>h4</h4><h5>h5</h5><h6>h6</h6></p>
-    </div>
+            <h2>Estilos de texto</h2>
 
-    <hr>
+            <br>
 
-    <!-- Estilos de Texto -->
-    <div>
-        <h2>Estilos de texto</h2>
-        <p><b>Negrito:</b> Destaca um texto com ênfase forte. < b ></p>
-        <p><i>Itálico:</i> Dá ênfase ou indica algo especial como nomes ou termos estrangeiros. < i > <p>
-        <p><u>Sublinhado:</u> Sublinha o texto, geralmente usado para chamar atenção (com moderação). < u > </p>
-        <p><s>Riscado:</s> Indica algo removido ou inválido. < s > </p>
+            <p><b>Negrito:</b> Destaca um texto com ênfase forte. < b ></p>
 
-    <!-- ao invés de b, strong da emfase a palavra para robos e pesquisa -->
-    <!-- ctrl+; Informações sobre o código, ou comentários sobre o projeto. -->
+            <br>
 
-    </div>
+            <p><i>Itálico:</i> Dá ênfase ou indica algo especial como nomes ou termos estrangeiros. < i > <p>
 
-    <hr>
+            <br>
 
-    <!-- Abreviações -->
-    <div>
+            <p><u>Sublinhado:</u> Sublinha o texto, geralmente usado para chamar atenção (com moderação). < u > </p>
+
+            <br>
+
+            <p><s>Riscado:</s> Indica algo removido ou inválido. < s >
+
+        </article>
+
+        <article>
+
         <h2>Abreviações</h2>
+        <br>
         <p>A tag < abbr > é usada para marcar abreviações ou siglas, permitindo que o navegador exiba o significado completo ao passar o mouse sobre o texto.</p>
         <p> <abbr title="Desse jeito!">Exemplo</abbr></p>
-        <!--Title é um atributo, que aparece quando passa o mouse em cima da palavra dentro do tag-->
-    </div>
+        <!--Title é um atributo, que aparece quando passa o mouse em cima da palavra dentro do tag--> 
 
-    <hr>
+        </article>
 
-    <!-- Conteúdo expansivel -->
-    <div>
-        <h2>Conteúdo Expansível</h2>
-        <p>A tag < details > é usada para esconder e revelar conteúdo quando o usuário clica em um resumo ou título. É muito útil para criar abas, perguntas frequentes (FAQ), ou informações extras sem deixar a página poluída.</p>
+        <article>
 
-        <details>
-        <summary>Exemplo</summary>
-        <!-- Menu interativo -->
-        <p>Desse jeito!</p>
-        <!-- windows + . para abrir emoticons -->
-        </details>
-        
-        <p>Obs.: Se você usar apenas < <b>details</b> > sem < <b>summary</b> >, o conteúdo ainda pode ser expandido, mas não haverá um título visível para o usuário clicar.</p>
-    </div>
+            <h2>Conteúdo Expansível</h2>
+            <br>
+            <p>A tag < details > é usada para esconder e revelar conteúdo quando o usuário clica em um resumo ou título. É muito útil para criar abas, perguntas frequentes (FAQ), ou informações extras sem deixar a página poluída.</p>
+            <br>
+            <details>
+            <summary>Exemplo</summary>
+            <!-- Menu interativo -->
+            <p>Desse jeito!</p>
+            <!-- windows + . para abrir emoticons -->
+            </details>
+            <br>
+            <p>Obs.: Se você usar apenas < <b>details</b> > sem < <b>summary</b> >, o conteúdo ainda pode ser expandido, mas não haverá um título visível para o usuário clicar.</p>
 
-    <hr>
-    <a href="#topo">Subir</a>
+        </article>
+
+    </section>
+
+    <footer>
+
+         <div class="bola">
+            <a href="../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../images/logos/Left.png" alt="Voltar"></a>
+        </div>
+
+        <div class="bola">
+            <a href="../index.html"><img class="logo" src="../images/logos/Home.png" alt="Home"></a>
+        </div>
+
+        <div class="bola">
+            <a href="#topo"><img class="logo" src="../images/logos/Up.png" alt="Topo"></a>
+        </div>
+
+
+
+    </footer>
 
 </body>
 </html>
