@@ -15,107 +15,154 @@
      H2, H3, H4, H5 e H6 = Subtitulos
       -->
 
-    <title>UC2 - Listas</title>
+    
     <link rel="icon" href="../images/logo_aba.png">
+    <link rel="stylesheet" href="../css/uc2/projeto_fullstack_uc2_listas.css">
+
+    <title>UC2 - Listas</title>
+
 </head>
 <body>
     
-    <p id="topo"> <a href="../index.html">Home</a> > <a href="projeto_fullstack_uc2.html">UC2</a> > Trabalhando com listas</p>
-    
-    <hr>
+    <header id="topo">
 
-    <h1>Trabalhando com listas</h1>
-    <p>Listas são estruturas para representação de conteúdo na forma de relação de itens.</p>
+        <img id="img_topo" src="../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
 
-    <hr>
+        <nav>
 
-    <div>
-    <h2>Listas não-ordenada UL </h2>
-    <p>Relação de itens em que a sequência não importa.</p>
-
-    <h3>Exemplos:</h3>
-
-    <!-- Não use <ul>(marcador com bolinha) ou <li> sozinho -->
-        <ul>
-            <li>Teclados</li>
-            <li>Mouse</li>
-            <li>Webcam</li>
-            <li>Monitor</li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <div>
-    <h2>Listas ordenadas OL</h2>
-    <p>Relação de itens em que a sequência importa.</p>
-
-    <h3>Exemplos:</h3>
-
-        <!-- Não use <ol>(marcador com números) ou <li> sozinho -->
-        <ol>
-            <li>Andressa</li>
-            <li>Bruno</li>
-            <li>Carla</li>
-            <li>Mônica</li>
-            <li>Tiago</li>
-        </ol>
-    </div>
-    
-    <hr>
-
-    <div>
-
-    <h2>Listas aninhadas (listas dentro de listas)</h2>
-    <p>Podemos misturar listas de diferentes tipos e também colocar listas dentro de outras listas.</p>
-
-    <h3>Exemplos:</h3>
-    <!-- Cardápio de doces e salgados -->
-
-    <!-- Lista não ordenada, com bolinhas -->
-    <ul>
-        <!-- Aninhado👇-->
-        <li>Doces
             <ul>
-                <li>Brigadeiro</li>
-                <li>Torta de limão</li>
-                <!-- 2ª nível de aninhar, muda o ícone -->
-                <li>Paçoca
-                    <ul>
-                    <li>Zero</li>
-                    <li>Integral</li>
+
+                <li id="menu">
+                    <a id="acesso" href="../index.html">HOME</a>
+                    <a id="acesso" href="../uc2/projeto_fullstack_uc2.html">UC2</a>
+                    <p>LISTAS</p>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <section>
+
+        <article>
+
+            <h1>Trabalhando com listas</h1>
+            <br>
+            <p>Listas são estruturas para representação de conteúdo na forma de relação de itens.</p>
+
+        </article>
+
+        <article>
+            
+           <h2>Listas não-ordenada UL </h2>
+           <br>
+           <p>Relação de itens em que a sequência não importa.</p>
+           <br>
+           <h3>Exemplos:</h3>
+           <br>
+    <!-- Não use <ul>(marcador com bolinha) ou <li> sozinho -->
+           <ul class="lista">
+                <li>Teclados</li>
+                <li>Mouse</li>
+                <li>Webcam</li>
+                <li>Monitor</li>
+           </ul> 
+
+        </article>
+
+        <article>
+
+            <h2>Listas ordenadas OL</h2>
+            <br>
+            <p>Relação de itens em que a sequência importa.<p>
+            <br>
+            <h3>Exemplos:</h3>
+
+            <!-- Não use <ol>(marcador com números) ou <li> sozinho -->
+            <ol class="lista">
+                <li>Andressa</li>
+                <li>Bruno</li>
+                <li>Carla</li>
+                <li>Mônica</li>
+                <li>Tiago</li>
+            </ol>
+
+        </article>
+
+        <article>
+
+            <h2>Listas aninhadas (listas dentro de listas)</h2>
+            <br>
+            <p>Podemos misturar listas de diferentes tipos e também colocar listas dentro de outras listas.</p>
+            <br>
+            <h3>Exemplos:</h3>
+            <!-- Cardápio de doces e salgados -->
+            <br>
+            <!-- Lista não ordenada, com bolinhas -->
+            <ul class="lista">
+                <!-- Aninhado👇-->
+                <li>Doces
+                    <ul class="lista">
+                        <li>Brigadeiro</li>
+                        <li>Torta de limão</li>
+                        <!-- 2ª nível de aninhar, muda o ícone -->
+                        <li>Paçoca
+                            <ul class="lista">
+                            <li>Zero</li>
+                            <li>Integral</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-            </ul>
-        </li>
-    </ul>
-    
-    </div>
+            </ul>  
 
-    <hr>
+        </article>
 
-    <div>
-    <h2>Lista de Difinição</h2>
-    <p>Lista usada para estruturas de itens baseados em <b>termo</b> e <b>descrição</b>. Muito útil para conteúdos do tipo: glossários, FAQs, ou apresentação de dados com algum conceito, etc.</p>
+        <article>
 
-    <h3>Exemplos:</h3>
+            <h2>Lista de Difinição</h2>
+            <br>
+            <p>Lista usada para estruturas de itens baseados em <b>termo</b> e <b>descrição</b>. Muito útil para conteúdos do tipo: glossários, FAQs, ou apresentação de dados com algum conceito, etc.</p>
+            <br>
+            <h3>Exemplos:</h3>
+            <br>
+            
+            <dl>
+            <dt>Processador</dt>
+            <dd>É uma unidade de processamento computacional...</dd>
+            <dd>Peça essencial em qualquer equipamento digital.</dd>          
 
-    <!-- Tags usadas para definição -->
-<!-- Dl (Lista de dedinicição) -->
-    <dl>
-        <!--DT = 
-            DD = -->
-        <dt>Processador</dt>
-        <dd>É uma unidade de processamento computacional...</dd>
-        <dd>Peça essencial em qualquer equipamento digital.</dd>
+            <br>
 
-        <dt>Memória RAM</dt>
-        <dd>Espaço de armazenamento volátil</dd>
-    </dl>
-    </div>
-    
-    <hr>
-    <a href="#topo">Subir</a>
+            <dt>Memória RAM</dt>
+            <dd>Espaço de armazenamento volátil</dd>
+            </dl>   
+
+        </article>
+
+    </section>
+
+
+    <footer>
+
+         <div class="bola">
+            <a href="../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../images/logos/Left.png" alt="Voltar"></a>
+        </div>
+
+        <div class="bola">
+            <a href="../index.html"><img class="logo" src="../images/logos/Home.png" alt="Home"></a>
+        </div>
+
+        <div class="bola">
+            <a href="#topo"><img class="logo" src="../images/logos/Up.png" alt="Topo"></a>
+        </div>
+
+
+
+    </footer>
 
 </body>
 </html>
