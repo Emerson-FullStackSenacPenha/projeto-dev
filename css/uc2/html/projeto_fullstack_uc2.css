@@ -73,7 +73,7 @@ nav{
 /* Section */
 #geral{
 
-    background-image: url(../../images/fundo.png);
+    background-image: url(../../../images/fundo.png);
     background-size: 80px;
     
     display: flex;
