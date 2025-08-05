@@ -15,109 +15,186 @@
      H2, H3, H4, H5 e H6 = Subtitulos
       -->
 
-    <title>UC2 - Git e GitHub</title>
     <link rel="icon" href="../images/logo_aba.png">
+    <link rel="stylesheet" href="../css/uc2/projeto_fullstack_uc2_git.css">
+
+    <title>UC2 - Git e GitHub</title>
+
 </head>
 <body>
     
-    <p id="topo"> <a href="../index.html">Home</a> > <a href="projeto_fullstack_uc2.html">UC2</a> > Git e GitHub</p>
+     <header id="topo">
+
+        <img id="img_topo" src="../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
+
+        <nav>
+
+            <ul>
+
+                <li id="menu">
+                    <a id="acesso" href="../index.html">HOME</a>
+                    <a id="acesso" href="../uc2/projeto_fullstack_uc2.html">UC2</a>
+                    <p>GITHUB</p>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section>
+
+        <article>
+
+            <p><h1>Git e GitHub</h1></p>
+            <br>
+            <p>Usar ferramentas como essas no desenvolvimento de um projeto, garante controle, segurança e organização do código, permitindo registrar cada etapa do projeto, trabalhando em equipe sem gerar conflitos e mantendo cópias sincronizadas salvas na nuvem. Com isso, é possível evoluir o código com facilidade e colaboração de forma mais       profissional.</p>
+
+        </article>
+
+        <article>
+
+            <p><h2>Ferramentas</h2></p>
+            <br>
+            <ul class="lista">
+                <li><p><b>Git:</b> Software de controle de versão de código, instalado no computador e que funciona localmente, sem necessidade de conexão com a internet. Pode ser integrado a editores como o VS Code, facilitando o acompanhamento e registro das alterações diretamente no software de desenvolvimento.</p></li>
+                <br>
+                <li><p><b>GitHub:</b> Plataforma online para armazenar e colaborar em projetos com Git.</p></li>
+                <br>
+                <li><p><b>GitHub Desktop:</b> Programa instalado no computador que facilita o uso do Git e integração com o GitHub.</p></li>
+            </ul> 
+
+        </article>
+
+        <article>
+
+            <p><h2>Repositório</h2></p>
+            <br>
+            <p>Repositório é uma pasta com controle de versão ativado pelo Git, usada para armazenar o código-fonte e acompanhar todas as mudanças feitas no projeto ao longo do tempo. Pode ser local (no seu computador) ou remoto (hospedado em plataformas como o GitHub).</p>
+
+        </article>
+
+        <article>
+
+            <p><h2>Registros</h2></p>
+            <br>
+            <ul class="lista">
+                <li><b>Commit:</b> Registro de uma versão (ponto no tempo) do código.</li>
+                <br>
+                <li><b>Push:</b> Enviar as alterações para o GitHub (nuvem).</li>
+                <br>
+                <li><b>Pull:</b> Receber alterações do GitHub para sua máquina.</li>
+            </ul>
+        
+
+        </article>
+
+        <article>
+
+            <p><h2>Status do arquivo</h2> </p>
+            <br>
+             <ul>
+                <li><b>Novo:</b> ainda não versionado.</li>
+                <br>
+                <li><b>Modificado:</b> foi alterado.</li>
+                <br>
+                <li><b>Salvo (commitado):</b> já está registrado.</li>
+            </ul>  
+
+        </article>
+
+        <article>
+
+            <p><h2>Ramificação</h2></p>
+            <br>
+            <ul class="lista">
+                <li><b>Main ou Master:</b> Branch principal.</li>
+                <br>
+                <li><b>Branch:</b> Linha paralela de desenvolvimento.</li>
+                <br>
+                <li><b>Merge:</b> Unir alterações de diferentes branches.</li>
+            </ul>
+
+        </article>
+
+        <article>
+
+            <p><h2>Arquivos especiais</h2></p>
+            <br>
+            <ul class="lista">
+                <li><b>README.md:</b> Arquivo de apresentação e informações do projeto.</li>
+                <br>
+                <li><b>Markdown (.md):</b> Linguagem de marcação para escrever o README e outros docs.</li>
+                <br>
+                <li><b>.gitignore:</b> Arquivo que define o que não será enviado ao GitHub (ex: arquivos grandes, senhas, etc).</li>
+            </ul>
     
-    <hr>
+        </article>
 
-    <h1>Git e GitHub</h1>
-    <p>Usar ferramentas como essas no desenvolvimento de um projeto, garante controle, segurança e organização do código, permitindo registrar cada etapa do projeto, trabalhando em equipe sem gerar conflitos e mantendo cópias sincronizadas salvas na nuvem. Com isso, é possível evoluir o código com facilidade e colaboração de forma mais profissional.</p>
+        <article>
 
-    <hr>
+            <p><h2>Boas Práticas</h2></p>
 
-<div>
+            <ul class="lista">
+                <li>Commits pequenos e frequentes.</li>
+                <li>Mensagens claras e específicas.</li>
+                <li>Revisar antes de enviar (push).</li>
+                <li>Evitar enviar arquivos desnecessários, grandes ou confidenciais.</li>
+            </ul>    
 
-    <h2>Ferramentas</h2>
+        </article>
 
-    <ul>
-        <li><p><b>Git:</b> Software de controle de versão de código, instalado no computador e que funciona localmente, sem necessidade de conexão com a internet. Pode ser integrado a editores como o VS Code, facilitando o acompanhamento e registro das alterações diretamente no software de desenvolvimento.</p></li>
-        <li><p><b>GitHub:</b> Plataforma online para armazenar e colaborar em projetos com Git.</p></li>
-        <li><p><b>GitHub Desktop:</b> Programa instalado no computador que facilita o uso do Git e integração com o GitHub.</p></li>
-    </ul>
+        <article>
 
-    <hr>
+            <p><h2>Outros Conceitos</h2></p>
+            <br>
+            <ul>
+                <li><b>Update:</b> Atualizar repositório local com as mudanças remotas.</li>
+                <br>
+                <li><b>Clone:</b> Copiar um repositório do GitHub para o seu computador.</li>
+                <br>
+                <li><b>Novo Repositório:</b> Nome sem espaços e tudo minúsculo, e adicionar descrição clara para facilitar a busca online.</li>
+            </ul>
 
-    <h2>Repositório</h2>
-    <p>Repositório é uma pasta com controle de versão ativado pelo Git, usada para armazenar o código-fonte e acompanhar todas as mudanças feitas no projeto ao longo do tempo. Pode ser local (no seu computador) ou remoto (hospedado em plataformas como o GitHub).</p>
+        </article>
 
-    <hr>
+        <article>
 
-    <h2>Registros</h2>
-    
-    <ul>
-        <li><b>Commit:</b> Registro de uma versão (ponto no tempo) do código.</li>
-        <li><b>Push:</b> Enviar as alterações para o GitHub (nuvem).</li>
-        <li><b>Pull:</b> Receber alterações do GitHub para sua máquina.</li>
-    </ul>
+            <p><h2>Links úteis</h2></p>    
+            <br>
+            <ul class="list">
+                <li><a href="https://git-scm.com/" target="_blank">Git</a></li>
+                <br>
+                <li><a href="https://desktop.github.com/download/" target="_blank">GitHub Desktop</a></li>
+                <br>
+                <li><a href="https://github.com/" target="_blank">GitHub Online</a></li>
+                <br>
+                <li><a href="https://www.youtube.com/watch?v=_F88EGikLSE&list=PLRsX0TYeYfdlUJpZ-vs4YZzKb3Dz-ds5w" target="_blank">Videoaula de GitHub do professor Tiago </a></li>
 
-    <hr>
+            </ul>
 
-    <h2>Status do arquivo</h2> 
-    <ul>
-        <li><b>Novo:</b> ainda não versionado.</li>
-        <li><b>Modificado:</b> foi alterado.</li>
-        <li><b>Salvo (commitado):</b> já está registrado.</li>
-    </ul>  
+        </article>
 
-    <h2>Ramificação</h2>
-    
-    <ul>
-        <li><b>Main ou Master:</b> Branch principal.</li>
-        <li><b>Branch:</b> Linha paralela de desenvolvimento.</li>
-        <li><b>Merge:</b> Unir alterações de diferentes branches.</li>
-    </ul>
+    </section>
 
-    <hr>
+     <footer>
 
-    <h2>Arquivos especiais</h2>
+         <div class="bola">
+            <a href="../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../images/logos/Left.png" alt="Voltar"></a>
+        </div>
 
-    <ul>
-        <li><b>README.md:</b> Arquivo de apresentação e informações do projeto.</li>
-        <li><b>Markdown (.md):</b> Linguagem de marcação para escrever o README e outros docs.</li>
-        <li><b>.gitignore:</b> Arquivo que define o que não será enviado ao GitHub (ex: arquivos grandes, senhas, etc).</li>
-    </ul>
+        <div class="bola">
+            <a href="../index.html"><img class="logo" src="../images/logos/Home.png" alt="Home"></a>
+        </div>
 
-    <hr>
+        <div class="bola">
+            <a href="#topo"><img class="logo" src="../images/logos/Up.png" alt="Topo"></a>
+        </div>
 
-    <h2>Boas Práticas</h2>
 
-    <ul>
-        <li>Commits pequenos e frequentes.</li>
-        <li>Mensagens claras e específicas.</li>
-        <li>Revisar antes de enviar (push).</li>
-        <li>Evitar enviar arquivos desnecessários, grandes ou confidenciais.</li>
-    </ul>
 
-    <hr>
-
-    <h2>Outros Conceitos</h2>
-
-    <ul>
-        <li><b>Update:</b> Atualizar repositório local com as mudanças remotas.</li>
-        <li><b>Clone:</b> Copiar um repositório do GitHub para o seu computador.</li>
-        <li><b>Novo Repositório:</b> Nome sem espaços e tudo minúsculo, e adicionar descrição clara para facilitar a busca online.</li>
-    </ul>
-
-    <hr>
-
-    <h2>Links úteis</h2>
-
-    <ul>
-
-        <li><a href="https://git-scm.com/" target="_blank">Git</a></li>
-        <li><a href="https://desktop.github.com/download/" target="_blank">GitHub Desktop</a></li>
-        <li><a href="https://github.com/" target="_blank">GitHub Online</a></li>
-        <li><a href="https://www.youtube.com/watch?v=_F88EGikLSE&list=PLRsX0TYeYfdlUJpZ-vs4YZzKb3Dz-ds5w" target="_blank">Videoaula de GitHub do professor Tiago </a></li>
-
-    </ul>
-
-</div>
-    <hr>
-    <a href="#topo">Subir</a>
+    </footer>
 
 </body>
 </html>
