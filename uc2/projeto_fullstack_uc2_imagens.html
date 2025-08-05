@@ -3,125 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com imagens</title>
+    
     <link rel="icon" href="../images/logo_aba.png">
+    <link rel="stylesheet" href="../css/uc2/projeto_fullstack_uc2_imagens.css">
+
+    <title>Trabalhando com imagens</title>
+
 </head>
 <body>
 
-    <p  id="topo"> <a href="../index.html">Home</a> > <a href="projeto_fullstack_uc2.html">UC2</a> > Trabalhando com imagens</p>
-    
-    <hr>
+    <header id="topo">
 
-    <h1>Trabalhando com imagens</h1>
-    <details>
-        <summary>Obs.:</summary>
-        <p>Abra o código fonte do seu navegador para entender as tags. (Chrome Ctrl+U)</p>
+        <img id="img_topo" src="../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
 
-    </details>
-    <p>Para exibir imagens em uma página web, usamos a tag < <b>img</b> >. Ela é auto-fechada e precisa de, no mínimo, dois atributos: src (fonte da imagem) e alt (texto alternativo).</p>
-    
+        <nav>
 
-    <hr>
+            <ul>
 
-    <h2>Formatos mais comuns</h2>
-    <ul>
-        <li><b>JPEG/JPG</b>: Muito usado para fotos em geral</li>
-        <li><b>PNG</b>: Imagens com exigência maior de qualidade, permite uso de transparência.Pode ser mais pesado.</li>
-        <li><b>GIF</b>: Usado para desenhos/ilustrações, com poucas cores <i>(até 256 cores)</i>. Suporte báscio à transparência e permite animações.</li>
-        <li><b>WEBP</b>: Formato moderno, com ótima compressão, suporta transparência e animação.</li>
-        <li><b>SVG</b>: Formato de imagem vetorial, muito usado em desenhos e logotipos, que pode ser exportado a partir de programas como CorelDRAW/Ilustrator. Um formato de imagem vetorial baseado em código XML, usado principalmente para ícones, logos e gráficos que precisam manter qualidade em qualquer tamanho.</li>
-    </ul>
+                <li id="menu">
+                    <a id="acesso" href="../index.html">HOME</a>
+                    <a id="acesso" href="../uc2/projeto_fullstack_uc2.html">UC2</a>
+                    <p>IMAGENS</p>
+                </li>
 
-    <hr>
+            </ul>
 
-    <div>
-    <h2>Aplicando imagem direto no body</h2>
+        </nav>
 
-    <!-- 
-    Atributo src: indica o caminho e o arquivo
-    Atributo alt: indica um texto alternativo
-    --> 
-    <img src="../images/pink-floyd.jpg" alt="Integrantes da banda Pink Floyd acenando para o público">
+    </header>
 
-    <hr>
+    <section>
 
-    <h2>Imagens dentro de outros elementos</h2>
+        <article>
 
-    
-    <p>
-        <img src="../images/dedos.jpg" alt="">
-        <img src="../images/ideias.jpg" alt="">
-    </p>
+            <p><h1>Trabalhando com imagens</h1></p>
+            <br>
+            <details>
+            
+                <summary>Obs.:</summary>
+                <p>Abra o código fonte do seu navegador para entender as tags. (Chrome Ctrl+U)</p>
 
-    
+            </details>
+            <br>
 
-    <!-- Div = Amarrando imagens -->
-    <div>
-        <img src="../images/logo-html5.png" alt="">
-        <img src="../images/logo-css3.gif" alt="">
-        <img src="../images/logo-javascript.gif" alt="">
-    </div>
-    </div>
-   
-    <hr>
+            <p>Para exibir imagens em uma página web, usamos a tag < <b>img</b> >. Ela é auto-fechada e precisa de, no mínimo, dois atributos: src (fonte da imagem) e alt (texto alternativo).</p>
 
-    <div>
-    <h2>Imagem/Ilustração COM legenda</h2>
+        </article>
+        
+        <article>
 
-    <figure>
-        <img src="../images/stonehenge.jpg" alt="Ruínas do Stonehenge com um pôr do Sol ao fundo">
-        <figcaption>Férias no Stonehenge em 2024</figcaption>
-    </figure>
+           <p><h2>Formatos mais comuns</h2></p>
+           <br>
+           <ul class="lista">
 
-        <p>A tag < figure > é usada para agrupar uma imagem (ou outro conteúdo visual) com uma legenda descritiva, usando a tag < figcaption >. Isso dá mais significado semântico ao conteúdo.</p>
-    </div>
+                <li><b>JPEG/JPG</b>: Muito usado para fotos em geral</li>
+                <br>
+                <li><b>PNG</b>: Imagens com exigência maior de qualidade, permite uso de transparência.Pode ser mais pesado.</li>
+                <br>
+                <li><b>GIF</b>: Usado para desenhos/ilustrações, com poucas cores <i>(até 256 cores)</i>. Suporte báscio à transparência e permite animações.</li>
+                <br>
+                <li><b>WEBP</b>: Formato moderno, com ótima compressão, suporta transparência e animação.</li>
+                <br>
+                <li><b>SVG</b>: Formato de imagem vetorial, muito usado em desenhos e logotipos, que pode ser exportado a partir de programas como CorelDRAW/Ilustrator. Um formato de imagem vetorial baseado em código XML, usado principalmente para ícones, logos e gráficos que precisam manter qualidade em qualquer tamanho.</li>
+                
+            </ul> 
 
-    <hr>
+        </article>
 
-    <div>
-    <h2>Formato WEBP</h2>
+        <article>
+            
+            <p><h2>Aplicando imagem direto no body</h2></p>
+            <br>
+            <img src="../images/pink-floyd.jpg" alt="Integrantes da banda Pink Floyd acenando para o público">
 
-        <figure>
-            <img src="../images/montanhas.jpg" alt="">
-            <figcaption>Foto jpg com 43,8kb</figcaption>
-        </figure>
+        </article>
 
-        <figure>
-            <img src="../images/montanhas.webp" alt="">
-            <figcaption>Foto webp com 29,6kb</figcaption>
-        </figure>
+        <article>
+            
+            <p><h2>Imagens dentro de outros elementos</h2></p>
+            <br>
+            <p>
+            <img src="../images/dedos.jpg" alt="dedos" height="100px">
+            <img src="../images/ideias.jpg" alt="ideias" height="100px">
+            </p>
 
-    </div>
+        </article>
 
-    <hr>
+        <article>
+            
+            <p><h2>Amarrando imagens dentro de uma div </h2></p>
+            <br>
+            <div>
+            <img src="../images/logo-html5.png" alt="">
+            <img src="../images/logo-css3.gif" alt="">
+            <img src="../images/logo-javascript.gif" alt="">
+            </div>  
 
-    <div>
-    <h2>Vetor para a Web (SVG)</h2>
+        </article>
 
-    <figure>
-        <img src="../images/black-cat.png" alt="">
-        <p>Imagem original</p>
-    </figure>
+        <article>
 
-    <figure>
-        <img src="../images/black-cat.svg" alt="">
-        <p>Imagem editada direto do código fonte pelo bloco de notas</p>
-    </figure>
-    
-    <hr>
+            <h2>Imagem/Ilustração COM legenda</h2>
+            <br>
+            <figure>
+            <img src="../images/stonehenge.jpg" alt="Ruínas do Stonehenge com um pôr do Sol ao fundo">
+            <figcaption>Férias no Stonehenge em 2024</figcaption>
+            </figure>
+            <br>
+            <p>A tag < figure > é usada para agrupar uma imagem (ou outro conteúdo visual) com uma legenda descritiva, usando a tag < figcaption >. Isso dá mais significado semântico ao conteúdo.</p>
 
-    <h2>Banco de imagens</h2>
+        </article>
 
-    <ul>
-        <li><a href="https://pixabay.com/pt/" target="_blank">PixaBay</a></li>
-        <li><a href="https://unsplash.com/pt-br" target="_blank">Unsplash</a></li>
-    </ul>
+        <article>
+
+            <p><h2>Formato WEBP</h2></p>
+            <br>
+            <figure>
+                <img src="../images/montanhas.jpg" alt="">
+                <figcaption>Foto jpg com 43,8kb</figcaption>
+            </figure>
+            <br>
+            <figure>
+                <img src="../images/montanhas.webp" alt="">
+                <figcaption>Foto webp com 29,6kb</figcaption>
+            </figure>
+
+        </article>
+
+        <article>
+
+            <p><h2>Vetor para a Web (SVG)</h2></p>
+            <br>
+            <figure>
+                <img src="../images/black-cat.png" alt="">
+                <p>Imagem original</p>
+            </figure>
+            <br>
+            <figure>
+                <img src="../images/black-cat.svg" alt="">
+                <p>Imagem editada direto do código fonte pelo bloco de notas</p> 
+            </figure>
+
+        </article>
+
+        <article>
+
+            <p><h2>Banco de imagens</h2></p>
+
+            <ul class="lista">
+                <li><a href="https://pixabay.com/pt/" target="_blank">PixaBay</a></li>
+                <li><a href="https://unsplash.com/pt-br" target="_blank">Unsplash</a></li>
+            </ul>
+
+        </article>
+
+    </section>
+
+     <footer>
+
+         <div class="bola">
+            <a href="../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../images/logos/Left.png" alt="Voltar"></a>
+        </div>
+
+        <div class="bola">
+            <a href="../index.html"><img class="logo" src="../images/logos/Home.png" alt="Home"></a>
+        </div>
+
+        <div class="bola">
+            <a href="#topo"><img class="logo" src="../images/logos/Up.png" alt="Topo"></a>
+        </div>
 
 
-    </div>
 
- <hr>
-    <a href="#topo">Subir</a>
+    </footer>
 
 </body>
 </html>
