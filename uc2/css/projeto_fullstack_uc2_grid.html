@@ -23,7 +23,7 @@
                 <li id="menu">
                     <a id="acesso" href="../../index.html">HOME</a>
                     <a id="acesso" href="../../uc2/projeto_fullstack_uc2.html">UC2</a>
-                    <p>LINKS</p>
+                    <p>GRID</p>
                 </li>
 
             </ul>
@@ -32,7 +32,87 @@
 
     </header>
 
-      <footer>
+    <section>
+
+        <article>
+
+            <h1>Conceitos Básicos do Grid</h1>    
+            <br>
+            <p>O CSS Grid organiza elementos filhos em linhas e colunas.</p>
+            <p>Quem organiza os filhos é o elemento pai, aplicando " <b>display: grid</b> ".</p>
+            <p>A primeira organização que definimos normalmente é colunas.</p>
+            <p>A quantidade e tamanho das linhas são menos controláveis diretamente, pois dependem do conteúdo e do tamanho do pai.</p>
+
+        </article>
+
+        <article>
+
+            <h2>Propriedades Principais do Grid</h2>
+            <br>
+            <p><strong>grid-template-columns:</strong> define a estrutura das colunas pelo pai (ex.: tamanho da 1ª coluna, da 2ª coluna, etc).</p>
+
+            <p><strong>grid-template-rows:</strong> define o tamanho das linhas.</p>
+            
+            <p>As unidades de medida podem ser em %, px, vh ou a unidade especial <code>fr</code> (fração do espaço disponível do pai).</p>
+            <br>
+            <p><strong>gap:</strong> espaçamento entre linhas e colunas (semelhante ao gap do Flexbox).</p>
+  
+        </article>
+
+        <article>
+
+            <h2>Unidades e Tamanhos</h2>
+            <br>
+            <p><code>fr</code> representa uma fração do espaço disponível do container pai.</p>
+            <br>
+            <p>Exemplo: <code>grid-template-columns: 1fr 3fr;</code> → a segunda coluna ocupará três vezes o espaço da primeira.</p>
+
+        </article>
+
+        <article>
+
+            <h2>Áreas do Grid (grid-area)</h2>
+            <br>
+            <p>Podemos nomear áreas para os filhos usando <code>grid-area</code> e referenciar esses nomes para posicionamento.</p>
+            <br>
+            <p>O nome funciona como um "id" ou "etiqueta" para facilitar o posicionamento dos itens.</p>
+
+        </article>
+
+        <article>
+
+            <h2>Controle de Alinhamento</h2>
+            <br>
+            <p>A propriedade <code>place-items</code> (abreviação para <code>align-items</code> + <code>justify-items</code>) controla o alinhamento dos itens no grid:</p>
+            <br>
+            <p>Exemplo: <code>place-items: end end;</code> — alinha os itens no final no eixo vertical e horizontal.</p>
+            <br>
+            <p>Diferente do Flexbox, que usa <code>justify-content</code> para alinhamento principal.</p>
+
+
+        </article>
+
+        <article>
+
+            <h2>Definir espaços com frações</h2>
+            <br>
+            <p><strong>Para colunas</strong></p>
+            <br>
+            <p><code>grid-template-columns: 1fr 4fr;</code><br>
+            O primeiro item ocupará 1 parte, o segundo 4 partes do espaço.</p>
+            <br>
+            <p><strong>Para linhas</strong></p>
+            <br>
+            <p><code>grid-template-rows: 100px 200px;</code><br>
+            Define explicitamente o tamanho das linhas.</p>
+
+
+        </article>
+
+
+    </section>
+    
+    <footer>
 
          <div class="bola">
             <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png" alt="Voltar"></a>
