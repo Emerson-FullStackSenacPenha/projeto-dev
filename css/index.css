@@ -101,7 +101,7 @@ section{
 
 .dis{
 
-    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10%;
     
     height: 150px;
@@ -124,6 +124,12 @@ a{
 
     text-decoration: none;
     color: rgb(255, 255, 255);
+
+}
+
+.dis:hover{
+
+ box-shadow: 0px 0px 5px rgb(255, 255, 255);
 
 }
 
