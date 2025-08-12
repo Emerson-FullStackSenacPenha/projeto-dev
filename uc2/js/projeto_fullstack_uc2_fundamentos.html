@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../../images/logo_aba.png">
+    <link rel="stylesheet" href="../../css/uc2/js/projeto_fullstack_uc2_fundamentos.css">
+
+    <title>Introdução Js</title>
+</head>
+<body>
+    
+     <header id="topo">
+
+        <img id="img_topo" src="../../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
+
+        <nav>
+
+            <ul>
+
+                <li id="menu">
+                    <a id="acesso" href="../../index.html">HOME</a>
+                    <a id="acesso" href="../../uc2/projeto_fullstack_uc2.html">UC2</a>
+                    <p>INTRODUÇÃO Js</p>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+     <section>
+
+        <article>
+            <h2>Introdução e Ambiente</h2>
+            <br>
+            <p>Sequência ideal para aprender desenvolvimento web:</p>
+            <ul class="lista">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript (por último, para adicionar interatividade)</li>
+            </ul>
+            <br>
+            <p>Inclusão do JavaScript no HTML:</p>
+            <br>
+            <p>Inserir o <code>&lt;script src="arquivo.js"&gt;&lt;/script&gt;</code> no final do <code>&lt;body&gt;</code>.</p>
+            
+            <p>Se precisar colocar o script no <code>&lt;head&gt;</code>, usar o atributo <code>defer</code> para garantir que o HTML carregue antes do JS executar, evitando bugs.</p>
+        </article>
+
+        <article>
+            <h2>Operações Aritméticas</h2>
+            <br>
+            <p>Use parênteses para definir prioridade nas expressões.</p>
+            <br>
+            <h3>Exemplos:</h3>
+            <br>
+            <p>let resultado = (2 + 3) * 4; // resultado = 20</p>
+            <p>let resultado = 2 + 3 * 4; // resultado = 14</p>
+        </article>
+
+        <article>
+            <h2>Variáveis e Constantes</h2>
+            <br>
+            <p><strong>Variável</strong> (dados que mudam): declarada com <code>let</code>.</p>
+            <p><strong>Constante</strong> (dados fixos): declarada com <code>const</code>.</p>
+            <br>
+            <h3>Exemplo:</h3>
+            <p>let nome = "João";     // variável dinâmica</p>
+            <p>const pi = 3.14;       // valor fixo</p>
+        </article>
+
+        <article>
+            <h2>Concatenar Strings</h2>
+            <br>
+            <h3>Forma antiga (Concatenação tradicional):</h3>
+            <p>Usar aspas "" e sinal de + para juntar textos e variáveis.</p>
+            <br>
+            <pre><code>console.log("Olá " + nome + ", tudo bem?");</code></pre>
+            <br>
+            <h3>Forma moderna (Template Literals):</h3>
+            
+            <p>Usar crase e ${} para inserir variáveis e expressões, mais legível e com suporte a quebras de linha.</p>
+            <br>
+            <pre><code>console.log(`Olá ${nome}, tudo bem?`);</code></pre>
+        </article>
+
+        <article>
+            <h2>Quebra de linha em strings</h2>
+            <br>
+            <p>Pode concatenar com +=:</p>
+            <pre><code>let texto = "Olá, sou fulano ";
+texto += "e sou tal coisa.";</code></pre>
+            <br>
+            <p>Template literals já permitem quebras de linha naturalmente:</p>
+            <pre><code>let texto = `Linha 1
+Linha 2`;</code></pre>
+        </article>
+
+        <article>
+            <h2>Usando aspas dentro de texto</h2>
+            <br>
+            <p>Errado</p>
+            <pre><code>// console.log("Gosto "muito" de paçoca");  // ERRADO</code></pre>
+            <br>
+            <p>Correto</p>
+        <pre><code>console.log('Gosto "muito" de paçoca'); // aspas simples no comando, duplas no texto
+console.log("Gosto 'muito' de paçoca"); // aspas duplas no comando, simples no texto
+console.log("Gosto \"muito\" de paçoca"); // escapando aspas com \</code></pre>
+        </article>
+
+        <article>
+            <h2>Modo Estrito (Strict Mode)</h2>
+            <br>
+            <p>Coloque no início do arquivo .js para ativar o modo estrito, que ajuda a evitar erros comuns, como usar variáveis não declaradas:</p>
+            <br>
+            <pre><code>'use strict';
+teste = "Senac"; // erro, variável não declarada
+console.log(teste);</code></pre>
+        </article>
+
+        <article>
+            <h2>Tipos de Dados e Verificação</h2>
+            <br>
+            <p>Para saber o tipo de uma variável, usar:</p>
+            <br>
+            <pre><code>console.log(typeof nome); "string"
+console.log(typeof pi);   "number"</code></pre>
+        </article>
+
+    </section>
+
+     <footer>
+
+         <div class="bola">
+            <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png" alt="Voltar"></a>
+        </div>
+
+        <div class="bola">
+            <a href="../../index.html"><img class="logo" src="../../images/logos/Home.png" alt="Home"></a>
+        </div>
+
+        <div class="bola">
+            <a href="#topo"><img class="logo" src="../../images/logos/Up.png" alt="Topo"></a>
+        </div>
+
+
+
+    </footer>
+
+</body>
+</html>
