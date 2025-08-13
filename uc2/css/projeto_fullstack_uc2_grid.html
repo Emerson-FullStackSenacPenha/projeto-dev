@@ -49,13 +49,13 @@
 
             <h2>Propriedades Principais do Grid</h2>
             <br>
-            <p><strong>grid-template-columns:</strong> define a estrutura das colunas pelo pai (ex.: tamanho da 1ª coluna, da 2ª coluna, etc).</p>
+            <p><h3>grid-template-columns:</h3> define a estrutura das colunas pelo pai (ex.: tamanho da 1ª coluna, da 2ª coluna, etc).</p>
 
-            <p><strong>grid-template-rows:</strong> define o tamanho das linhas.</p>
+            <p><h3>grid-template-rows:</h3> define o tamanho das linhas.</p>
             
             <p>As unidades de medida podem ser em %, px, vh ou a unidade especial <code>fr</code> (fração do espaço disponível do pai).</p>
             <br>
-            <p><strong>gap:</strong> espaçamento entre linhas e colunas (semelhante ao gap do Flexbox).</p>
+            <p><h3>gap:</h3> espaçamento entre linhas e colunas (semelhante ao gap do Flexbox).</p>
   
         </article>
 
@@ -104,12 +104,12 @@
 
             <h2>Definir espaços com frações</h2>
             <br>
-            <p><strong>Para colunas</strong></p>
+            <p><h3>Para colunas</h3></p>
             <br>
             <p><code>grid-template-columns: 1fr 4fr;</code><br>
             O primeiro item ocupará 1 parte, o segundo 4 partes do espaço.</p>
             <br>
-            <p><strong>Para linhas</strong></p>
+            <p><h3>Para linhas</h3></p>
             <br>
             <p><code>grid-template-rows: 100px 200px;</code><br>
             Define explicitamente o tamanho das linhas.</p>
@@ -147,18 +147,19 @@
             <h2>Fontes e Tipografia</h2>
             <br>
             <ul class="lista">
-                <li><strong>font-family</strong>: Define a família da fonte do texto (ex.: Arial, Verdana, Times New Roman). Fonte escolhida, familia da fonte e o tipo dela serifada ou não.</li>
+                <li><h3>font-family</h3>
+                Define a família da fonte do texto (ex.: Arial, Verdana, Times New Roman). Fonte escolhida, familia da fonte e o tipo dela serifada ou não.</li>
                 <br>
-                <li><strong>font-weight</strong>: Controla a espessura da fonte (ex.: normal, bold, valores numéricos como 100, 400, 700).</li><br>
-                <li><strong>font-style</strong>: Define o estilo da fonte (ex.: normal, italic, oblique).</li><br>
-                <li><strong>font-size</strong>: Determina o tamanho da fonte (ex.: px, em, rem, %).</li><br>
-                <li><strong>text-align</strong>: Alinha o texto horizontalmente (ex.: left, right, center, justify).</li><br>
-                <li><strong>text-transform</strong>: Controla a capitalização das letras (ex.: uppercase, lowercase, capitalize).</li><br>
-                <li><strong>text-decoration</strong>: Adiciona ou remove efeitos como sublinhado, linha sobre o texto ou risco (ex.: underline, overline, line-through, none).</li><br>
-                <li><strong>text-shadow</strong>: Aplica sombra ao texto (definindo deslocamento, desfoque e cor).</li><br>
-                <li><strong>line-height</strong>: Define o espaçamento vertical entre as linhas de texto.</li><br>
-                <li><strong>letter-spacing</strong>: Controla o espaçamento entre caracteres individuais.</li><br>
-                <li><strong>word-spacing</strong>: Define o espaçamento entre palavras.</li>
+                <li><h3>font-weight</h3>Controla a espessura da fonte (ex.: normal, bold, valores numéricos como 100, 400, 700).</li><br>
+                <li><h3>font-style</h3>Define o estilo da fonte (ex.: normal, italic, oblique).</li><br>
+                <li><h3>font-size</h3>Determina o tamanho da fonte (ex.: px, em, rem, %).</li><br>
+                <li><h3>text-align</h3>Alinha o texto horizontalmente (ex.: left, right, center, justify).</li><br>
+                <li><h3>text-transform</h3>Controla a capitalização das letras (ex.: uppercase, lowercase, capitalize).</li><br>
+                <li><h3>text-decoration</h3>Adiciona ou remove efeitos como sublinhado, linha sobre o texto ou risco (ex.: underline, overline, line-through, none).</li><br>
+                <li><h3>text-shadow</h3>Aplica sombra ao texto (definindo deslocamento, desfoque e cor).</li><br>
+                <li><h3>line-height</h3>Define o espaçamento vertical entre as linhas de texto.</li><br>
+                <li><h3>letter-spacing</h3>Controla o espaçamento entre caracteres individuais.</li><br>
+                <li><h3>word-spacing</h3>Define o espaçamento entre palavras.</li>
             </ul>
         </article>
 
@@ -202,8 +203,11 @@
             <h2>Criando variáveis</h2>
             <br>
             <ul class="lista">
-                <li><strong>Definir variáveis</strong>: Criamos dentro do seletor <code>:root</code> para serem globais.<br>
-                    Exemplo:<br>
+                <li>
+                    <h3>Definir variáveis</h3>Criamos dentro do seletor <code>:root</code> para serem globais.
+                    <br>
+                    Exemplo
+                    <br>
                     <code>
                         :root {<br>
                             --cor-principal: #3498db;<br>
@@ -212,8 +216,8 @@
                     </code>
                 </li><br>
                 
-                <li><strong>Usar variáveis</strong>: Chamamos com a função <code>var()</code>.<br>
-                    Exemplo:<br>
+                <li><h3>Usar variáveis</h3>Chamamos com a função <code>var()</code>.<br>
+                    Exemplo<br>
                     <code>
                         body {<br>
                             color: var(--cor-principal);<br>
@@ -222,8 +226,8 @@
                     </code>
                 </li><br>
                 
-                <li><strong>Alterar valor</strong>: Podemos redefinir em outro seletor.<br>
-                    Exemplo:<br>
+                <li><h3>Alterar valor</h3>Podemos redefinir em outro seletor.<br>
+                    Exemplo<br>
                     <code>
                         h1 {<br>
                             --cor-principal: red;<br>
@@ -234,36 +238,41 @@
             </ul>
         </article>
 
-
         <article>
             <h2>Cores no Texto</h2>
-            <ul>
-            <li>Nome da cor (em inglês): <code>red</code></li>
-            <li>Hexadecimal: <code>#RRGGBB</code></li>
-            <li>RGB: <code>rgb(255, 0, 0)</code></li>
-            <li>RGBA: <code>rgba(255, 0, 0, 0.5)</code></li>
+            <br>
+            <ul class="lista">
+                <li>Nome da cor (em inglês): <code>red</code></li>
+                <li>Hexadecimal: <code>#RRGGBB</code></li>
+                <li>RGB: <code>rgb(255, 0, 0)</code></li>
+                <li>RGBA: <code>rgba(255, 0, 0, 0.5)</code></li>
             </ul>
         </article>
 
         <article>
             <h2>Bordas</h2>
-            <p>Forma simplificada:</p>
+            <br>
+            <pre><code>border: espessura tipo cor;</code></pre>
             <pre><code>border: 2px solid black;</code></pre>
             <p>Substitui: <code>border-width</code>, <code>border-style</code>, <code>border-color</code></p>
         </article>
 
         <article>
             <h2>Interações: Hover e Cursor</h2>
+            <br>
             <pre><code>button:hover {
         background-color: blue;
         cursor: pointer;
         }</code></pre>
-            <p><code>cursor: pointer</code> exibe a mãozinha ao passar o mouse.</p>
+            <p><code>cursor: pointer</code></p>
+            <br>
+            <p>Ao passar o mouse sobre o botão, a cor de fundo ficará azul e o ponteiro se transformará em uma mãozinha.</p>
         </article>
 
         <article>
-            <h2>Boas Práticas</h2>
-            <ul>
+            <h2>Boas práticas com variáveis</h2>
+            <br>
+            <ul class="lista">
             <li>Crie variáveis no <code>:root</code></li>
             <li>Evite acentos e palavras reservadas</li>
             <li>Use nomes claros e consistentes, como <code>--cor-primaria</code></li>
