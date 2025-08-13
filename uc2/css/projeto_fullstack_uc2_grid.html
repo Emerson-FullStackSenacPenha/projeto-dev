@@ -117,6 +117,154 @@
 
         </article>
 
+        <article>
+            <h2>Seletores Básicos</h2>
+            <br>
+            <ul class="lista">
+                <li><code>p</code> = tag</li>
+                <li><code>.texto</code> = class</li>
+                <li><code>#id</code> = id</li>
+                <li><code>*</code> = seleciona tudo</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Seletores de Agrupamento</h2>
+            <br>
+            <p>Exemplo:</p>
+            <pre><code>h1, h2, p { ... }</code></pre>
+        </article>
+
+        <article>
+            <h2>Seletores Descendentes</h2>
+            <br>
+            <p>Exemplo:</p>
+            <pre><code>#Itens_menu li { ... }</code></pre>
+            <p>Seleciona todos os &lt;li&gt; dentro de #Itens_menu.</p>
+        </article>
+
+        <article>
+            <h2>Fontes e Tipografia</h2>
+            <br>
+            <ul class="lista">
+                <li><strong>font-family</strong>: Define a família da fonte do texto (ex.: Arial, Verdana, Times New Roman). Fonte escolhida, familia da fonte e o tipo dela serifada ou não.</li>
+                <br>
+                <li><strong>font-weight</strong>: Controla a espessura da fonte (ex.: normal, bold, valores numéricos como 100, 400, 700).</li><br>
+                <li><strong>font-style</strong>: Define o estilo da fonte (ex.: normal, italic, oblique).</li><br>
+                <li><strong>font-size</strong>: Determina o tamanho da fonte (ex.: px, em, rem, %).</li><br>
+                <li><strong>text-align</strong>: Alinha o texto horizontalmente (ex.: left, right, center, justify).</li><br>
+                <li><strong>text-transform</strong>: Controla a capitalização das letras (ex.: uppercase, lowercase, capitalize).</li><br>
+                <li><strong>text-decoration</strong>: Adiciona ou remove efeitos como sublinhado, linha sobre o texto ou risco (ex.: underline, overline, line-through, none).</li><br>
+                <li><strong>text-shadow</strong>: Aplica sombra ao texto (definindo deslocamento, desfoque e cor).</li><br>
+                <li><strong>line-height</strong>: Define o espaçamento vertical entre as linhas de texto.</li><br>
+                <li><strong>letter-spacing</strong>: Controla o espaçamento entre caracteres individuais.</li><br>
+                <li><strong>word-spacing</strong>: Define o espaçamento entre palavras.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Importar Fontes do Google Fonts</h2>
+            <br>
+            <ul class="lista">
+                <li><h3>1. Acessar o Google Fonts</h3>
+                Vá até <a href="https://fonts.google.com" target="_blank">fonts.google.com</a> e escolha a fonte desejada.</li>
+                <br>
+                <li><h3>2. Copiar o link de importação</h3> 
+                    No Google Fonts, clique em “Get embed code” e copie a tag <code>@import</code>.  
+                </li><br>
+
+                <li><strong>3. Usar no CSS</strong>:  
+                    Após importar, aplique a fonte usando <code>font-family</code>.<br>
+                    <code>
+                        body {<br>
+                            font-family: 'Roboto', sans-serif;<br>
+                        }
+                    </code>
+                </li><br>
+
+                <li><strong>4. Exemplo com <code>@import</code> direto no CSS</strong>:<br>
+                    <code>
+                        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');<br>
+                        body {<br>
+                            font-family: 'Roboto', sans-serif;<br>
+                        }
+                    </code>
+                </li>
+            </ul>
+
+        </article>
+
+        <article>
+            <h2>Criando variáveis</h2>
+            <br>
+            <ul class="lista">
+                <li><strong>Definir variáveis</strong>: Criamos dentro do seletor <code>:root</code> para serem globais.<br>
+                    Exemplo:<br>
+                    <code>
+                        :root {<br>
+                            --cor-principal: #3498db;<br>
+                            --tamanho-fonte: 16px;<br>
+                        }
+                    </code>
+                </li><br>
+                
+                <li><strong>Usar variáveis</strong>: Chamamos com a função <code>var()</code>.<br>
+                    Exemplo:<br>
+                    <code>
+                        body {<br>
+                            color: var(--cor-principal);<br>
+                            font-size: var(--tamanho-fonte);<br>
+                        }
+                    </code>
+                </li><br>
+                
+                <li><strong>Alterar valor</strong>: Podemos redefinir em outro seletor.<br>
+                    Exemplo:<br>
+                    <code>
+                        h1 {<br>
+                            --cor-principal: red;<br>
+                            color: var(--cor-principal);<br>
+                        }
+                    </code>
+                </li>
+            </ul>
+        </article>
+
+
+        <article>
+            <h2>Cores no Texto</h2>
+            <ul>
+            <li>Nome da cor (em inglês): <code>red</code></li>
+            <li>Hexadecimal: <code>#RRGGBB</code></li>
+            <li>RGB: <code>rgb(255, 0, 0)</code></li>
+            <li>RGBA: <code>rgba(255, 0, 0, 0.5)</code></li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Bordas</h2>
+            <p>Forma simplificada:</p>
+            <pre><code>border: 2px solid black;</code></pre>
+            <p>Substitui: <code>border-width</code>, <code>border-style</code>, <code>border-color</code></p>
+        </article>
+
+        <article>
+            <h2>Interações: Hover e Cursor</h2>
+            <pre><code>button:hover {
+        background-color: blue;
+        cursor: pointer;
+        }</code></pre>
+            <p><code>cursor: pointer</code> exibe a mãozinha ao passar o mouse.</p>
+        </article>
+
+        <article>
+            <h2>Boas Práticas</h2>
+            <ul>
+            <li>Crie variáveis no <code>:root</code></li>
+            <li>Evite acentos e palavras reservadas</li>
+            <li>Use nomes claros e consistentes, como <code>--cor-primaria</code></li>
+            </ul>
+        </article>
 
     </section>
     
