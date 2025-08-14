@@ -70,8 +70,8 @@
         <article>
             <h2>Variáveis e Constantes</h2>
             <br>
-            <p><strong>Variável</strong> (dados que mudam): declarada com <code>let</code>.</p>
-            <p><strong>Constante</strong> (dados fixos): declarada com <code>const</code>.</p>
+            <p><h3>Variável</h3> (dados que mudam): declarada com <code>let</code>.</p>
+            <p><h3>Constante</h3> (dados fixos): declarada com <code>const</code>.</p>
             <br>
             <h3>Exemplo:</h3>
             <p>let nome = "João";     // variável dinâmica</p>
@@ -134,6 +134,95 @@ console.log(teste);</code></pre>
             <br>
             <pre><code>console.log(typeof nome); "string"
 console.log(typeof pi);   "number"</code></pre>
+        </article>
+
+        <article>
+            <h2>Arrays (Vetores) Conceitos Básicos</h2>
+            <br>
+            <ul class="lista">
+                <li>Array é uma variável que pode armazenar vários valores.</li>
+                <li>Pode conter dados heterogêneos (tipos diferentes), embora o ideal seja manter dados homogêneos.</li>
+                <li>Os índices começam em 0.</li>
+                <li>
+                <h3>Exemplo:</h3>
+                <br>
+                <pre><code>let vocalistas = ["Ozzy", "Dio", "Lemmy", "David Gilmour"];
+            console.log(vocalistas[0]); // "Ozzy"</code></pre>
+                <br>
+            </li>
+                <br>
+                <li>Em JS, arrays não têm tamanho fixo — podem crescer conforme necessário.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Exemplo com Template Literal e Array</h2>
+            <br>
+            <pre><code>console.log(`O ${vocalistas[3]} está em turnê tocando Pink Floyd`);</code></pre>
+        </article>
+
+        <article>
+            <h2>Arrays Multidimensionais (Matrizes)</h2>
+            <br>
+            <ul class="lista">
+                <li>São arrays dentro de arrays, semelhantes a uma tabela (por exemplo, planilha Excel).</li>
+                <br>
+                <li>
+                <h3>Exemplo de matriz 2D:</h3>
+                <pre><code>let matriz = [
+            [1, 2],
+            [3, 4]
+            ];
+            console.log(matriz[0][1]); // 2</code></pre>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Objetos</h2>
+            <br>
+            <ul class="lista">
+                <li>Objetos armazenam informações relacionadas em pares <h3>chave:valor</h3>.</li>
+                <li>A sintaxe usa chaves <code>{}</code> ao invés de colchetes <code>[]</code>.</li>
+                <li>
+                <h3>Exemplo:</h3>
+                <br>
+                <pre><code>let pessoa = {
+            nome: "João",
+            idade: 30
+            };
+            
+console.log(`O ${pessoa.nome} tem ${pessoa.idade} anos.`);</code></pre>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Manipulação do DOM (Document Object Model)</h2>
+            <br>
+            <ul class="lista">
+                <li>JavaScript pode acessar e alterar elementos HTML através do DOM.</li>
+                <li>O JS manipula a estrutura da página e o conteúdo.</li>
+                <br>
+                <ul>
+                <li>Criar um arquivo .js no próprio HTML:</li>
+                <pre><code>&lt;script src="js/04-objetos.js"&gt;&lt;/script&gt;</code></pre>
+                <br>
+                <li>Mesmo sem ter criado, já nomeie o arquivo que queira, segure CTRL e clique no nome, em seguida clique em "Criar Arquivo".</li>
+                </ul>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Dicas Finais da Aula</h2>
+            <br>
+            <ul class="lista">
+                <li>Nomeie os arquivos <code>.js</code> com nomes coerentes e crie-os antecipadamente para organização (ex: <code>04-objetos.js</code>).</li>
+                <li>Use <code>console.log</code> para debugar e testar seu código.</li>
+                <li>Use <code>\n</code> dentro de strings para pular linha no console:</li>
+                <pre><code>console.log("Exemplo 1\nExemplo 2");</code></pre>
+            </ul>
         </article>
 
     </section>
