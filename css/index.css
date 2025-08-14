@@ -120,17 +120,16 @@ section{
 
 }
 
-a{
+.dis a{
 
     text-decoration: none;
     color: rgb(255, 255, 255);
+    
     display: flex;
     flex: 1;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-
+    justify-content: space-between;
+    
 }
 
 .dis:hover{
@@ -151,8 +150,7 @@ a{
 
     display: flex;
     flex-direction: column;
-    
-    align-items: center;
+    justify-content: space-between;
 
     color: rgba(255, 255, 255, 0.3);
 
