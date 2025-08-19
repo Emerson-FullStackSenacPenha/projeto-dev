@@ -109,12 +109,12 @@ Linha 2`;</code></pre>
             <h2>Usando aspas dentro de texto</h2>
             <br>
             <p>Errado</p>
-            <pre><code>// console.log("Gosto "muito" de paçoca");  // ERRADO</code></pre>
+            <pre><code>// console.log("Gosto "muito" de paçoca");</code></pre>
             <br>
             <p>Correto</p>
-        <pre><code>console.log('Gosto "muito" de paçoca'); // aspas simples no comando, duplas no texto
-console.log("Gosto 'muito' de paçoca"); // aspas duplas no comando, simples no texto
-console.log("Gosto \"muito\" de paçoca"); // escapando aspas com \</code></pre>
+        <pre><code>console.log('Gosto "muito" de paçoca');
+console.log("Gosto 'muito' de paçoca");
+console.log("Gosto \"muito\" de paçoca");</code></pre>
         </article>
 
         <article>
@@ -146,9 +146,9 @@ console.log(typeof pi);   "number"</code></pre>
                 <li>
                 <h3>Exemplo:</h3>
                 <br>
-                <pre><code>let vocalistas = ["Ozzy", "Dio", "Lemmy", "David Gilmour"];
-            console.log(vocalistas[0]); // "Ozzy"</code></pre>
-                <br>
+                <pre><code>let vocalistas = ["Ozzy", "Dio", "Lemmy"];
+console.log(vocalistas[0]); // "Ozzy"</code></pre>
+                
             </li>
                 <br>
                 <li>Em JS, arrays não têm tamanho fixo — podem crescer conforme necessário.</li>
@@ -158,7 +158,10 @@ console.log(typeof pi);   "number"</code></pre>
         <article>
             <h2>Exemplo com Template Literal e Array</h2>
             <br>
-            <pre><code>console.log(`O ${vocalistas[3]} está em turnê tocando Pink Floyd`);</code></pre>
+            <pre><code>console.log(`O ${vocalistas[1]} está em turnê`);
+                "O Dio está em turnê"
+
+            </code></pre>
         </article>
 
         <article>
@@ -187,12 +190,14 @@ console.log(typeof pi);   "number"</code></pre>
                 <li>
                 <h3>Exemplo:</h3>
                 <br>
-                <pre><code>let pessoa = {
+                <pre><code>let p = {
             nome: "João",
             idade: 30
             };
             
-console.log(`O ${pessoa.nome} tem ${pessoa.idade} anos.`);</code></pre>
+console.log(`${p.nome} tem ${p.idade} anos.`);
+"João tem 30 anos"
+</code></pre>
                 </li>
             </ul>
         </article>
