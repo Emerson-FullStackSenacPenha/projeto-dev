@@ -259,6 +259,95 @@ for(let prop in pessoa) {
     <p><strong>Resumo:</strong> <br>
     Loops permitem automatizar tarefas repetitivas. <br>
     Escolha o tipo adequado: <code>for</code>, <code>for of</code>, <code>for in</code> ou <code>while</code>.</p>
+        </article>
+
+        <article>
+
+            <h2>Daqui pra baixo, colocar em outra pagina</h2>
+
+        </article>
+
+        <article id="arrays-objetos-loops">
+    <h2>15. Arrays, Objetos e Loops Explicados de Forma Simples</h2>
+    <br>
+
+    <p><strong>Arrays (Vetores)</strong> <br>
+    Um array é como uma caixinha com vários brinquedos dentro. <br>
+    Cada brinquedo tem uma posição, começando do 0.</p>
+    <br>
+
+    <pre><code>let frutas = ["maçã", "banana", "uva"];
+console.log(frutas[0]); // maçã
+console.log(frutas[2]); // uva</code></pre>
+    <br>
+
+    <p><strong>Objetos</strong> <br>
+    Um objeto é como uma caixinha com etiquetas. <br>
+    Cada etiqueta tem um nome e um valor.</p>
+    <br>
+
+    <pre><code>let pessoa = {nome: "Ana", idade: 5};
+console.log(pessoa.nome); // Ana
+console.log(pessoa.idade); // 5</code></pre>
+    <br>
+
+    <p><strong>Arrays dentro de Objetos</strong> <br>
+    Um objeto pode ter uma caixinha de brinquedos dentro.</p>
+    <br>
+
+    <pre><code>let caixa = {brinquedos: ["bola", "boneca", "carrinho"]};
+console.log(caixa.brinquedos[1]); // boneca</code></pre>
+    <br>
+
+    <p><strong>Objetos dentro de Arrays</strong> <br>
+    Um array pode ter várias caixinhas de brinquedos.</p>
+    <br>
+
+    <pre><code>let caixaArray = [
+  {nome: "Ana", idade: 5},
+  {nome: "Leo", idade: 6}
+];
+console.log(caixaArray[1].nome); // Leo</code></pre>
+    <br>
+
+    <p><strong>Loops (Repetições)</strong> <br>
+    Loops repetem coisas várias vezes, como contar brinquedos.</p>
+    <br>
+
+    <h3>While</h3>
+    <pre><code>let i = 0;
+while(i < 3) {
+  console.log("Brinquedo " + i);
+  i++;
+}
+// Saída: Brinquedo 0, Brinquedo 1, Brinquedo 2</code></pre>
+    <br>
+
+    <h3>For</h3>
+    <pre><code>for(let i = 0; i < 3; i++) {
+  console.log("Brinquedo " + i);
+}</code></pre>
+    <br>
+
+    <h3>For Of (para arrays)</h3>
+    <pre><code>let frutas = ["maçã", "banana", "uva"];
+for(let fruta of frutas) {
+  console.log(fruta);
+}</code></pre>
+    <br>
+
+    <h3>For In (para objetos)</h3>
+    <pre><code>let pessoa = {nome: "Ana", idade: 5};
+for(let prop in pessoa) {
+  console.log(prop + ": " + pessoa[prop]);
+}</code></pre>
+    <br>
+
+    <p><strong>Resumo:</strong> <br>
+    - Arrays são caixinhas com brinquedos. <br>
+    - Objetos são caixinhas com etiquetas e valores. <br>
+    - Loops repetem coisas várias vezes. <br>
+    - Você pode misturar arrays e objetos para organizar tudo de forma divertida!</p>
 </article>
 
 
