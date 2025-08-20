@@ -71,6 +71,197 @@ console.log(`Último: ${vocal[3]}`);
     Use índices para acessar os dados e concatenar ou interpolar com template literals.</p>
         </article>
 
+        <article>
+
+            <h2>Daqui pra baixo, colocar em outra pagina</h2>
+
+        </article>
+
+        <article id="dom-arrays-objetos">
+    <h2>12. Manipulação do DOM, Arrays e Objetos</h2>
+    <br>
+
+    <p><strong>Arrays heterogêneos:</strong> <br>
+    No JS, um array pode conter dados de tipos diferentes.</p>
+    <br>
+
+    <p><strong>Arrays de 1 dimensão:</strong> <br>
+    Já aprendemos sobre arrays simples (1D), que armazenam uma lista de elementos sequenciais.</p>
+    <br>
+
+    <p><strong>Matrizes (arrays 2D):</strong> <br>
+    São arrays de duas dimensões, como uma planilha Excel, acessados por linha e coluna (índices começam em 0).</p>
+    <br>
+
+    <p><strong>Arquivos JS:</strong> <br>
+    Crie um arquivo externo e linke no HTML: <br>
+    <code>&lt;script src="js/04-objetos.js"&gt;&lt;/script&gt;</code> <br>
+    Mesmo sem criar ainda, já nomeie o arquivo no editor, segure <kbd>CTRL</kbd> + clique e selecione "Criar Arquivo".</p>
+    <br>
+
+    <p><strong>Objetos:</strong> <br>
+    Objetos representam características de algo, por exemplo, um cliente. <br>
+    - <code>()</code> Parênteses → operações e funções <br>
+    - <code>[]</code> Colchetes → arrays <br>
+    - <code>{}</code> Chaves → objetos, funções, condicionais, loops, template strings</p>
+    <br>
+
+    <h3>Exemplos de Objetos e Arrays</h3>
+    <pre><code>let pessoa = {nome: "Tiago", idade: 30};
+console.log(`O ${pessoa.nome} tem ${pessoa.idade} anos.`);
+// Saída: O Tiago tem 30 anos.
+
+let livros = [
+  {titulo: "Livro 1"},
+  {titulo: "Livro 2"},
+  {titulo: "Livro 3"}
+];
+console.log(livros[2].titulo);
+// Saída: Livro 3
+
+console.log("Exemplo 1\nExemplo 2");
+// Saída: Exemplo 1
+//         Exemplo 2</code></pre>
+    <br>
+
+    <p><strong>Explicação:</strong> <br>
+    - Use o ponto <code>.</code> para acessar propriedades de objetos. <br>
+    - Use colchetes <code>[]</code> para acessar elementos de arrays. <br>
+    - Template literals <code>${}</code> permitem combinar variáveis e texto. <br>
+    - <code>\n</code> pula linha no console.</p>
+    <br>
+
+    <p><strong>Resumo:</strong> <br>
+    Arrays e objetos permitem organizar dados de forma estruturada. <br>
+    Combine com template literals e console.log para exibir informações de forma clara.</p>
+        </article>
+
+        <article>
+
+            <h2>Daqui pra baixo, colocar em outra pagina</h2>
+
+        </article>
+
+        <article id="condicionais-operadores">
+    <h2>13. Caracteres, Condicionais e Operadores Lógicos</h2>
+    <br>
+
+    <p><strong>Caracteres principais:</strong> <br>
+    <code>()</code> → parênteses para operações <br>
+    <code>[]</code> → colchetes para arrays/vetores <br>
+    <code>{}</code> → chaves para objetos, funções, condicionais, loops e template strings</p>
+    <br>
+
+    <p><strong>Condicionais:</strong> <br>
+    - <code>if</code> → SE <br>
+    - <code>else</code> → SENÃO <br>
+    - Condicional comum: <code>if</code> <br>
+    - Condicional composta: <code>if else</code> <br>
+    - Para uma linha, pode usar operador ternário <code>condição ? valor1 : valor2</code></p>
+    <br>
+
+    <h3>Exemplo de Condicional</h3>
+    <pre><code>let idade = 20;
+let temCarta = true;
+
+if (idade >= 18 && temCarta) {
+    console.log("Pode dirigir");
+} else {
+    console.log("Não pode dirigir");
+}
+// Saída: Pode dirigir</code></pre>
+    <br>
+
+    <p><strong>Operadores Lógicos:</strong> <br>
+    <code>&&</code> → E (AND, todos devem ser verdadeiros) <br>
+    <code>||</code> → OU (OR, apenas um precisa ser verdadeiro) <br>
+    <code>!</code> → NÂO/negação (NOT, inverte o valor)</p>
+    <br>
+
+    <p><strong>Comparadores:</strong> <br>
+    <code>==</code> → compara valor <br>
+    <code>===</code> → compara valor e tipo (mais seguro para evitar erros de tipo)</p>
+    <br>
+
+    <p><strong>Prioridade de execução:</strong> <br>
+    1. <code>!</code> <br>
+    2. <code>&&</code> <br>
+    3. <code>||</code></p>
+    <br>
+
+    <p><strong>Resumo:</strong> <br>
+    Use caracteres corretos para cada estrutura. <br>
+    Condicionais controlam o fluxo do programa. <br>
+    Operadores lógicos e comparadores ajudam a criar decisões complexas de forma clara.</p>
+        </article>
+
+        <article>
+
+            <h2>Daqui pra baixo, colocar em outra pagina</h2>
+
+        </article>
+
+        <article id="loops">
+    <h2>14. Loops e Estruturas de Repetição</h2>
+    <br>
+
+    <p><strong>O que são loops:</strong> <br>
+    Loops executam ações repetidamente com base em uma condição lógica.</p>
+    <br>
+
+    <p><strong>Tipos de loops:</strong> <br>
+    - <code>for</code> → Para arrays ou contadores <br>
+    - <code>for of</code> → Exclusivo JS, percorre valores de arrays <br>
+    - <code>for in</code> → Exclusivo JS, percorre propriedades de objetos <br>
+    - <code>while</code> → Enquanto a condição for verdadeira</p>
+    <br>
+
+    <p><strong>Variáveis de controle:</strong> <br>
+    - Normalmente chamadas de <code>i</code>, <code>j</code>, <code>k</code> ou qualquer letra <br>
+    - Incrementos: <code>i++</code> → soma 1 <br>
+    - Incrementos personalizados: <code>i += 5</code> → soma 5</p>
+    <br>
+
+    <h3>Exemplo: Loop For</h3>
+    <pre><code>const bandas = ["Nirvana", "Pearl Jam", "Metallica"];
+
+for(let i = 0; i < bandas.length; i++) {
+    console.log(bandas[i]);
+}
+// Saída: Nirvana
+//         Pearl Jam
+//         Metallica</code></pre>
+    <br>
+
+    <p><strong>Exemplo: Loop For Of</strong></p>
+    <pre><code>for(let banda of bandas) {
+    console.log(banda);
+}
+// Saída igual ao anterior</code></pre>
+    <br>
+
+    <p><strong>Exemplo: Loop For In (Objetos)</strong></p>
+    <pre><code>const pessoa = {nome: "Tiago", idade: 30};
+
+for(let prop in pessoa) {
+    console.log(prop + ": " + pessoa[prop]);
+}
+// Saída: nome: Tiago
+//         idade: 30</code></pre>
+    <br>
+
+    <p><strong>Explicação:</strong> <br>
+    - Use loops para percorrer arrays ou objetos automaticamente. <br>
+    - <code>length</code> define quantas vezes um loop deve rodar com base no tamanho do array. <br>
+    - <code>for of</code> percorre valores diretamente, <code>for in</code> percorre propriedades.</p>
+    <br>
+
+    <p><strong>Resumo:</strong> <br>
+    Loops permitem automatizar tarefas repetitivas. <br>
+    Escolha o tipo adequado: <code>for</code>, <code>for of</code>, <code>for in</code> ou <code>while</code>.</p>
+</article>
+
+
     </section>
 
     <footer>
