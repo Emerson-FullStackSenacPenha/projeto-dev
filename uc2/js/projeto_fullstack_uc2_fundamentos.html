@@ -11,7 +11,7 @@
 </head>
 <body>
     
-     <header id="topo">
+    <header id="topo">
 
         <img id="img_topo" src="../../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
 
@@ -22,7 +22,8 @@
                 <li id="menu">
                     <a id="acesso" href="../../index.html">HOME</a>
                     <a id="acesso" href="../../uc2/projeto_fullstack_uc2.html">UC2</a>
-                    <p>JS - INTRODUÇÃO</p>
+                    <p>JS</p>
+                    <p>SINTAXE GERAL</p>
                 </li>
 
             </ul>
@@ -31,217 +32,334 @@
 
     </header>
 
-     <section>
+    <section>
 
-        <article>
-            <h1>Introdução de JavaScript</h1>
-            <br>
-            <p>Resumo da primeira aula de Js com o professor Tiago</p>
+        <article id="fundamentos-logica">
+        <h2>1. Fundamentos da Lógica de Programação</h2>
+        <br>
+
+        <ul class="lista">
+            <li><strong>Sequência:</strong> execução dos comandos em ordem.</li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Significa que as instruções são executadas passo a passo, <br>
+        seguindo a ordem em que foram escritas no programa.</p>
+        <br>
+
+        <ul class="lista">
+            <li><strong>Decisão (condicional):</strong> <em>se... então... senão...</em></li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Permite ao programa escolher entre diferentes caminhos, <br>
+        dependendo se uma condição é verdadeira (<code>true</code>) ou falsa (<code>false</code>).</p>
+        <br>
+
+        <ul class="lista">
+            <li><strong>Repetição (loop):</strong> repetir ações até uma condição ser atendida.</li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Utilizado quando precisamos executar um conjunto de instruções várias vezes, <br>
+        até que uma condição de parada seja atingida.</p>
+        <br>
+
+        <p><strong>Resumo:</strong> <br>
+        Toda lógica é baseada em três pilares: <br>
+        executar instruções na ordem certa (sequência), <br>
+        tomar decisões (condicionais) <br>
+        e repetir processos sempre que necessário (loops).</p>
         </article>
 
-        <article>
-            <h2>Introdução e Ambiente</h2>
-            <br>
-            <p>Sequência ideal para aprender desenvolvimento web:</p>
-            <ul class="lista">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript (por último, para adicionar interatividade)</li>
-            </ul>
-            <br>
-            <p>Inclusão do JavaScript no HTML:</p>
-            <br>
-            <p>Inserir o <code>&lt;script src="arquivo.js"&gt;&lt;/script&gt;</code> no final do <code>&lt;body&gt;</code>.</p>
-            
-            <p>Se precisar colocar o script no <code>&lt;head&gt;</code>, usar o atributo <code>defer</code> para garantir que o HTML carregue antes do JS executar, evitando bugs.</p>
+        <article id="variaveis-constantes">
+        <h2>2. Variáveis e Constantes</h2>
+        <br>
+
+        <ul class="lista">
+            <li><strong>Variáveis:</strong> guardam valores que podem mudar (<code>let</code>).</li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        São espaços na memória do computador para armazenar dados que podem ser alterados durante a execução do programa.</p>
+        <br>
+
+        <ul class="lista">
+            <li><strong>Constantes:</strong> valores que não mudam (<code>const</code>).</li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        São valores fixos que, uma vez definidos, não podem ser modificados no decorrer do programa.</p>
+        <br>
+
+        <ul class="lista">
+            <li><strong>Tipos comuns:</strong> <code>number</code>, <code>string</code>, <code>boolean</code>, <code>undefined</code>.</li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Cada variável ou constante armazena um tipo de dado: <br>
+        números (<code>number</code>), textos (<code>string</code>), valores lógicos (<code>boolean</code>) ou ainda sem valor definido (<code>undefined</code>).</p>
+        <br>
+
+        <pre><code>let idade = 30;
+const nome = "Tiago";
+let teste;
+teste = "Agora tem valor";
+console.log(idade, nome, teste);
+// Saída: 30 Tiago Agora tem valor</code></pre>
+        <br>
+
+        <p><strong>Resumo:</strong> <br>
+        Variáveis guardam dados que podem mudar, <br>
+        constantes guardam dados fixos, <br>
+        e cada valor tem um tipo específico (número, texto, lógico etc).</p>
         </article>
 
-        <article>
-            <h2>Operações Aritméticas</h2>
-            <br>
-            <p>Use parênteses para definir prioridade nas expressões.</p>
-            <br>
-            <h3>Exemplos:</h3>
-            <br>
-            <p>let resultado = (2 + 3) * 4; // resultado = 20</p>
-            <p>let resultado = 2 + 3 * 4; // resultado = 14</p>
+        <article id="operadores">
+        <h2>3. Operadores</h2>
+        <br>    
+
+        <h3>Aritméticos</h3>
+        <ul class="lista">
+            <li><code>+</code> <code>-</code> <code>*</code> <code>/</code> <code>%</code> <code>**</code></li>
+        </ul>
+        <pre><code>let a = 10, b = 5;
+console.log(a + b); // 15
+console.log(a % b); // 0</code></pre>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Usados para realizar cálculos matemáticos, como soma, subtração, multiplicação, divisão, resto e potência.</p>
+        <br>        
+
+        <h3>Relacionais</h3>
+        <ul class="lista">
+            <li><code>==</code> (igualdade de valor)</li>
+            <li><code>!=</code> (diferente de valor)</li>
+            <li><code>&gt;</code> (maior que)</li>
+            <li><code>&lt;</code> (menor que)</li>
+            <li><code>&gt;=</code> (maior ou igual)</li>
+            <li><code>&lt;=</code> (menor ou igual)</li>
+        </ul>
+        <pre><code>console.log(10 &gt; 5);       // true
+console.log(10 == "10");   // true (só compara valor)
+console.log(10 != 5);      // true
+console.log(10 &gt;= 10);     // true
+console.log(5 &lt; 3);        // false</code></pre>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Usados para comparar valores. <br>
+        O resultado sempre será <code>true</code> (verdadeiro) ou <code>false</code> (falso).</p>
+        <br>    
+
+        <h3>Lógicos</h3>
+        <ul class="lista">
+            <li><code>&amp;&amp;</code> (E)</li>
+            <li><code>||</code> (OU)</li>
+            <li><code>!</code> (negação)</li>
+        </ul>
+        <pre><code>console.log(10 &gt; 5 &amp;&amp; 3 &lt; 2); // false</code></pre>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Usados para combinar expressões relacionais. <br>
+        <code>&amp;&amp;</code> só é verdadeiro se todas forem verdadeiras. <br>
+        <code>||</code> é verdadeiro se pelo menos uma for verdadeira. <br>
+        <code>!</code> inverte o resultado lógico.</p>
+        <br>
+
+        <p><strong>Resumo:</strong> <br>
+        Operadores permitem fazer contas, <br>
+        comparar valores, <br>
+        e combinar condições para controlar o fluxo do programa.</p>
         </article>
 
-        <article>
-            <h2>Variáveis e Constantes</h2>
-            <br>
-            <p><h3>Variável</h3> (dados que mudam): declarada com <code>let</code>.</p>
-            <p><h3>Constante</h3> (dados fixos): declarada com <code>const</code>.</p>
-            <br>
-            <h3>Exemplo:</h3>
-            <p>let nome = "João";     // variável dinâmica</p>
-            <p>const pi = 3.14;       // valor fixo</p>
-        </article>
+        <article id="saida-comentarios">
+        <h2>4. Saída de Dados e Comentários</h2>
+        <br>
 
-        <article>
-            <h2>Concatenar Strings</h2>
-            <br>
-            <h3>Forma antiga (Concatenação tradicional):</h3>
-            <p>Usar aspas "" e sinal de + para juntar textos e variáveis.</p>
-            <br>
-            <pre><code>console.log("Olá " + nome + ", tudo bem?");</code></pre>
-            <br>
-            <h3>Forma moderna (Template Literals):</h3>
-            
-            <p>Usar crase e ${} para inserir variáveis e expressões, mais legível e com suporte a quebras de linha.</p>
-            <br>
-            <pre><code>console.log(`Olá ${nome}, tudo bem?`);</code></pre>
-        </article>
+        <ul class="lista">
+            <li><code>console.log()</code> → imprime informações.</li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Usado para exibir valores no console do navegador ou do Node.js, <br>
+        útil para testar o que o programa está fazendo.</p>
+        <br>
 
-        <article>
-            <h2>Quebra de linha em strings</h2>
-            <br>
-            <p>Pode concatenar com +=:</p>
-            <pre><code>let texto = "Olá, sou fulano ";
-texto += "e sou tal coisa.";</code></pre>
-            <br>
-            <p>Template literals já permitem quebras de linha naturalmente:</p>
-            <pre><code>let texto = `Linha 1
-Linha 2`;</code></pre>
-        </article>
+        <ul class="lista">
+            <li><code>//</code> → comentário de uma linha.</li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Permite adicionar observações ou anotações no código, <br>
+        sem que elas sejam executadas pelo programa.</p>
+        <br>
 
-        <article>
-            <h2>Usando aspas dentro de texto</h2>
-            <br>
-            <p>Errado</p>
-            <pre><code>// console.log("Gosto "muito" de paçoca");</code></pre>
-            <br>
-            <p>Correto</p>
-        <pre><code>console.log('Gosto "muito" de paçoca');
-console.log("Gosto 'muito' de paçoca");
-console.log("Gosto \"muito\" de paçoca");</code></pre>
-        </article>
+        <ul class="lista">
+            <li><code>/* ... */</code> → comentário de várias linhas.</li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Serve para escrever comentários mais longos, <br>
+        abrangendo várias linhas, útil para explicar trechos maiores do código.</p>
+        <br>
 
-        <article>
-            <h2>Modo Estrito (Strict Mode)</h2>
-            <br>
-            <p>Coloque no início do arquivo .js para ativar o modo estrito, que ajuda a evitar erros comuns, como usar variáveis não declaradas:</p>
-            <br>
-            <pre><code>'use strict';
-teste = "Senac"; // erro, variável não declarada
-console.log(teste);</code></pre>
-        </article>
-
-        <article>
-            <h2>Tipos de Dados e Verificação</h2>
-            <br>
-            <p>Para saber o tipo de uma variável, usar:</p>
-            <br>
-            <pre><code>console.log(typeof nome); "string"
-console.log(typeof pi);   "number"</code></pre>
-        </article>
-
-        <article>
-            <h2>Arrays (Vetores) Conceitos Básicos</h2>
-            <br>
-            <ul class="lista">
-                <li>Array é uma variável que pode armazenar vários valores.</li>
-                <li>Pode conter dados heterogêneos (tipos diferentes), embora o ideal seja manter dados homogêneos.</li>
-                <li>Os índices começam em 0.</li>
-                <li>
-                <h3>Exemplo:</h3>
-                <br>
-                <pre><code>let vocalistas = ["Ozzy", "Dio", "Lemmy"];
-console.log(vocalistas[0]); // "Ozzy"</code></pre>
-                
-            </li>
-                <br>
-                <li>Em JS, arrays não têm tamanho fixo — podem crescer conforme necessário.</li>
-            </ul>
-        </article>
-
-        <article>
-            <h2>Exemplo com Template Literal e Array</h2>
-            <br>
-            <pre><code>console.log(`O ${vocalistas[1]} está em turnê`);
-                "O Dio está em turnê"
-
-            </code></pre>
-        </article>
-
-        <article>
-            <h2>Arrays Multidimensionais (Matrizes)</h2>
-            <br>
-            <ul class="lista">
-                <li>São arrays dentro de arrays, semelhantes a uma tabela (por exemplo, planilha Excel).</li>
-                <br>
-                <li>
-                <h3>Exemplo de matriz 2D:</h3>
-                <br>
-                <pre><code>let matriz = [
-            [1, 2],
-            [3, 4]
-            ];
-console.log(matriz[0][1]); // 2</code></pre>
-                <br>
-                    <ol class="lista">
-
-                        <li>Acessar variavel "matriz"</li>
-                        <li>Selecionar 1ª Array</li>
-                        <li>Acessar 2º elemento</li>
-
-                    </ol>
-                </li>
-            </ul>
-        </article>
-
-        <article>
-            <h2>Objetos</h2>
-            <br>
-            <ul class="lista">
-                <li>Objetos armazenam informações relacionadas em pares <h3>chave:valor</h3>.</li>
-                <li>A sintaxe usa chaves <code>{}</code> ao invés de colchetes <code>[]</code>.</li>
-                <li>
-                <h3>Exemplo:</h3>
-                <br>
-                <pre><code>let p = {
-            nome: "João",
-            idade: 30
-            };
-            
-console.log(`${p.nome} tem ${p.idade} anos.`);
-"João tem 30 anos"
+        <pre><code>console.log("Hello World"); // teste
+/* Comentário de várias linhas */
 </code></pre>
-                </li>
-            </ul>
+        <br>
+
+        <p><strong>Resumo:</strong> <br>
+        Use <code>console.log()</code> para exibir informações e testar seu código, <br>
+        e comentários para organizar e explicar trechos do programa.</p>
         </article>
 
-        <article>
-            <h2>Manipulação do DOM (Document Object Model)</h2>
-            <br>
-            <ul class="lista">
-                <li>JavaScript pode acessar e alterar elementos HTML através do DOM.</li>
-                <li>O JS manipula a estrutura da página e o conteúdo.</li>
-                <br>
-                <ul>
-                <li>Criar um arquivo .js no próprio HTML:</li>
-                <pre><code>&lt;script src="js/04-objetos.js"&gt;&lt;/script&gt;</code></pre>
-                <br>
-                <li>Mesmo sem ter criado, já nomeie o arquivo que queira, segure CTRL e clique no nome, em seguida clique em "Criar Arquivo".</li>
-                </ul>
-                </li>
-            </ul>
+        <article id="linkar-js-html">
+        <h2>5. Linkando JS com HTML</h2>
+        <br>
+
+        <ul class="lista">
+            <li><strong>Em linha:</strong> código direto no atributo HTML.</li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Permite colocar pequenos trechos de JavaScript diretamente dentro de elementos HTML, <br>
+        mas não é recomendado para códigos maiores ou complexos.</p>
+        <br>
+
+        <ul class="lista">
+            <li><strong>Interna:</strong> dentro da tag <code>&lt;script&gt;</code>.</li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        O JavaScript é escrito dentro do próprio arquivo HTML usando a tag <code>&lt;script&gt;</code>, <br>
+        bom para testes rápidos ou scripts curtos.</p>
+        <br>
+
+        <ul class="lista">
+            <li><strong>Externa:</strong> arquivo separado <code>.js</code> (melhor prática).</li>
+        </ul>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        O código JavaScript é colocado em arquivos separados e vinculados ao HTML, <br>
+        mantendo o projeto organizado e facilitando a manutenção.</p>
+        <br>
+
+        <pre><code>&lt;!-- Interna --&gt;
+&lt;script&gt;console.log("JS interno");&lt;/script&gt;
+
+&lt;!-- Externa --&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+        <br>
+
+        <p><strong>Resumo:</strong> <br>
+        O JavaScript pode ser escrito direto no HTML, <br>
+        mas o ideal é usar arquivos externos para melhor organização e manutenção do código.</p>
         </article>
 
-        <article>
-            <h2>Dicas Finais da Aula</h2>
-            <br>
-            <ul class="lista">
-                <li>Nomeie os arquivos <code>.js</code> com nomes coerentes e crie-os antecipadamente para organização (ex: <code>04-objetos.js</code>).</li>
-                <li>Use <code>console.log</code> para debugar e testar seu código.</li>
-                <li>Use <code>\n</code> dentro de strings para pular linha no console:</li>
-                <pre><code>console.log("Exemplo 1\nExemplo 2");</code></pre>
-            </ul>
+        <article id="exercicios-operadores">
+        <h2>6. Exercícios de Operadores</h2>
+        <br>
+
+        <pre><code>let dia = 29;
+let mes = 7;
+console.log(dia + mes, dia - mes, dia * mes, dia / mes);
+// Saída: 36 22 203 4.142857142857143</code></pre>
+        <br>
+
+        <p><strong>Explicação:</strong> <br>
+        Crie variáveis e aplique os operadores aritméticos para entender como funcionam <br>
+        soma (<code>+</code>), subtração (<code>-</code>), multiplicação (<code>*</code>) e divisão (<code>/</code>).</p>
+        <br>
+
+        <p><strong>Resumo:</strong> <br>
+        Pratique operadores criando variáveis e aplicando diferentes cálculos para reforçar o aprendizado.</p>
         </article>
+
+        <article id="ordem-calculo">
+        <h2>7. Ordem de Cálculo</h2>
+        <br>
+
+        <pre><code>let a = 100;
+let b = 20;
+let media = (a + b) / 2; 
+console.log(media);
+// Saída: 60</code></pre>
+        <br>
+
+        <p><strong>Explicação:</strong> <br>
+        O JavaScript segue a ordem matemática padrão: parênteses, multiplicação/divisão e depois soma/subtração. <br>
+        Usar parênteses ajuda a garantir que as operações sejam executadas na ordem desejada.</p>
+        <br>
+
+        <p><strong>Resumo:</strong> <br>
+        Use parênteses para definir a ordem de execução das operações matemáticas e evitar resultados inesperados.</p>
+        </article>
+
+
+        <article id="strings">
+        <h2>8. Concatenação e Template String</h2>
+        <br>
+
+        <h3>Concatenação com <code>+</code></h3>
+        <pre><code>console.log("Olá " + "Mundo");
+// Saída: Olá Mundo</code></pre>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Une duas ou mais strings usando o operador <code>+</code>. <br>
+        Útil para criar mensagens combinando textos fixos e variáveis.</p>
+        <br>
+
+        <h3>Template String</h3>
+        <pre><code>let nome = "Tiago";
+console.log(`Olá ${nome}`);
+// Saída: Olá Tiago</code></pre>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Permite inserir variáveis diretamente dentro de strings usando crases <code>` `</code> <br>
+        e a sintaxe <code>${}</code>, tornando o código mais legível e prático.</p>
+        <br>
+
+        <h3>Concatenação com <code>+=</code></h3>
+        <pre><code>let frase = "Estudo JS ";
+frase += "no Senac.";
+console.log(frase);
+// Saída: Estudo JS no Senac.</code></pre>
+        <br>
+        <p><strong>Explicação:</strong> <br>
+        Adiciona texto a uma string existente sem precisar reescrevê-la completamente, <br>
+        útil para construir frases ou mensagens dinamicamente.</p>
+        <br>
+
+        <p><strong>Resumo:</strong> <br>
+        Strings podem ser unidas com <code>+</code> ou de forma mais moderna usando <code>${}</code> dentro de crases, <br>
+        e o operador <code>+=</code> permite acrescentar conteúdo a uma string existente.</p>
+        </article>
+
+
+        <article id="typeof">
+        <h2>9. Identificando Tipos (<code>typeof</code>)</h2>
+        <br>
+
+        <pre><code>let numero = 10;
+let texto = "Oi";
+console.log(typeof numero); // number
+console.log(typeof texto);  // string</code></pre>
+        <br>
+
+        <p><strong>Explicação:</strong> <br>
+        O operador <code>typeof</code> retorna o tipo de dado armazenado em uma variável. <br>
+        Pode ser <code>number</code>, <code>string</code>, <code>boolean</code>, <code>undefined</code>, entre outros.</p>
+        <br>
+
+        <p><strong>Resumo:</strong> <br>
+        Use <code>typeof</code> para descobrir o tipo de qualquer variável, <br>
+        ajudando a evitar erros e entender melhor o comportamento do código.</p>
+        </article>
+
 
     </section>
 
-     <footer>
+    <footer>
 
          <div class="bola">
             <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png" alt="Voltar"></a>
