@@ -34,323 +34,69 @@
 
     <section>
 
-        <article id="vetores">
-    <h2>Trabalhando com Vetores (Arrays)</h2>
-    <br>
-
-    <p><strong>O que são vetores:</strong> <br>
-    Vetores (arrays) guardam vários dados em uma única variável.</p>
-    <br>
-
-    <p><strong>Índices:</strong> <br>
-    Cada elemento tem uma posição chamada índice, começando em 0.</p>
-    <br>
-
-    <h3>Exemplo de Array e Strings</h3>
-    <pre><code>let vocal = ["Ozzy", "Dio", "Lemmy", "David"];
-let msg = "O vocalista ";
-
-console.log(msg + vocal[0] + " é famoso.");
-// Saída: O vocalista Ozzy é famoso.
-
-console.log(msg + vocal[3] + " toca Pink Floyd.");
-// Saída: O vocalista David toca Pink Floyd
-
-console.log(`Último: ${vocal[3]}`);
-// Saída: Último: David</code></pre>
-    <br>
-
-    <p><strong>Explicação:</strong> <br>
-    - Arrays armazenam múltiplos valores em uma variável. <br>
-    - Strings podem ser concatenadas usando <code>+</code> ou template literals <code>${}</code>. <br>
-    - Cada elemento do array é acessado pelo índice <code>[]</code>.</p>
-    <br>
-
-    <p><strong>Resumo:</strong> <br>
-    Vetores e strings juntos permitem criar mensagens dinâmicas de forma simples. <br>
-    Use índices para acessar os dados e concatenar ou interpolar com template literals.</p>
+        <article id="arrays-introducao">
+            <h2>Introdução Arrays / Vetores<br></h2>
+            <p><strong>Explicação:</strong><br>
+            Arrays são estruturas que armazenam múltiplos valores em uma única variável.<br>
+            Cada valor dentro do array é chamado de elemento e possui uma posição chamada índice.<br>
+            O índice sempre começa em 0, ou seja, o primeiro elemento está na posição 0.<br>
+            Arrays são muito usados quando precisamos organizar dados relacionados de forma sequencial.<br>
+            <br>
+            Uma forma fácil de entender arrays é pensar em um armário com várias gavetas.<br>
+            Cada gaveta tem uma posição (índice) e contém algum item (elemento).<br>
+            Para pegar algo específico, basta indicar a gaveta correspondente.<br>
+            </p>
         </article>
 
-        <article>
-
-            <h2>Daqui pra baixo, colocar em outra pagina</h2>
-
+        <article id="arrays-declaracao">
+            <h2>Como declarar um Array<br></h2>
+            <p><strong>Explicação:</strong><br>
+            Um array é declarado usando colchetes [].<br>
+            Cada elemento é separado por vírgula.<br>
+            </p>
+            <pre><code>let armario = ["camisa", "calça", "meias", "chapeu", "sapatos"];</code></pre><br>
         </article>
 
-        <article id="dom-arrays-objetos">
-    <h2>12. Manipulação do DOM, Arrays e Objetos</h2>
-    <br>
-
-    <p><strong>Arrays heterogêneos:</strong> <br>
-    No JS, um array pode conter dados de tipos diferentes.</p>
-    <br>
-
-    <p><strong>Arrays de 1 dimensão:</strong> <br>
-    Já aprendemos sobre arrays simples (1D), que armazenam uma lista de elementos sequenciais.</p>
-    <br>
-
-    <p><strong>Matrizes (arrays 2D):</strong> <br>
-    São arrays de duas dimensões, como uma planilha Excel, acessados por linha e coluna (índices começam em 0).</p>
-    <br>
-
-    <p><strong>Arquivos JS:</strong> <br>
-    Crie um arquivo externo e linke no HTML: <br>
-    <code>&lt;script src="js/04-objetos.js"&gt;&lt;/script&gt;</code> <br>
-    Mesmo sem criar ainda, já nomeie o arquivo no editor, segure <kbd>CTRL</kbd> + clique e selecione "Criar Arquivo".</p>
-    <br>
-
-    <p><strong>Objetos:</strong> <br>
-    Objetos representam características de algo, por exemplo, um cliente. <br>
-    - <code>()</code> Parênteses → operações e funções <br>
-    - <code>[]</code> Colchetes → arrays <br>
-    - <code>{}</code> Chaves → objetos, funções, condicionais, loops, template strings</p>
-    <br>
-
-    <h3>Exemplos de Objetos e Arrays</h3>
-    <pre><code>let pessoa = {nome: "Tiago", idade: 30};
-console.log(`O ${pessoa.nome} tem ${pessoa.idade} anos.`);
-// Saída: O Tiago tem 30 anos.
-
-let livros = [
-  {titulo: "Livro 1"},
-  {titulo: "Livro 2"},
-  {titulo: "Livro 3"}
-];
-console.log(livros[2].titulo);
-// Saída: Livro 3
-
-console.log("Exemplo 1\nExemplo 2");
-// Saída: Exemplo 1
-//         Exemplo 2</code></pre>
-    <br>
-
-    <p><strong>Explicação:</strong> <br>
-    - Use o ponto <code>.</code> para acessar propriedades de objetos. <br>
-    - Use colchetes <code>[]</code> para acessar elementos de arrays. <br>
-    - Template literals <code>${}</code> permitem combinar variáveis e texto. <br>
-    - <code>\n</code> pula linha no console.</p>
-    <br>
-
-    <p><strong>Resumo:</strong> <br>
-    Arrays e objetos permitem organizar dados de forma estruturada. <br>
-    Combine com template literals e console.log para exibir informações de forma clara.</p>
+        <article id="arrays-acesso">
+            <h2>Acessando elementos do Array<br></h2>
+            <p><strong>Explicação:</strong><br>
+            Para acessar um elemento, usamos o nome do array seguido do índice entre colchetes.<br>
+            O índice indica a posição da gaveta que queremos abrir.<br>
+            </p>
+            <pre><code>console.log(armario[0]); // "camisa"<br>console.log(armario[4]); // "sapatos"</code></pre><br>
         </article>
 
-        <article>
-
-            <h2>Daqui pra baixo, colocar em outra pagina</h2>
-
+        <article id="arrays-modificacao">
+            <h2>Modificando elementos<br></h2>
+            <p><strong>Explicação:</strong><br>
+            Podemos alterar o conteúdo de uma posição específica do array.<br>
+            Basta acessar o índice e atribuir um novo valor.<br>
+            </p>
+            <pre><code>armario[0] = "jaqueta";<br>console.log(armario[0]); // "jaqueta"</code></pre><br>
         </article>
 
-        <article id="condicionais-operadores">
-    <h2>13. Caracteres, Condicionais e Operadores Lógicos</h2>
-    <br>
-
-    <p><strong>Caracteres principais:</strong> <br>
-    <code>()</code> → parênteses para operações <br>
-    <code>[]</code> → colchetes para arrays/vetores <br>
-    <code>{}</code> → chaves para objetos, funções, condicionais, loops e template strings</p>
-    <br>
-
-    <p><strong>Condicionais:</strong> <br>
-    - <code>if</code> → SE <br>
-    - <code>else</code> → SENÃO <br>
-    - Condicional comum: <code>if</code> <br>
-    - Condicional composta: <code>if else</code> <br>
-    - Para uma linha, pode usar operador ternário <code>condição ? valor1 : valor2</code></p>
-    <br>
-
-    <h3>Exemplo de Condicional</h3>
-    <pre><code>let idade = 20;
-let temCarta = true;
-
-if (idade >= 18 && temCarta) {
-    console.log("Pode dirigir");
-} else {
-    console.log("Não pode dirigir");
-}
-// Saída: Pode dirigir</code></pre>
-    <br>
-
-    <p><strong>Operadores Lógicos:</strong> <br>
-    <code>&&</code> → E (AND, todos devem ser verdadeiros) <br>
-    <code>||</code> → OU (OR, apenas um precisa ser verdadeiro) <br>
-    <code>!</code> → NÂO/negação (NOT, inverte o valor)</p>
-    <br>
-
-    <p><strong>Comparadores:</strong> <br>
-    <code>==</code> → compara valor <br>
-    <code>===</code> → compara valor e tipo (mais seguro para evitar erros de tipo)</p>
-    <br>
-
-    <p><strong>Prioridade de execução:</strong> <br>
-    1. <code>!</code> <br>
-    2. <code>&&</code> <br>
-    3. <code>||</code></p>
-    <br>
-
-    <p><strong>Resumo:</strong> <br>
-    Use caracteres corretos para cada estrutura. <br>
-    Condicionais controlam o fluxo do programa. <br>
-    Operadores lógicos e comparadores ajudam a criar decisões complexas de forma clara.</p>
+        <article id="arrays-propriedades">
+            <h2>Propriedades importantes<br></h2>
+            <ul class="lista">
+                <li>length: indica quantos elementos o array possui.</li>
+                <li>push(): adiciona um elemento no final do array.</li>
+                <li>pop(): remove o último elemento do array.</li>
+                <li>shift(): remove o primeiro elemento do array.</li>
+                <li>unshift(): adiciona um elemento no início do array.</li>
+            </ul><br>
         </article>
 
-        <article>
-
-            <h2>Daqui pra baixo, colocar em outra pagina</h2>
-
+        <article id="arrays-resumo">
+            <h2>Resumo dos Arrays<br></h2>
+            <p><strong>Resumo:</strong><br>
+            Arrays são como armários com gavetas.<br>
+            Cada gaveta tem uma posição (índice) e contém um elemento.<br>
+            Podemos acessar, modificar ou adicionar elementos indicando a posição.<br>
+            Arrays facilitam organizar e manipular conjuntos de dados relacionados.<br>
+            Propriedades como length e métodos como push/pop ajudam a gerenciar o conteúdo do array.<br>
+            </p>
         </article>
-
-        <article id="loops">
-    <h2>14. Loops e Estruturas de Repetição</h2>
-    <br>
-
-    <p><strong>O que são loops:</strong> <br>
-    Loops executam ações repetidamente com base em uma condição lógica.</p>
-    <br>
-
-    <p><strong>Tipos de loops:</strong> <br>
-    - <code>for</code> → Para arrays ou contadores <br>
-    - <code>for of</code> → Exclusivo JS, percorre valores de arrays <br>
-    - <code>for in</code> → Exclusivo JS, percorre propriedades de objetos <br>
-    - <code>while</code> → Enquanto a condição for verdadeira</p>
-    <br>
-
-    <p><strong>Variáveis de controle:</strong> <br>
-    - Normalmente chamadas de <code>i</code>, <code>j</code>, <code>k</code> ou qualquer letra <br>
-    - Incrementos: <code>i++</code> → soma 1 <br>
-    - Incrementos personalizados: <code>i += 5</code> → soma 5</p>
-    <br>
-
-    <h3>Exemplo: Loop For</h3>
-    <pre><code>const bandas = ["Nirvana", "Pearl Jam", "Metallica"];
-
-for(let i = 0; i < bandas.length; i++) {
-    console.log(bandas[i]);
-}
-// Saída: Nirvana
-//         Pearl Jam
-//         Metallica</code></pre>
-    <br>
-
-    <p><strong>Exemplo: Loop For Of</strong></p>
-    <pre><code>for(let banda of bandas) {
-    console.log(banda);
-}
-// Saída igual ao anterior</code></pre>
-    <br>
-
-    <p><strong>Exemplo: Loop For In (Objetos)</strong></p>
-    <pre><code>const pessoa = {nome: "Tiago", idade: 30};
-
-for(let prop in pessoa) {
-    console.log(prop + ": " + pessoa[prop]);
-}
-// Saída: nome: Tiago
-//         idade: 30</code></pre>
-    <br>
-
-    <p><strong>Explicação:</strong> <br>
-    - Use loops para percorrer arrays ou objetos automaticamente. <br>
-    - <code>length</code> define quantas vezes um loop deve rodar com base no tamanho do array. <br>
-    - <code>for of</code> percorre valores diretamente, <code>for in</code> percorre propriedades.</p>
-    <br>
-
-    <p><strong>Resumo:</strong> <br>
-    Loops permitem automatizar tarefas repetitivas. <br>
-    Escolha o tipo adequado: <code>for</code>, <code>for of</code>, <code>for in</code> ou <code>while</code>.</p>
-        </article>
-
-        <article>
-
-            <h2>Daqui pra baixo, colocar em outra pagina</h2>
-
-        </article>
-
-        <article id="arrays-objetos-loops">
-    <h2>15. Arrays, Objetos e Loops Explicados de Forma Simples</h2>
-    <br>
-
-    <p><strong>Arrays (Vetores)</strong> <br>
-    Um array é como uma caixinha com vários brinquedos dentro. <br>
-    Cada brinquedo tem uma posição, começando do 0.</p>
-    <br>
-
-    <pre><code>let frutas = ["maçã", "banana", "uva"];
-console.log(frutas[0]); // maçã
-console.log(frutas[2]); // uva</code></pre>
-    <br>
-
-    <p><strong>Objetos</strong> <br>
-    Um objeto é como uma caixinha com etiquetas. <br>
-    Cada etiqueta tem um nome e um valor.</p>
-    <br>
-
-    <pre><code>let pessoa = {nome: "Ana", idade: 5};
-console.log(pessoa.nome); // Ana
-console.log(pessoa.idade); // 5</code></pre>
-    <br>
-
-    <p><strong>Arrays dentro de Objetos</strong> <br>
-    Um objeto pode ter uma caixinha de brinquedos dentro.</p>
-    <br>
-
-    <pre><code>let caixa = {brinquedos: ["bola", "boneca", "carrinho"]};
-console.log(caixa.brinquedos[1]); // boneca</code></pre>
-    <br>
-
-    <p><strong>Objetos dentro de Arrays</strong> <br>
-    Um array pode ter várias caixinhas de brinquedos.</p>
-    <br>
-
-    <pre><code>let caixaArray = [
-  {nome: "Ana", idade: 5},
-  {nome: "Leo", idade: 6}
-];
-console.log(caixaArray[1].nome); // Leo</code></pre>
-    <br>
-
-    <p><strong>Loops (Repetições)</strong> <br>
-    Loops repetem coisas várias vezes, como contar brinquedos.</p>
-    <br>
-
-    <h3>While</h3>
-    <pre><code>let i = 0;
-while(i < 3) {
-  console.log("Brinquedo " + i);
-  i++;
-}
-// Saída: Brinquedo 0, Brinquedo 1, Brinquedo 2</code></pre>
-    <br>
-
-    <h3>For</h3>
-    <pre><code>for(let i = 0; i < 3; i++) {
-  console.log("Brinquedo " + i);
-}</code></pre>
-    <br>
-
-    <h3>For Of (para arrays)</h3>
-    <pre><code>let frutas = ["maçã", "banana", "uva"];
-for(let fruta of frutas) {
-  console.log(fruta);
-}</code></pre>
-    <br>
-
-    <h3>For In (para objetos)</h3>
-    <pre><code>let pessoa = {nome: "Ana", idade: 5};
-for(let prop in pessoa) {
-  console.log(prop + ": " + pessoa[prop]);
-}</code></pre>
-    <br>
-
-    <p><strong>Resumo:</strong> <br>
-    - Arrays são caixinhas com brinquedos. <br>
-    - Objetos são caixinhas com etiquetas e valores. <br>
-    - Loops repetem coisas várias vezes. <br>
-    - Você pode misturar arrays e objetos para organizar tudo de forma divertida!</p>
-</article>
-
-
+  
     </section>
 
     <footer>
