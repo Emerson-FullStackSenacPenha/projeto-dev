@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,13 @@
 
     <title>Introdução Js</title>
 </head>
+
 <body>
-    
+
     <header id="topo">
 
-        <img id="img_topo" src="../../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
+        <img id="img_topo" src="../../images/Titulo Botão.png"
+            alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
 
         <nav>
 
@@ -34,75 +37,79 @@
 
     <section>
 
-        <article id="arrays-introducao">
-            <h2>Introdução Arrays / Vetores<br></h2>
+        <article id="objetos-introducao">
+            <h2>Introdução aos Objetos<br></h2>
             <p><strong>Explicação:</strong><br>
-            Arrays são estruturas que armazenam múltiplos valores em uma única variável.<br>
-            Cada valor dentro do array é chamado de elemento e possui uma posição chamada índice.<br>
-            O índice sempre começa em 0, ou seja, o primeiro elemento está na posição 0.<br>
-            Arrays são muito usados quando precisamos organizar dados relacionados de forma sequencial.<br>
+                Objetos são estruturas que armazenam dados em pares chave-valor.<br>
+                Cada chave é um identificador único e cada valor é o conteúdo associado.<br>
+                Objetos são úteis quando precisamos organizar informações mais complexas que não cabem apenas em uma
+                lista sequencial.<br>
+                <br>
+                Uma forma fácil de entender objetos é pensar em um armário já aberto.<br>
+                Cada gaveta tem um nome (chave) e contém itens (valor).<br>
+                Para acessar um item, basta indicar o nome da gaveta.<br>
+            </p>
+        </article>
+
+        <article id="objetos-declaracao">
+            <h2>Como declarar um Objeto<br></h2>
+            <p><strong>Explicação:</strong><br>
+                Um objeto é declarado usando chaves {}.<br>
+                Cada par chave-valor é separado por vírgula.<br>
+            </p>
+            <pre><code>let armario = {
+            camisa: "azul",
+            calca: "preta",
+            meias: "vermelhas"
+            };</code></pre><br>
+        </article>
+
+        <article id="objetos-acesso">
+            <h2>Acessando elementos do Objeto<br></h2>
+            <p><strong>Explicação:</strong><br>
+                Para acessar o valor de uma chave, usamos o nome do objeto seguido de ponto e o nome da chave.<br>
+                Isso é como abrir a gaveta pelo nome.<br>
+            </p>
+            <pre><code>console.log(armario.camisa); // "azul"<br>console.log(armario.meias); // "vermelhas"</code></pre>
             <br>
-            Uma forma fácil de entender arrays é pensar em um armário com várias gavetas.<br>
-            Cada gaveta tem uma posição (índice) e contém algum item (elemento).<br>
-            Para pegar algo específico, basta indicar a gaveta correspondente.<br>
-            </p>
         </article>
 
-        <article id="arrays-declaracao">
-            <h2>Como declarar um Array<br></h2>
-            <p><strong>Explicação:</strong><br>
-            Um array é declarado usando colchetes [].<br>
-            Cada elemento é separado por vírgula.<br>
-            </p>
-            <pre><code>let armario = ["camisa", "calça", "meias", "chapeu", "sapatos"];</code></pre><br>
-        </article>
-
-        <article id="arrays-acesso">
-            <h2>Acessando elementos do Array<br></h2>
-            <p><strong>Explicação:</strong><br>
-            Para acessar um elemento, usamos o nome do array seguido do índice entre colchetes.<br>
-            O índice indica a posição da gaveta que queremos abrir.<br>
-            </p>
-            <pre><code>console.log(armario[0]); // "camisa"<br>console.log(armario[4]); // "sapatos"</code></pre><br>
-        </article>
-
-        <article id="arrays-modificacao">
+        <article id="objetos-modificacao">
             <h2>Modificando elementos<br></h2>
             <p><strong>Explicação:</strong><br>
-            Podemos alterar o conteúdo de uma posição específica do array.<br>
-            Basta acessar o índice e atribuir um novo valor.<br>
+                Podemos alterar o valor associado a uma chave existente.<br>
+                Basta acessar a chave e atribuir um novo valor.<br>
             </p>
-            <pre><code>armario[0] = "jaqueta";<br>console.log(armario[0]); // "jaqueta"</code></pre><br>
+            <pre><code>armario.camisa = "vermelha";<br>console.log(armario.camisa); // "vermelha"</code></pre><br>
         </article>
 
-        <article id="arrays-propriedades">
-            <h2>Propriedades importantes<br></h2>
+        <article id="objetos-metodos">
+            <h2>Propriedades e Métodos Importantes<br></h2>
             <ul class="lista">
-                <li>length: indica quantos elementos o array possui.</li>
-                <li>push(): adiciona um elemento no final do array.</li>
-                <li>pop(): remove o último elemento do array.</li>
-                <li>shift(): remove o primeiro elemento do array.</li>
-                <li>unshift(): adiciona um elemento no início do array.</li>
+                <li>Object.keys(obj): retorna um array com todas as chaves do objeto.</li>
+                <li>Object.values(obj): retorna um array com todos os valores do objeto.</li>
+                <li>Object.entries(obj): retorna um array de arrays [chave, valor].</li>
             </ul><br>
         </article>
 
-        <article id="arrays-resumo">
-            <h2>Resumo dos Arrays<br></h2>
+        <article id="objetos-resumo">
+            <h2>Resumo dos Objetos<br></h2>
             <p><strong>Resumo:</strong><br>
-            Arrays são como armários com gavetas.<br>
-            Cada gaveta tem uma posição (índice) e contém um elemento.<br>
-            Podemos acessar, modificar ou adicionar elementos indicando a posição.<br>
-            Arrays facilitam organizar e manipular conjuntos de dados relacionados.<br>
-            Propriedades como length e métodos como push/pop ajudam a gerenciar o conteúdo do array.<br>
+                Objetos são como armários abertos, onde cada gaveta tem um nome (chave) e contém itens (valor).<br>
+                Podemos acessar, modificar ou adicionar novos pares chave-valor facilmente.<br>
+                Métodos como Object.keys(), Object.values() e Object.entries() ajudam a gerenciar e percorrer o conteúdo
+                do objeto.<br>
+                Objetos permitem organizar dados complexos de forma clara e estruturada.<br>
             </p>
         </article>
-  
+
     </section>
 
     <footer>
 
-         <div class="bola">
-            <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png" alt="Voltar"></a>
+        <div class="bola">
+            <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png"
+                    alt="Voltar"></a>
         </div>
 
         <div class="bola">
@@ -118,4 +125,5 @@
     </footer>
 
 </body>
+
 </html>
