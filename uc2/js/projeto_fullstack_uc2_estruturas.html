@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../../images/logo_aba.png">
+    <link rel="stylesheet" href="../../css/uc2/js/projeto_fullstack_uc2_estruturas.css">
+
+    <title>Introdução Js</title>
+</head>
+
+<body>
+
+    <header id="topo">
+
+        <img id="img_topo" src="../../images/Titulo Botão.png"
+            alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
+
+        <nav>
+
+            <ul>
+
+                <li id="menu">
+                    <a id="acesso" href="../../index.html">HOME</a>
+                    <a id="acesso" href="../../uc2/projeto_fullstack_uc2.html">UC2</a>
+                    <p>JS</p>
+                    <p>ESTRUTURAS COMBINADAS</p>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section>
+
+        <article id="objetos-introducao">
+            <h2>Introdução aos Objetos<br></h2>
+            <p><strong>Explicação:</strong><br>
+                Objetos são estruturas que armazenam dados em pares chave-valor.<br>
+                Cada chave é um identificador único e cada valor é o conteúdo associado.<br>
+                Objetos são úteis quando precisamos organizar informações mais complexas que não cabem apenas em uma
+                lista sequencial.<br>
+                <br>
+                Uma forma fácil de entender objetos é pensar em um armário já aberto.<br>
+                Cada gaveta tem um nome (chave) e contém itens (valor).<br>
+                Para acessar um item, basta indicar o nome da gaveta.<br>
+            </p>
+        </article>
+
+        <article id="objetos-declaracao">
+            <h2>Como declarar um Objeto<br></h2>
+            <p><strong>Explicação:</strong><br>
+                Um objeto é declarado usando chaves {}.<br>
+                Cada par chave-valor é separado por vírgula.<br>
+            </p>
+            <pre><code>let armario = {
+            camisa: "azul",
+            calca: "preta",
+            meias: "vermelhas"
+            };</code></pre><br>
+        </article>
+
+        <article id="objetos-acesso">
+            <h2>Acessando elementos do Objeto<br></h2>
+            <p><strong>Explicação:</strong><br>
+                Para acessar o valor de uma chave, usamos o nome do objeto seguido de ponto e o nome da chave.<br>
+                Isso é como abrir a gaveta pelo nome.<br>
+            </p>
+            <pre><code>console.log(armario.camisa); // "azul"<br>console.log(armario.meias); // "vermelhas"</code></pre>
+            <br>
+        </article>
+
+        <article id="objetos-modificacao">
+            <h2>Modificando elementos<br></h2>
+            <p><strong>Explicação:</strong><br>
+                Podemos alterar o valor associado a uma chave existente.<br>
+                Basta acessar a chave e atribuir um novo valor.<br>
+            </p>
+            <pre><code>armario.camisa = "vermelha";<br>console.log(armario.camisa); // "vermelha"</code></pre><br>
+        </article>
+
+        <article id="objetos-metodos">
+            <h2>Propriedades e Métodos Importantes<br></h2>
+            <ul class="lista">
+                <li>Object.keys(obj): retorna um array com todas as chaves do objeto.</li>
+                <li>Object.values(obj): retorna um array com todos os valores do objeto.</li>
+                <li>Object.entries(obj): retorna um array de arrays [chave, valor].</li>
+            </ul><br>
+        </article>
+
+        <article id="objetos-resumo">
+            <h2>Resumo dos Objetos<br></h2>
+            <p><strong>Resumo:</strong><br>
+                Objetos são como armários abertos, onde cada gaveta tem um nome (chave) e contém itens (valor).<br>
+                Podemos acessar, modificar ou adicionar novos pares chave-valor facilmente.<br>
+                Métodos como Object.keys(), Object.values() e Object.entries() ajudam a gerenciar e percorrer o conteúdo
+                do objeto.<br>
+                Objetos permitem organizar dados complexos de forma clara e estruturada.<br>
+            </p>
+        </article>
+
+    </section>
+
+    <footer>
+
+        <div class="bola">
+            <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png"
+                    alt="Voltar"></a>
+        </div>
+
+        <div class="bola">
+            <a href="../../index.html"><img class="logo" src="../../images/logos/Home.png" alt="Home"></a>
+        </div>
+
+        <div class="bola">
+            <a href="#topo"><img class="logo" src="../../images/logos/Up.png" alt="Topo"></a>
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>
