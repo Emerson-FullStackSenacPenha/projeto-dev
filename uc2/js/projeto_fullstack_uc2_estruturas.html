@@ -37,69 +37,77 @@
 
     <section>
 
-        <article id="objetos-introducao">
-            <h2>Introdução aos Objetos<br></h2>
+        <article id="estruturas-combinadas-introducao">
+            <h2>Estruturas Combinadas em JavaScript<br></h2>
             <p><strong>Explicação:</strong><br>
-                Objetos são estruturas que armazenam dados em pares chave-valor.<br>
-                Cada chave é um identificador único e cada valor é o conteúdo associado.<br>
-                Objetos são úteis quando precisamos organizar informações mais complexas que não cabem apenas em uma
-                lista sequencial.<br>
+                Em JavaScript, podemos combinar Arrays e Objetos para organizar dados mais complexos.<br>
+                Duas estruturas comuns são:
+                - Objeto dentro de Array: várias gavetas (objetos) dentro de um armário (array).
+                - Array dentro de Objeto: uma gaveta (objeto) que contém vários itens (array).<br>
                 <br>
-                Uma forma fácil de entender objetos é pensar em um armário já aberto.<br>
-                Cada gaveta tem um nome (chave) e contém itens (valor).<br>
-                Para acessar um item, basta indicar o nome da gaveta.<br>
+                Essas combinações ajudam a representar situações do mundo real, como armários com várias gavetas e
+                organizadores internos.<br>
             </p>
         </article>
 
-        <article id="objetos-declaracao">
-            <h2>Como declarar um Objeto<br></h2>
+        <article id="objeto-dentro-array">
+            <h2>Objeto dentro de Array<br></h2>
             <p><strong>Explicação:</strong><br>
-                Um objeto é declarado usando chaves {}.<br>
-                Cada par chave-valor é separado por vírgula.<br>
+                Um array pode conter múltiplos objetos, cada um representando um armário.<br>
+                Cada objeto tem suas próprias gavetas (propriedades) e conteúdos (valores).<br>
+                Para acessar, usamos o índice do array e depois a chave do objeto.<br>
             </p>
-            <pre><code>let armario = {
-            camisa: "azul",
-            calca: "preta",
-            meias: "vermelhas"
-            };</code></pre><br>
-        </article>
-
-        <article id="objetos-acesso">
-            <h2>Acessando elementos do Objeto<br></h2>
-            <p><strong>Explicação:</strong><br>
-                Para acessar o valor de uma chave, usamos o nome do objeto seguido de ponto e o nome da chave.<br>
-                Isso é como abrir a gaveta pelo nome.<br>
-            </p>
-            <pre><code>console.log(armario.camisa); // "azul"<br>console.log(armario.meias); // "vermelhas"</code></pre>
             <br>
+            <pre><code>let armarios = [
+  { camisa: "verde", calca: "amarela" },
+  { camisa: "preta", calca: "branca" }
+];
+
+console.log(armarios[1].camisa); // "preta"</code></pre><br>
         </article>
 
-        <article id="objetos-modificacao">
-            <h2>Modificando elementos<br></h2>
+        <article id="array-dentro-objeto">
+            <h2>Array dentro de Objeto<br></h2>
             <p><strong>Explicação:</strong><br>
-                Podemos alterar o valor associado a uma chave existente.<br>
-                Basta acessar a chave e atribuir um novo valor.<br>
+                Um objeto pode ter uma propriedade que é um array.<br>
+                Cada propriedade funciona como uma gaveta do armário, e o array dentro dela representa os itens dessa
+                gaveta.<br>
+                Para acessar, usamos o nome do objeto, a chave e o índice do array.<br>
             </p>
-            <pre><code>armario.camisa = "vermelha";<br>console.log(armario.camisa); // "vermelha"</code></pre><br>
+            <br>
+            <pre><code>let armario = {
+  gavetaDeMeias: ["azul", "vermelha", "preta"]
+};
+
+console.log(armario.gavetaDeMeias[2]); // "preta"</code></pre><br>
         </article>
 
-        <article id="objetos-metodos">
-            <h2>Propriedades e Métodos Importantes<br></h2>
-            <ul class="lista">
-                <li>Object.keys(obj): retorna um array com todas as chaves do objeto.</li>
-                <li>Object.values(obj): retorna um array com todos os valores do objeto.</li>
-                <li>Object.entries(obj): retorna um array de arrays [chave, valor].</li>
-            </ul><br>
+        <article id="combinando-acesso">
+            <h2>Como acessar e modificar<br></h2>
+            <p><strong>Explicação:</strong><br>
+                Podemos combinar as estruturas para acessar ou modificar elementos específicos.<br>
+                Exemplo: alterar a primeira meia da gaveta do armário dentro de um array.<br>
+            </p>
+            <br>
+            <pre><code>let quarto = [
+  { gavetaDeMeias: ["azul", "verde"] },
+  { gavetaDeMeias: ["preta", "branca"] }
+];
+
+// Alterar a primeira meia do primeiro armário
+quarto[0].gavetaDeMeias[0] = "rosa";
+
+console.log(quarto[0].gavetaDeMeias[0]); // "rosa"</code></pre><br>
         </article>
 
-        <article id="objetos-resumo">
-            <h2>Resumo dos Objetos<br></h2>
+        <article id="estruturas-combinadas-resumo">
+            <h2>Resumo das Estruturas Combinadas<br></h2>
             <p><strong>Resumo:</strong><br>
-                Objetos são como armários abertos, onde cada gaveta tem um nome (chave) e contém itens (valor).<br>
-                Podemos acessar, modificar ou adicionar novos pares chave-valor facilmente.<br>
-                Métodos como Object.keys(), Object.values() e Object.entries() ajudam a gerenciar e percorrer o conteúdo
-                do objeto.<br>
-                Objetos permitem organizar dados complexos de forma clara e estruturada.<br>
+                Objetos dentro de Arrays representam múltiplos armários com gavetas próprias.<br>
+                Arrays dentro de Objetos representam gavetas com vários itens.<br>
+                Podemos acessar, modificar e percorrer essas estruturas combinadas usando índices e chaves.<br>
+                Essas estruturas ajudam a modelar dados complexos de forma clara e organizada, como armários com gavetas
+                e organizadores internos.<br>
             </p>
         </article>
 
