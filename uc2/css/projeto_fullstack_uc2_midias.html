@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/uc2/css/projeto_fullstack_uc2_midias.css">
+
+    <link rel="icon" href="../../images/logo_aba.png">
+
+    <title>Grid</title>
+</head>
+<body>
+ 
+    <header id="topo">
+
+        <img id="img_topo" src="../../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
+
+        <nav>
+
+            <ul>
+
+                <li id="menu">
+                    <a id="acesso" href="../../index.html">HOME</a>
+                    <a id="acesso" href="../../uc2/projeto_fullstack_uc2.html">UC2</a>
+                    <p>CSS - GRID</p>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section>
+
+        <article>
+
+            <h1>Conceitos Básicos do Grid</h1>    
+            <br>
+            <p>O CSS Grid organiza elementos filhos em linhas e colunas.</p>
+            <p>Quem organiza os filhos é o elemento pai, aplicando " <b>display: grid</b> ".</p>
+            <p>A primeira organização que definimos normalmente é colunas.</p>
+            <p>A quantidade e tamanho das linhas são menos controláveis diretamente, pois dependem do conteúdo e do tamanho do pai.</p>
+
+        </article>
+
+        <article>
+
+            <h2>Propriedades Principais do Grid</h2>
+            <br>
+            <p><h3>grid-template-columns:</h3> define a estrutura das colunas pelo pai (ex.: tamanho da 1ª coluna, da 2ª coluna, etc).</p>
+
+            <p><h3>grid-template-rows:</h3> define o tamanho das linhas.</p>
+            
+            <p>As unidades de medida podem ser em %, px, vh ou a unidade especial <code>fr</code> (fração do espaço disponível do pai).</p>
+            <br>
+            <p><h3>gap:</h3> espaçamento entre linhas e colunas (semelhante ao gap do Flexbox).</p>
+  
+        </article>
+
+        <article>
+
+            <h2>Unidades e Tamanhos</h2>
+            <br>
+            <p><code>fr</code> representa uma fração do espaço disponível do container pai.</p>
+            <br>
+            <p>Exemplo: <code>grid-template-columns: 1fr 3fr;</code> → a segunda coluna ocupará três vezes o espaço da primeira.</p>
+
+        </article>
+
+        <article>
+
+            <h2>Áreas do Grid (grid-area)</h2>
+            <br>
+            <p>Podemos nomear áreas para os filhos usando <code>grid-area</code> e referenciar esses nomes para posicionamento.</p>
+            <br>
+            <p>O nome funciona como um "id" ou "etiqueta" para facilitar o posicionamento dos itens.</p>
+            <br>
+            <figure>
+
+                <img id="foto_grid" src="../../images/grid_area.png" alt="exemplo de nomear e referenciar com grid">
+
+                <figcaption>Exemplo de como nomear área e referenciar com grid</figcaption>
+
+            </figure>
+
+        </article>
+
+        <article>
+
+            <h2>Controle de Alinhamento</h2>
+            <br>
+            <p>A propriedade <code>place-items</code> (abreviação para <code>align-items</code> + <code>justify-items</code>) controla o alinhamento dos itens no grid:</p>
+            <br>
+            <p>Exemplo: <code>place-items: end end;</code> — alinha os itens no final no eixo vertical e horizontal.</p>
+            <br>
+            <p>Diferente do Flexbox, que usa <code>justify-content</code> para alinhamento principal.</p>
+
+
+        </article>
+
+        <article>
+
+            <h2>Definir espaços com frações</h2>
+            <br>
+            <p><h3>Para colunas</h3></p>
+            <br>
+            <p><code>grid-template-columns: 1fr 4fr;</code><br>
+            O primeiro item ocupará 1 parte, o segundo 4 partes do espaço.</p>
+            <br>
+            <p><h3>Para linhas</h3></p>
+            <br>
+            <p><code>grid-template-rows: 100px 200px;</code><br>
+            Define explicitamente o tamanho das linhas.</p>
+
+
+        </article>
+
+        <article>
+            <h2>Seletores Básicos</h2>
+            <br>
+            <ul class="lista">
+                <li><code>p</code> = tag</li>
+                <li><code>.texto</code> = class</li>
+                <li><code>#id</code> = id</li>
+                <li><code>*</code> = seleciona tudo</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Seletores de Agrupamento</h2>
+            <br>
+            <p>Exemplo:</p>
+            <pre><code>h1, h2, p { ... }</code></pre>
+        </article>
+
+        <article>
+            <h2>Seletores Descendentes</h2>
+            <br>
+            <p>Exemplo:</p>
+            <pre><code>#Itens_menu li { ... }</code></pre>
+            <p>Seleciona todos os &lt;li&gt; dentro de #Itens_menu.</p>
+        </article>
+
+        <article>
+            <h2>Fontes e Tipografia</h2>
+            <br>
+            <ul class="lista">
+                <li><h3>font-family</h3>
+                Define a família da fonte do texto (ex.: Arial, Verdana, Times New Roman). Fonte escolhida, familia da fonte e o tipo dela serifada ou não.</li>
+                <br>
+                <li><h3>font-weight</h3>Controla a espessura da fonte (ex.: normal, bold, valores numéricos como 100, 400, 700).</li><br>
+                <li><h3>font-style</h3>Define o estilo da fonte (ex.: normal, italic, oblique).</li><br>
+                <li><h3>font-size</h3>Determina o tamanho da fonte (ex.: px, em, rem, %).</li><br>
+                <li><h3>text-align</h3>Alinha o texto horizontalmente (ex.: left, right, center, justify).</li><br>
+                <li><h3>text-transform</h3>Controla a capitalização das letras (ex.: uppercase, lowercase, capitalize).</li><br>
+                <li><h3>text-decoration</h3>Adiciona ou remove efeitos como sublinhado, linha sobre o texto ou risco (ex.: underline, overline, line-through, none).</li><br>
+                <li><h3>text-shadow</h3>Aplica sombra ao texto (definindo deslocamento, desfoque e cor).</li><br>
+                <li><h3>line-height</h3>Define o espaçamento vertical entre as linhas de texto.</li><br>
+                <li><h3>letter-spacing</h3>Controla o espaçamento entre caracteres individuais.</li><br>
+                <li><h3>word-spacing</h3>Define o espaçamento entre palavras.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Importar Fontes do Google Fonts</h2>
+            <br>
+            <ul class="lista">
+                <li>
+                    <h3>1. Acessar o Google Fonts</h3>
+                    <br>
+                    <p>Vá até <a href="https://fonts.google.com" target="_blank">fonts.google.com</a> e escolha a fonte desejada.</p>
+                </li>
+                <br>
+                <li><h3>2. Copiar o link de importação</h3> 
+                    <br>
+                    <p>No Google Fonts, clique em “Get embed code” e copie a tag <code>@import</code>.  </p>
+                </li>
+                <br>
+                <li>
+                    <h3>3. Cole o <code>@import</code> direto no CSS</h3>
+                    <br>
+                    <code>
+                        <p>@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');</p>
+                    </code>
+                </li>
+                <br>
+                <li>
+                <h3>4. Inserindo formatação</h3>
+                <br>
+                <code>
+                    <p>body {<br>
+                            font-family: 'Roboto', sans-serif;<br>
+                        }</p>
+                </code>
+
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Criando variáveis</h2>
+            <br>
+            <ul class="lista">
+                <li>
+                    <h3>Definir variáveis</h3>Criamos dentro do seletor <code>:root</code> para serem globais.
+                    <br>
+                    Exemplo
+                    <br>
+                    <code>
+                        :root {<br>
+                            --cor-principal: #3498db;<br>
+                            --tamanho-fonte: 16px;<br>
+                        }
+                    </code>
+                </li><br>
+                
+                <li><h3>Usar variáveis</h3>Chamamos com a função <code>var()</code>.<br>
+                    Exemplo<br>
+                    <code>
+                        body {<br>
+                            color: var(--cor-principal);<br>
+                            font-size: var(--tamanho-fonte);<br>
+                        }
+                    </code>
+                </li><br>
+                
+                <li><h3>Alterar valor</h3>Podemos redefinir em outro seletor.<br>
+                    Exemplo<br>
+                    <code>
+                        h1 {<br>
+                            --cor-principal: red;<br>
+                            color: var(--cor-principal);<br>
+                        }
+                    </code>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Cores no Texto</h2>
+            <br>
+            <ul class="lista">
+                <li>Nome da cor (em inglês): <code>red</code></li>
+                <li>Hexadecimal: <code>#RRGGBB</code></li>
+                <li>RGB: <code>rgb(255, 0, 0)</code></li>
+                <li>RGBA: <code>rgba(255, 0, 0, 0.5)</code></li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Bordas</h2>
+            <br>
+            <pre><code>border: espessura tipo cor;</code></pre>
+            <pre><code>border: 2px solid black;</code></pre>
+            <p>Substitui: <code>border-width</code>, <code>border-style</code>, <code>border-color</code></p>
+        </article>
+
+        <article>
+            <h2>Interações: Hover e Cursor</h2>
+            <br>
+            <pre><code>button:hover {
+        background-color: blue;
+        cursor: pointer;
+        }</code></pre>
+            <p><code>cursor: pointer</code></p>
+            <br>
+            <p>Ao passar o mouse sobre o botão, a cor de fundo ficará azul e o ponteiro se transformará em uma mãozinha.</p>
+        </article>
+
+        <article>
+            <h2>Boas práticas com variáveis</h2>
+            <br>
+            <ul class="lista">
+            <li>Crie variáveis no <code>:root</code></li>
+            <li>Evite acentos e palavras reservadas</li>
+            <li>Use nomes claros e consistentes, como <code>--cor-primaria</code></li>
+            </ul>
+        </article>
+
+    </section>
+    
+    <footer>
+
+         <div class="bola">
+            <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png" alt="Voltar"></a>
+        </div>
+
+        <div class="bola">
+            <a href="../../index.html"><img class="logo" src="../../images/logos/Home.png" alt="Home"></a>
+        </div>
+
+        <div class="bola">
+            <a href="#topo"><img class="logo" src="../../images/logos/Up.png" alt="Topo"></a>
+        </div>
+
+
+
+    </footer>
+
+</body>
+</html>
