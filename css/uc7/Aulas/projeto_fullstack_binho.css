@@ -106,11 +106,19 @@ article{
 
 }
 
-#info_uc{
+.info_prof{
 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.info_prof img{
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 
 }
 
