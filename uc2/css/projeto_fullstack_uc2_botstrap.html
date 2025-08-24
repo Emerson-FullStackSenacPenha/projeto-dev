@@ -8,7 +8,7 @@
 
     <link rel="icon" href="../../images/logo_aba.png">
 
-    <title>Grid</title>
+    <title>Botstrap</title>
 </head>
 <body>
  
@@ -24,7 +24,7 @@
                     <a id="acesso" href="../../index.html">HOME</a>
                     <a id="acesso" href="../../uc2/projeto_fullstack_uc2.html">UC2</a>
                     <p>CSS</p>
-                    <p>MIDIAS E ESTILIZAÇÃO</p>
+                    <p>BOTSTRAP</p>
                 </li>
 
             </ul>
@@ -35,142 +35,31 @@
 
     <section>
 
-        <article id="midias-e-estilizacao">
-  <h2>Mídias e Estilização<br></h2>
+      <article id="bootstrap">
+  <h2>Bootstrap<br></h2>
 
-  <h3>Tags para mídias<br></h3>
+  <h3>Como usar o Bootstrap<br></h3>
   <ul class="lista">
-    <li>Imagem: <code>&lt;img&gt;</code></li>
-    <li>Áudio: <code>&lt;audio controls&gt;</code></li>
-    <li>Vídeo: <code>&lt;video controls&gt;</code></li>
+    <li>Copiar o link CSS do Bootstrap e colar dentro do <code>&lt;head&gt;</code> do HTML</li>
+    <li>Adicionar o script JavaScript do Bootstrap no final do <code>&lt;body&gt;</code></li>
   </ul><br>
 
+  <h3>Exemplo de inclusão no HTML<br></h3>
+  <br>
+  <p><img src="../../images/botstrap.png" alt=""></p>
+  <br>
   <p><strong>Explicação:</strong><br>
-  Cada tipo de mídia possui sua própria tag no HTML.<br>
-  Para áudio e vídeo, o atributo <code>controls</code> adiciona os controles nativos do navegador.<br>
-  Não podemos deixar as tags soltas: imagens devem estar dentro de <code>&lt;figure&gt;</code> e legendas em <code>&lt;figcaption&gt;</code>.<br>
-  Para áudio e vídeo, podemos usar <code>&lt;source&gt;</code> dentro da tag principal para fornecer múltiplos formatos.<br></p>
-
-  <h3>Exemplo de imagem com legenda<br></h3>
-  <pre><code>&lt;figure&gt;
-  &lt;img src="foto.jpg" alt="Descrição da imagem"&gt;
-  &lt;figcaption&gt>Esta é a legenda da imagem.&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre><br>
-
-  <h3>Exemplo de áudio e vídeo com múltiplos formatos<br></h3>
-  <pre><code>&lt;audio controls&gt;
-  &lt;source src="musica.mp3" type="audio/mpeg"&gt;
-  &lt;source src="musica.ogg" type="audio/ogg"&gt;
-  Seu navegador não possui rederizador de áudio.
-&lt;/audio&gt;
-
-&lt;video controls width="300"&gt;
-  &lt;source src="video.mp4" type="video/mp4"&gt;
-  &lt;source src="video.webm" type="video/webm"&gt;
-  Seu navegador não possui rederizador de vídeo.
-&lt;/video&gt;</code></pre><br>
-
+  O link CSS adiciona todos os estilos prontos do Bootstrap ao seu HTML.<br>
+  O script JS ativa componentes interativos como menus dropdown, carrosséis e modais.<br>
+  O CSS deve ser incluído no <code>&lt;head&gt;</code> e o JS no final do <code>&lt;body&gt;</code> para garantir que o HTML seja carregado antes dos scripts.<br></p>
+  <br>
   <p><strong>Resumo:</strong><br>
-  Use tags específicas para cada mídia.<br>
-  Sempre adicione legendas para imagens.<br>
-  Para áudio e vídeo, forneça múltiplos formatos e mensagem de fallback.<br></p>
+  Bootstrap facilita estilização e componentes prontos.<br>
+  CSS no cabeçalho, JS no final do corpo.<br>
+  </p>
 </article>
 
-<article id="backgrounds-e-transicoes">
-  <h2>Backgrounds e Transições<br></h2>
-
-  <h3>Propriedades de background<br></h3>
-  <ul class="lista">
-    <li>background-image: define a imagem de fundo</li>
-    <li>background-size: cover / contain</li>
-    <li>background-repeat: repeat-x / repeat-y / no-repeat</li>
-    <li>background-position: posição da imagem (center, top, left...)</li>
-    <li>background-attachment: fixed (para efeito parallax)</li>
-    <li>background: linear-gradient(45deg, cor1, cor2)</li>
-    <li>background: radial-gradient(cor1, cor2)</li>
-  </ul><br>
-
-  <h3>Exemplo de background com gradiente<br></h3>
-  <pre><code>body {
-  background: linear-gradient(45deg, #ff0000, #0000ff);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}</code></pre><br>
-
-  <h3>Transições e transformações<br></h3>
-  <pre><code>div {
-  transition: transform 0.5s;
-}
-div:hover {
-  transform: scale(1.2);
-}</code></pre><br>
-
-  <p><strong>Explicação:</strong><br>
-  Background pode ser imagem ou gradiente.<br>
-  Cover ajusta a imagem para cobrir todo o container, contain mantém proporção.<br>
-  Repeat controla se a imagem se repete horizontal ou verticalmente.<br>
-  Attachment fixed cria o efeito de parallax.<br>
-  Transition define o tempo da animação ao interagir com elementos.<br>
-  Transform permite aumentar, girar ou mover elementos.</p><br>
-
-  <p><strong>Resumo:</strong><br>
-  Use backgrounds para estilização visual.<br>
-  Transitions suavizam alterações.<br>
-  Transform dá movimento e efeitos interativos.<br></p>
-</article>
-
-<article id="responsividade">
-  <h2>Responsividade e Media Queries<br></h2>
-
-  <h3>Media Queries<br></h3>
-  <pre><code>@media (max-width: 600px) {
-  body {
-    background-color: #f0f0f0;
-  }
-}</code></pre><br>
-
-  <p><strong>Explicação:</strong><br>
-  Media queries permitem adaptar o estilo de acordo com o tamanho da tela.<br>
-  Podemos definir limites máximos ou mínimos de largura, altura ou outras características.<br>
-  Elas devem ser colocadas no final do CSS para sobrescrever estilos padrões.<br></p>
-
-  <p><strong>Resumo:</strong><br>
-  Responsividade garante que o site se adapte a diferentes dispositivos.<br>
-  Media queries são essenciais para controlar estilos em telas pequenas.<br></p>
-</article>
-
-<article id="pseudo-classes-e-atributos">
-  <h2>Pseudoclasses e Atributos<br></h2>
-
-  <h3>Propriedades úteis<br></h3>
-  <ul class="lista">
-    <li>hidden: esconde elementos da tela</li>
-    <li>hover: muda o estilo ao passar o mouse</li>
-    <li>transform: aplica escala, rotação, translação, etc.</li>
-  </ul><br>
-
-  <h3>Exemplo de hover e hidden<br></h3>
-  <pre><code>p:hover {
-  color: red;
-}
-
-div[hidden] {
-  display: none;
-}</code></pre><br>
-
-  <p><strong>Explicação:</strong><br>
-  Pseudoclasses como hover permitem interatividade sem JavaScript.<br>
-  Hidden é um atributo que remove o elemento da renderização, mas mantém no HTML.<br>
-  Transform modifica visualmente os elementos de forma dinâmica.</p><br>
-
-  <p><strong>Resumo:</strong><br>
-  Use pseudoclasses para interação visual.<br>
-  Hidden para esconder elementos sem apagar do código.<br>
-  Transform para animações e efeitos.<br></p>
-</article>
-
-
+      
     </section>
     
     <footer>
