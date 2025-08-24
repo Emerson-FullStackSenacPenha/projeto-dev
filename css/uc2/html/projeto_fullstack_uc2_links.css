@@ -73,7 +73,7 @@ nav{
 
 section{
 
-    background-image: url(../../images/fundo.png);
+    background-image: url(../../../images/fundo.png);
     background-size: 80px;
     
     display: flex;
@@ -141,4 +141,27 @@ footer{
 
     height: 30px;
     width: 25px;
+}
+
+@media(max-width: 740px){
+
+    pre{
+
+        font-size: 10px;
+
+    }
+
+    #curta{
+
+        height: 78px;
+
+    }
+
+    #larga{
+
+        height: 30px;
+
+    }
+
+
 }
