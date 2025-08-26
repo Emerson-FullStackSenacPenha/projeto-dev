@@ -148,3 +148,13 @@ footer{
     height: 30px;
     width: 25px;
 }
+
+@media (max-width: 450px){
+
+    pre{
+
+        font-size: 11px;
+
+    }
+
+}
