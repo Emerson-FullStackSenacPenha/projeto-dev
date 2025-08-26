@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,13 @@
 
     <title>Loopings</title>
 </head>
+
 <body>
-    
+
     <header id="topo">
 
-        <img id="img_topo" src="../../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
+        <img id="img_topo" src="../../images/Titulo Botão.png"
+            alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
 
         <nav>
 
@@ -34,75 +37,150 @@
 
     <section>
 
-        <article id="arrays-introducao">
-            <h2>Introdução Arrays / Vetores<br></h2>
+        <article id="introducao-looping">
+            <h2>O que são Loops em JavaScript</h2><br>
             <p><strong>Explicação:</strong><br>
-            Arrays são estruturas que armazenam múltiplos valores em uma única variável.<br>
-            Cada valor dentro do array é chamado de elemento e possui uma posição chamada índice.<br>
-            O índice sempre começa em 0, ou seja, o primeiro elemento está na posição 0.<br>
-            Arrays são muito usados quando precisamos organizar dados relacionados de forma sequencial.<br>
-            <br>
-            Uma forma fácil de entender arrays é pensar em um armário com várias gavetas.<br>
-            Cada gaveta tem uma posição (índice) e contém algum item (elemento).<br>
-            Para pegar algo específico, basta indicar a gaveta correspondente.<br>
+                Loops são como "rotinas automáticas" que repetem uma tarefa várias vezes até que uma condição seja
+                atendida.<br>
+                Pense em um loop como um porteiro que verifica uma fila: enquanto houver pessoas, ele continua chamando
+                uma por uma.<br>
+                Em programação, usamos loops para percorrer dados, executar cálculos ou automatizar tarefas
+                repetitivas.<br>
             </p>
-        </article>
-
-        <article id="arrays-declaracao">
-            <h2>Como declarar um Array<br></h2>
-            <p><strong>Explicação:</strong><br>
-            Um array é declarado usando colchetes [].<br>
-            Cada elemento é separado por vírgula.<br>
-            </p>
-            <pre><code>let armario = ["camisa", "calça", "meias","sapatos"];</code></pre><br>
-        </article>
-
-        <article id="arrays-acesso">
-            <h2>Acessando elementos do Array<br></h2>
-            <p><strong>Explicação:</strong><br>
-            Para acessar um elemento, usamos o nome do array seguido do índice entre colchetes.<br>
-            O índice indica a posição da gaveta que queremos abrir.<br>
-            </p>
-            <pre><code>console.log(armario[0]); // "camisa"<br>console.log(armario[3]); // "sapatos"</code></pre><br>
-        </article>
-
-        <article id="arrays-modificacao">
-            <h2>Modificando elementos<br></h2>
-            <p><strong>Explicação:</strong><br>
-            Podemos alterar o conteúdo de uma posição específica do array.<br>
-            Basta acessar o índice e atribuir um novo valor.<br>
-            </p>
-            <pre><code>armario[0] = "jaqueta";<br>console.log(armario[0]); // "jaqueta"</code></pre><br>
-        </article>
-
-        <article id="arrays-propriedades">
-            <h2>Propriedades importantes<br></h2>
-            <ul class="lista">
-                <li>length: indica quantos elementos o array possui.</li>
-                <li>push(): adiciona um elemento no final do array.</li>
-                <li>pop(): remove o último elemento do array.</li>
-                <li>shift(): remove o primeiro elemento do array.</li>
-                <li>unshift(): adiciona um elemento no início do array.</li>
-            </ul><br>
-        </article>
-
-        <article id="arrays-resumo">
-            <h2>Resumo dos Arrays<br></h2>
             <p><strong>Resumo:</strong><br>
-            Arrays são como armários com gavetas.<br>
-            Cada gaveta tem uma posição (índice) e contém um elemento.<br>
-            Podemos acessar, modificar ou adicionar elementos indicando a posição.<br>
-            Arrays facilitam organizar e manipular conjuntos de dados relacionados.<br>
-            Propriedades como length e métodos como push/pop ajudam a gerenciar o conteúdo do array.<br>
+                Loops ajudam a economizar código e executar ações repetidas de forma organizada.<br>
+                São fundamentais para lidar com listas, cálculos e estruturas de dados.<br>
             </p>
         </article>
-  
+
+        <article id="while">
+            <h2>Loop While</h2><br>
+            <p><strong>Explicação:</strong><br>
+                O "while" significa "enquanto". Imagine que você está enchendo uma caixa de bolas: <br>
+                enquanto houver espaço, continue colocando mais bolas.<br>
+                O código repete a ação enquanto a condição for verdadeira.<br>
+            </p>
+            <h3>Exemplo:</h3><br>
+            <pre><code>let numero = 2;
+while (numero &lt;= 10) {
+
+Concatenando strings com o resultado
+console.log("Número atual: " + numero + " - executando ação...");
+
+Usando template string com resultado
+console.log(`O dobro de ${numero} é ${numero * 2} - ação executada!`);
+
+  numero = numero + 2;
+}
+
+// Saída no console:
+// Número atual: 2 - executando ação...
+// O dobro de 2 é 4 - ação executada!
+// Número atual: 4 - executando ação...
+// O dobro de 4 é 8 - ação executada!
+// ... até 10</code></pre><br>
+            <p><strong>Resumo:</strong><br>
+                "while" executa uma tarefa repetidamente até que a condição se torne falsa.<br>
+                Aqui mostramos como exibir valores usando concatenação e template string, simulando a saída do
+                console.<br>
+            </p>
+        </article>
+
+        <article id="for">
+            <h2>Loop For</h2><br>
+            <p><strong>Explicação:</strong><br>
+                O "for" é como uma agenda: você já sabe quantas tarefas precisa fazer.<br>
+                Ele é útil quando sabemos o número exato de repetições, como contar de 1 a 10.<br>
+            </p>
+            <h3>Exemplo:</h3><br>
+            <pre><code>for (let i = 1; i &lt;= 5; i++) {
+Concatenando strings com resultado
+console.log("Valor atual: " + i + " - item processado.");
+
+Usando template string com resultado
+console.log(`O triplo de ${i} é ${i * 3} - processado com sucesso!`);
+}
+
+// Saída no console:
+// Valor atual: 1 - item processado.
+// O triplo de 1 é 3 - processado com sucesso!
+// Valor atual: 2 - item processado.
+// O triplo de 2 é 6 - processado com sucesso!
+// ... até 5</code></pre><br>
+            <p><strong>Resumo:</strong><br>
+                "for" é ótimo para quando você conhece o ponto de início, fim e o passo de repetição.<br>
+                Também permite formatar a saída usando concatenação e template string, mostrando os resultados.<br>
+            </p>
+        </article>
+
+        <article id="for-in">
+            <h2>Loop For...In</h2><br>
+            <p><strong>Explicação:</strong><br>
+                "for...in" é como olhar para as gavetas de um armário: você não está interessado no que há dentro ainda,
+                mas quer saber o nome de cada gaveta.<br>
+                Ele percorre as propriedades (chaves) de um objeto.<br>
+            </p>
+            <h3>Exemplo:</h3><br>
+            <pre><code>const aluno = { nome: "Ana", idade: 20, curso: "ADS" };
+for (let chave in aluno) {
+
+Concatenando strings com resultado
+console.log("Propriedade: " + chave + " - encontrada no objeto.");
+
+Usando template string com resultado
+console.log(`Chave ${chave} tem o valor ${aluno[chave]}-verificado!`);
+}
+
+// Saída no console:
+// Propriedade: nome - encontrada no objeto.
+// A chave nome tem o valor Ana - verificado!
+// Propriedade: idade - encontrada no objeto.
+// A chave idade tem o valor 20 - verificado!
+// Propriedade: curso - encontrada no objeto.
+// Chave curso tem o valor ADS - verificado!</code></pre><br>
+            <p><strong>Resumo:</strong><br>
+                "for...in" percorre as chaves (propriedades) de um objeto e permite mostrar suas informações no
+                console.<br>
+            </p>
+        </article>
+
+        <article id="for-of">
+            <h2>Loop For...Of</h2><br>
+            <p><strong>Explicação:</strong><br>
+                "for...of" é como abrir cada gaveta e olhar dentro: você vê os itens armazenados.<br>
+                Ele percorre os valores de arrays, strings ou outras coleções iteráveis.<br>
+            </p>
+            <h3>Exemplo:</h3><br>
+            <pre><code>const frutas = ["maçã", "banana", "uva"];
+for (let fruta of frutas) {
+
+  // Concatenando strings com resultado
+  console.log("Fruta: " + fruta + " - adicionada ao carrinho.");
+
+  // Usando template string com resultado
+  console.log(`Fruta atual: ${fruta} - compra registrada!`);
+}
+
+// Saída no console:
+// Fruta: maçã - adicionada ao carrinho.
+// Fruta atual: maçã - compra registrada!
+// Fruta: banana - adicionada ao carrinho.
+// Fruta atual: banana - compra registrada!
+// Fruta: uva - adicionada ao carrinho.
+// Fruta atual: uva - compra registrada!</code></pre><br>
+            <p><strong>Resumo:</strong><br>
+                "for...of" percorre diretamente os valores de arrays e outros iteráveis, permitindo mostrar mensagens
+                realistas no console.<br>
+            </p>
+        </article>
+
     </section>
 
     <footer>
 
-         <div class="bola">
-            <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png" alt="Voltar"></a>
+        <div class="bola">
+            <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png"
+                    alt="Voltar"></a>
         </div>
 
         <div class="bola">
@@ -118,4 +196,5 @@
     </footer>
 
 </body>
+
 </html>
