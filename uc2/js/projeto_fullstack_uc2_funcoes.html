@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,13 @@
 
     <title>Funções</title>
 </head>
+
 <body>
-    
+
     <header id="topo">
 
-        <img id="img_topo" src="../../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
+        <img id="img_topo" src="../../images/Titulo Botão.png"
+            alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
 
         <nav>
 
@@ -34,16 +37,39 @@
 
     <section>
 
-        <article id="funcao-anonima">
-    <h2>Função Anônima</h2><br>
-    <p><strong>Explicação:</strong><br>
-    Uma função anônima é aquela que não possui nome próprio. Ela é atribuída a uma variável ou constante, que passa a ser a referência para chamá-la.<br>
-    O nome da constante ou variável é o que usamos para invocar essa função.<br>
-    Não pode ser executada antes de ser declarada, pois o JavaScript só conhece sua existência após a linha de atribuição.<br>
-    É necessário usar o comando <strong>return</strong> de forma explícita caso queira devolver algum valor.</p><br>
+        <article id="resumo-funcoes-resumido">
+            <h2>Resumo: Funções</h2><br>
+            <p><strong>Explicação:</strong><br>
+                Funções são blocos de código que executam tarefas específicas.<br>
+                Podem receber dados (parâmetros) e devolver resultados (retorno).<br>
+                Ajudam a organizar, reutilizar e simplificar o código.</p><br>
 
-    <h3>Exemplo:</h3><br>
-    <pre><code>
+            <h3>Quando usar:</h3><br>
+            <ul class="lista">
+                <li>Evitar repetir código.</li>
+                <li>Separar tarefas em blocos claros.</li>
+                <li>Executar operações sob demanda.</li>
+            </ul><br>
+
+            <p><strong>Resumo:</strong><br>
+                - Organizam e reaproveitam código.<br>
+                - Facilitam manutenção e leitura.<br>
+                - Permitem criar programas mais eficientes.</p><br>
+        </article>
+
+        <article id="funcao-anonima">
+            <h2>Função Anônima</h2><br>
+            <p><strong>Explicação:</strong><br>
+                Uma função anônima é aquela que não possui nome próprio. Ela é atribuída a uma variável ou constante,
+                que passa a ser a referência para chamá-la.<br>
+                O nome da constante ou variável é o que usamos para invocar essa função.<br>
+                Não pode ser executada antes de ser declarada, pois o JavaScript só conhece sua existência após a linha
+                de atribuição.<br>
+                É necessário usar o comando <strong>return</strong> de forma explícita caso queira devolver algum valor.
+            </p><br>
+
+            <h3>Exemplo:</h3><br>
+            <pre><code>
 const exemplo1 = function() {
     console.log("Olá, função anônima!");
 };
@@ -51,19 +77,21 @@ const exemplo1 = function() {
 exemplo1(); // chamada
     </code></pre><br>
 
-    <p><strong>Resumo:</strong><br>
-    - Função sem nome, atribuída a uma variável ou constante.<br>
-    - Só pode ser chamada após ser criada.<br>
-    - Precisa de return explícito para devolver valores.</p><br>
-</article>
+            <p><strong>Resumo:</strong><br>
+                - Função sem nome, atribuída a uma variável ou constante.<br>
+                - Só pode ser chamada após ser criada.<br>
+                - Precisa de return explícito para devolver valores.</p><br>
+        </article>
 
-<article id="funcao-nomeada">
-    <h2>Função Nomeada/Declarada</h2><br>
-    <p><strong>Explicação:</strong><br>
-    Uma função nomeada é criada com a palavra-chave <strong>function</strong> e um nome. Pode ser chamada antes ou depois da sua declaração devido ao <strong>Hoisting</strong> (elevação), recurso do JavaScript que “move” a função para o topo do código em tempo de execução.</p><br>
+        <article id="funcao-nomeada">
+            <h2>Função Nomeada/Declarada</h2><br>
+            <p><strong>Explicação:</strong><br>
+                Uma função nomeada é criada com a palavra-chave <strong>function</strong> e um nome. Pode ser chamada
+                antes ou depois da sua declaração devido ao <strong>Hoisting</strong> (elevação), recurso do JavaScript
+                que “move” a função para o topo do código em tempo de execução.</p><br>
 
-    <h3>Exemplo:</h3><br>
-    <pre><code>
+            <h3>Exemplo:</h3><br>
+            <pre><code>
 function exemplo2() {
     console.log("Exemplo de função nomeada");
 }
@@ -71,20 +99,21 @@ function exemplo2() {
 exemplo2(); // chamada
     </code></pre><br>
 
-    <p><strong>Resumo:</strong><br>
-    - Possui nome próprio.<br>
-    - Pode ser executada antes de sua declaração (Hoisting).<br>
-    - Facilita leitura e manutenção do código.</p><br>
-</article>
+            <p><strong>Resumo:</strong><br>
+                - Possui nome próprio.<br>
+                - Pode ser executada antes de sua declaração (Hoisting).<br>
+                - Facilita leitura e manutenção do código.</p><br>
+        </article>
 
-<article id="funcao-arrow">
-    <h2>Função Arrow (Função Flecha)</h2><br>
-    <p><strong>Explicação:</strong><br>
-    A Arrow Function é uma forma mais curta de escrever funções em JavaScript. Ela é sempre atribuída a uma variável ou constante. Não sofre hoisting, por isso precisa ser declarada antes de ser chamada.<br>
-    Útil para simplificar códigos curtos, especialmente em callbacks.</p><br>
+        <article id="funcao-arrow">
+            <h2>Função Arrow (Função Flecha)</h2><br>
+            <p><strong>Explicação:</strong><br>
+                A Arrow Function é uma forma mais curta de escrever funções em JavaScript. Ela é sempre atribuída a uma
+                variável ou constante. Não sofre hoisting, por isso precisa ser declarada antes de ser chamada.<br>
+                Útil para simplificar códigos curtos, especialmente em callbacks.</p><br>
 
-    <h3>Exemplo:</h3><br>
-    <pre><code>
+            <h3>Exemplo:</h3><br>
+            <pre><code>
 const exemplo3 = () => {
     console.log("Sintaxe Arrow Function!");
 };
@@ -92,20 +121,21 @@ const exemplo3 = () => {
 exemplo3();
     </code></pre><br>
 
-    <p><strong>Resumo:</strong><br>
-    - Sintaxe curta e moderna.<br>
-    - Não sofre elevação (Hoisting).<br>
-    - Ideal para funções rápidas e reutilizáveis.</p><br>
-</article>
+            <p><strong>Resumo:</strong><br>
+                - Sintaxe curta e moderna.<br>
+                - Não sofre elevação (Hoisting).<br>
+                - Ideal para funções rápidas e reutilizáveis.</p><br>
+        </article>
 
-<article id="funcao-com-parametro">
-    <h2>Função com Parâmetro</h2><br>
-    <p><strong>Explicação:</strong><br>
-    Funções podem receber dados externos chamados parâmetros. Eles permitem tornar o código mais flexível.<br>
-    É possível definir valores padrão para parâmetros, evitando erros quando não são informados.</p><br>
+        <article id="funcao-com-parametro">
+            <h2>Função com Parâmetro</h2><br>
+            <p><strong>Explicação:</strong><br>
+                Funções podem receber dados externos chamados parâmetros. Eles permitem tornar o código mais
+                flexível.<br>
+                É possível definir valores padrão para parâmetros, evitando erros quando não são informados.</p><br>
 
-    <h3>Exemplo:</h3><br>
-    <pre><code>
+            <h3>Exemplo:</h3><br>
+            <pre><code>
 function saudacao(nome = "Visitante") {
     console.log("Olá, " + nome);
 }
@@ -114,19 +144,20 @@ saudacao("Emerson");
 saudacao();
     </code></pre><br>
 
-    <p><strong>Resumo:</strong><br>
-    - Parâmetros tornam a função adaptável.<br>
-    - Valores padrão evitam falhas sem argumento.<br>
-    - Permitem personalizar resultados.</p><br>
-</article>
+            <p><strong>Resumo:</strong><br>
+                - Parâmetros tornam a função adaptável.<br>
+                - Valores padrão evitam falhas sem argumento.<br>
+                - Permitem personalizar resultados.</p><br>
+        </article>
 
-<article id="funcao-parametro-retorno">
-    <h2>Função com Parâmetros e Retorno</h2><br>
-    <p><strong>Explicação:</strong><br>
-    Além de receber valores, funções podem devolver resultados com <strong>return</strong>. Esse retorno pode ser armazenado em variáveis para uso posterior.</p><br>
+        <article id="funcao-parametro-retorno">
+            <h2>Função com Parâmetros e Retorno</h2><br>
+            <p><strong>Explicação:</strong><br>
+                Além de receber valores, funções podem devolver resultados com <strong>return</strong>. Esse retorno
+                pode ser armazenado em variáveis para uso posterior.</p><br>
 
-    <h3>Exemplo:</h3><br>
-    <pre><code>
+            <h3>Exemplo:</h3><br>
+            <pre><code>
 function multiplicar(valor1, valor2) {
     return valor1 * valor2;
 }
@@ -135,38 +166,41 @@ let resultado1 = multiplicar(10, 5);
 console.log("Resultado 1: " + resultado1);
     </code></pre><br>
 
-    <p><strong>Resumo:</strong><br>
-    - <strong>return</strong> devolve o resultado.<br>
-    - Retornos podem ser usados em outras operações.<br>
-    - Aumenta a reutilização da lógica.</p><br>
-</article>
+            <p><strong>Resumo:</strong><br>
+                - <strong>return</strong> devolve o resultado.<br>
+                - Retornos podem ser usados em outras operações.<br>
+                - Aumenta a reutilização da lógica.</p><br>
+        </article>
 
-<article id="arrow-retorno-implicito">
-    <h2>Simplificando com Arrow Function</h2><br>
-    <p><strong>Explicação:</strong><br>
-    A Arrow Function permite retorno implícito quando usada em uma única linha, eliminando a necessidade de escrever a palavra <strong>return</strong>.</p><br>
+        <article id="arrow-retorno-implicito">
+            <h2>Simplificando com Arrow Function</h2><br>
+            <p><strong>Explicação:</strong><br>
+                A Arrow Function permite retorno implícito quando usada em uma única linha, eliminando a necessidade de
+                escrever a palavra <strong>return</strong>.</p><br>
 
-    <h3>Exemplo:</h3><br>
-    <pre><code>
+            <h3>Exemplo:</h3><br>
+            <pre><code>
 const somar = (valor1, valor2) => valor1 + valor2;
 
 console.log(somar(150, 500));
     </code></pre><br>
 
-    <p><strong>Resumo:</strong><br>
-    - Retorno implícito simplifica a sintaxe.<br>
-    - Ideal para cálculos e funções rápidas.<br>
-    - Código mais limpo e enxuto.</p><br>
-</article>
+            <p><strong>Resumo:</strong><br>
+                - Retorno implícito simplifica a sintaxe.<br>
+                - Ideal para cálculos e funções rápidas.<br>
+                - Código mais limpo e enxuto.</p><br>
+        </article>
 
-<article id="formatando-moeda">
-    <h2>Formatando Valor Monetário</h2><br>
-    <p><strong>Explicação:</strong><br>
-    Para valores monetários, podemos usar a classe <strong>Intl.NumberFormat</strong> para padronizar o formato de acordo com a região (locale).<br>
-    <strong>new</strong> cria um objeto (instância) dessa classe, permitindo acessar suas funcionalidades.</p><br>
+        <article id="formatando-moeda">
+            <h2>Formatando Valor Monetário</h2><br>
+            <p><strong>Explicação:</strong><br>
+                Para valores monetários, podemos usar a classe <strong>Intl.NumberFormat</strong> para padronizar o
+                formato de acordo com a região (locale).<br>
+                <strong>new</strong> cria um objeto (instância) dessa classe, permitindo acessar suas funcionalidades.
+            </p><br>
 
-    <h3>Exemplo:</h3><br>
-    <pre><code>
+            <h3>Exemplo:</h3><br>
+            <pre><code>
 let preco = 5000;
 let desconto = preco * 0.10;
 let precoFinal = preco - desconto;
@@ -183,19 +217,19 @@ console.log("Desconto: " + formatarMoeda(desconto));
 console.log("Preço final: " + formatarMoeda(precoFinal));
     </code></pre><br>
 
-    <p><strong>Resumo:</strong><br>
-    - <strong>Intl.NumberFormat</strong> ajuda na formatação regional.<br>
-    - <strong>new</strong> cria instâncias de classes para usar métodos.<br>
-    - Útil para exibir valores claros e padronizados.</p><br>
-</article>
-
+            <p><strong>Resumo:</strong><br>
+                - <strong>Intl.NumberFormat</strong> ajuda na formatação regional.<br>
+                - <strong>new</strong> cria instâncias de classes para usar métodos.<br>
+                - Útil para exibir valores claros e padronizados.</p><br>
+        </article>
 
     </section>
 
     <footer>
 
-         <div class="bola">
-            <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png" alt="Voltar"></a>
+        <div class="bola">
+            <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png"
+                    alt="Voltar"></a>
         </div>
 
         <div class="bola">
@@ -211,4 +245,5 @@ console.log("Preço final: " + formatarMoeda(precoFinal));
     </footer>
 
 </body>
+
 </html>
