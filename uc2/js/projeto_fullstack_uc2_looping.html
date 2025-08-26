@@ -174,6 +174,111 @@ for (let fruta of frutas) {
             </p>
         </article>
 
+        <article id="array-objetos">
+            <h2>Exercício: Objetos dentro de um Array</h2><br>
+            <p><strong>Explicação:</strong><br>
+                Agora vamos trabalhar com um array que contém vários objetos. Cada objeto representa um cliente com nome
+                e ID.<br>
+                O objetivo é percorrer todos os clientes usando diferentes tipos de loops e imprimir as informações no
+                formato:<br>
+                <strong>Cliente: "Nome" ID: "Número"</strong><br>
+            </p>
+
+            <h3>Array de Clientes</h3><br>
+            <pre><code>const clientes = [
+  { nome: "Ana", id: 101 },
+  { nome: "Bruno", id: 202 },
+  { nome: "Carla", id: 303 }
+];</code></pre><br>
+
+        </article>
+
+        <article id="while-clientes">
+            <h3>Usando While</h3><br>
+            <pre><code>let i = 0;
+while (i &lt; clientes.length) {
+Concatenando strings com resultado
+console.log("Cliente: "+clientes[i].nome + " ID: "+clientes[i].id);
+
+Usando template string com resultado
+console.log(`Cliente: ${clientes[i].nome} ID: ${clientes[i].id}`);
+
+  i++;
+}
+
+// Saída no console:
+// Cliente: Ana ID: 101
+// Cliente: Ana ID: 101
+// Cliente: Bruno ID: 202
+// Cliente: Bruno ID: 202
+// Cliente: Carla ID: 303
+// Cliente: Carla ID: 303</code></pre><br>
+        </article>
+
+        <article id="for-clientes">
+            <h3>Usando For</h3><br>
+            <pre><code>for (let i = 0; i &lt; clientes.length; i++) {
+Concatenando strings com resultado
+console.log("Cliente: "+clientes[i].nome+" ID: "+clientes[i].id);
+
+Usando template string com resultado
+console.log(`Cliente: ${clientes[i].nome} ID: ${clientes[i].id}`);
+}
+
+// Saída no console:
+// Cliente: Ana ID: 101
+// Cliente: Ana ID: 101
+// Cliente: Bruno ID: 202
+// Cliente: Bruno ID: 202
+// Cliente: Carla ID: 303
+// Cliente: Carla ID: 303</code></pre><br>
+        </article>
+
+        <article id="for-in-clientes">
+            <h3>Usando For...In</h3><br>
+            <pre><code>for (let ind in clientes) {
+Concatenando strings com resultado
+console.log("Cliente: "+clientes[ind].nome+" ID: "+clientes[ind].id);
+
+Usando template string com resultado
+console.log(`Cliente: ${clientes[ind].nome} ID: ${clientes[ind].id}`);
+}
+
+// Saída no console:
+// Cliente: Ana ID: 101
+// Cliente: Bruno ID: 202
+// Cliente: Carla ID: 303</code></pre><br>
+        </article>
+
+
+        <article id="for-of-clientes">
+            <h3>Usando For...Of</h3><br>
+            <pre><code>for (let cliente of clientes) {
+Concatenando strings com resultado
+console.log("Cliente: " + cliente.nome + " ID: " + cliente.id);
+
+Usando template string com resultado
+console.log(`Cliente: ${cliente.nome} ID: ${cliente.id}`);
+}
+
+// Saída no console:
+// Cliente: Ana ID: 101
+// Cliente: Ana ID: 101
+// Cliente: Bruno ID: 202
+// Cliente: Bruno ID: 202
+// Cliente: Carla ID: 303
+// Cliente: Carla ID: 303</code></pre><br>
+        </article>
+
+        <article>
+            <p><strong>Resumo:</strong><br>
+                Percorremos um array de objetos com os loops While, For, For...In e For...Of.<br>
+                Cada exemplo mostra como acessar e exibir os dados de cada cliente de duas formas: concatenação de
+                strings e template string.<br>
+            </p>
+        </article>
+
+
     </section>
 
     <footer>
