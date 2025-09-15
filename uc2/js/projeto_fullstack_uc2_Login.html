@@ -38,15 +38,15 @@
     <section>
 
         <article id="refatoracao">
-            <h2>Refatoração<br></h2>
-
-            <p><strong>Explicação:</strong><br>
-                Refatorar significa melhorar ou reescrever um código já existente sem mudar sua função.<br>
+            <h2>Refatoração</h2>
+            <br>
+            <p><strong>Explicação:</strong>
+                Refatorar significa melhorar ou reescrever um código já existente sem mudar sua função.
                 É como arrumar seu quarto: você não troca os móveis de lugar, mas deixa tudo mais limpo e
-                organizado.<br>
+                organizado.
             </p>
-
-            <h3>Exemplo prático<br></h3>
+            <br>
+            <h3>Exemplo prático</h3>
             <pre><code>// Antes
 let x = 1; let y = 2; let z = x + y;
 
@@ -54,30 +54,30 @@ let x = 1; let y = 2; let z = x + y;
 let x = 1;
 let y = 2;
 let soma = x + y;
-</code></pre><br>
-
-            <p><strong>Resumo:</strong><br>
-                Refatorar = deixar o código mais claro e organizado.<br>
-                Não muda o resultado final, apenas melhora a forma de escrever.<br>
+</code></pre>
+            <br>
+            <p><strong>Resumo:</strong>
+                Refatorar = deixar o código mais claro e organizado.
+                Não muda o resultado final, apenas melhora a forma de escrever.
             </p>
         </article>
 
         <article id="metodos-de-classe">
-            <h2>Métodos de Classe: add, remove e toggle<br></h2>
-
-            <p><strong>Explicação:</strong><br>
-                Esses métodos são usados para adicionar, remover ou alternar classes em elementos HTML.<br>
+            <h2>Métodos de Classe: add, remove e toggle</h2>
+            <br>
+            <p><strong>Explicação:</strong>
+                Esses métodos são usados para adicionar, remover ou alternar classes em elementos HTML.
                 Imagine que as classes são "etiquetas" que grudamos em um objeto. Podemos ligar, desligar ou alternar
-                essas etiquetas.<br>
+                essas etiquetas.
             </p>
-
+            <br>
             <ul class="lista">
                 <li><strong>add:</strong> Liga (adiciona uma classe)</li>
                 <li><strong>remove:</strong> Desliga (remove uma classe)</li>
                 <li><strong>toggle:</strong> Alterna (liga ou desliga, dependendo do estado atual)</li>
-            </ul><br>
-
-            <h3>Exemplo prático<br></h3>
+            </ul>
+            <br>
+            <h3>Exemplo prático</h3>
             <pre><code>const caixa = document.querySelector("#caixa");
 
 // Liga
@@ -88,24 +88,24 @@ caixa.classList.remove("ativo");
 
 // Alterna
 caixa.classList.toggle("ativo");
-</code></pre><br>
-
-            <p><strong>Resumo:</strong><br>
-                add = ligar uma classe.<br>
-                remove = desligar uma classe.<br>
-                toggle = alternar entre ligar e desligar.<br>
+</code></pre>
+            <br>
+            <p><strong>Resumo:</strong>
+                add = ligar uma classe.
+                remove = desligar uma classe.
+                toggle = alternar entre ligar e desligar.
             </p>
         </article>
 
         <article id="dialog">
-            <h2>Dialog (Janela de Diálogo)<br></h2>
-
-            <p><strong>Explicação:</strong><br>
-                O elemento <code>&lt;dialog&gt;</code> é usado para criar janelas modais.<br>
-                É como uma caixa de recado que aparece na frente da página, pedindo atenção do usuário.<br>
+            <h2>Dialog (Janela de Diálogo)</h2>
+            <br>
+            <p><strong>Explicação:</strong>
+                O elemento <code>&lt;dialog&gt;</code> é usado para criar janelas modais.
+                É como uma caixa de recado que aparece na frente da página, pedindo atenção do usuário.
             </p>
-
-            <h3>Exemplo prático<br></h3>
+            <br>
+            <h3>Exemplo prático</h3>
             <pre><code>&lt;dialog id="janela"&gt;
   &lt;p&gt;Bem-vindo!&lt;/p&gt;
 &lt;/dialog&gt;
@@ -120,23 +120,23 @@ abrir.addEventListener("click", () =&gt; {
   janela.showModal();
 });
 &lt;/script&gt;
-</code></pre><br>
-
-            <p><strong>Resumo:</strong><br>
-                Dialog = janela de diálogo.<br>
-                Usada para mostrar informações ou pedir uma ação ao usuário.<br>
+</code></pre>
+            <br>
+            <p><strong>Resumo:</strong>
+                Dialog = janela de diálogo.
+                Usada para mostrar informações ou pedir uma ação ao usuário.
             </p>
         </article>
 
         <article id="caixa-de-senha">
-            <h2>Caixa de Senha<br></h2>
-
-            <p><strong>Explicação:</strong><br>
-                O campo de senha esconde os caracteres digitados para garantir privacidade.<br>
-                Podemos adicionar um botão para mostrar ou esconder a senha quando necessário.<br>
+            <h2>Caixa de Senha</h2>
+            <br>
+            <p><strong>Explicação:</strong>
+                O campo de senha esconde os caracteres digitados para garantir privacidade.
+                Podemos adicionar um botão para mostrar ou esconder a senha quando necessário.
             </p>
-
-            <h3>Exemplo prático<br></h3>
+            <br>
+            <h3>Exemplo prático</h3>
             <pre><code>&lt;input type="password" id="senha"&gt;
 &lt;button id="mostrar"&gt;Mostrar senha&lt;/button&gt;
 
@@ -152,23 +152,23 @@ botao.addEventListener("click", () =&gt; {
   }
 });
 &lt;/script&gt;
-</code></pre><br>
-
-            <p><strong>Resumo:</strong><br>
-                Caixa de senha esconde os caracteres.<br>
-                Podemos alternar entre "password" e "text" para mostrar ou ocultar a senha.<br>
+</code></pre>
+            <br>
+            <p><strong>Resumo:</strong>
+                Caixa de senha esconde os caracteres.
+                Podemos alternar entre "password" e "text" para mostrar ou ocultar a senha.
             </p>
         </article>
 
         <article id="caixa-de-busca">
-            <h2>Caixa de Busca<br></h2>
-
-            <p><strong>Explicação:</strong><br>
-                O campo de busca ajuda o usuário a encontrar algo dentro do site.<br>
-                É como uma lupa em um livro: você digita e ele procura pelo conteúdo desejado.<br>
+            <h2>Caixa de Busca</h2>
+            <br>
+            <p><strong>Explicação:</strong>
+                O campo de busca ajuda o usuário a encontrar algo dentro do site.
+                É como uma lupa em um livro: você digita e ele procura pelo conteúdo desejado.
             </p>
-
-            <h3>Exemplo prático<br></h3>
+            <br>
+            <h3>Exemplo prático</h3>
             <pre><code>&lt;input type="search" id="busca" 
  placeholder="Buscar..."&gt;
 
@@ -179,11 +179,11 @@ busca.addEventListener("input", () =&gt; {
   console.log("Procurando por:", busca.value);
 });
 &lt;/script&gt;
-</code></pre><br>
-
-            <p><strong>Resumo:</strong><br>
-                Caixa de busca permite digitar termos para localizar informações.<br>
-                Usada em sites, lojas virtuais e aplicativos.<br>
+</code></pre>
+            <br>
+            <p><strong>Resumo:</strong>
+                Caixa de busca permite digitar termos para localizar informações.
+                Usada em sites, lojas virtuais e aplicativos.
             </p>
         </article>
 
