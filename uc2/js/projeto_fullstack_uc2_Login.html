@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="../../images/logo_aba.png">
-    <link rel="stylesheet" href="../../css/uc2/js/projeto_fullstack_uc2_dom.css">
+    <link rel="stylesheet" href="../../css/uc2/js/projeto_fullstack_uc2_login.css">
 
-    <title>Dom</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                     <a id="acesso" href="../../index.html">HOME</a>
                     <a id="acesso" href="../../uc2/projeto_fullstack_uc2.html">UC2</a>
                     <p>JS</p>
-                    <p>DOM</p>
+                    <p>Login</p>
                 </li>
 
             </ul>
@@ -37,128 +37,153 @@
 
     <section>
 
-        <article id="dom">
-            <h2>O que é o DOM (Modelo de objetos do documento)</h2><br>
+        <article id="refatoracao">
+            <h2>Refatoração<br></h2>
 
             <p><strong>Explicação:</strong><br>
-                O DOM é como uma "árvore genealógica" dos elementos de uma página HTML.<br>
-                Cada tag (como <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>) é tratada como
-                um objeto dentro dessa árvore.<br>
-                Isso permite que o JavaScript consiga acessar e manipular esses elementos, alterando conteúdo, estilos e
-                até criando novos nós.<br>
-            </p><br>
+                Refatorar significa melhorar ou reescrever um código já existente sem mudar sua função.<br>
+                É como arrumar seu quarto: você não troca os móveis de lugar, mas deixa tudo mais limpo e
+                organizado.<br>
+            </p>
 
-            <h3>Estrutura do DOM</h3><br>
-            <ul class="lista">
-                <li>Raiz: <code>&lt;html&gt;</code></li>
-                <li>Filhos diretos: <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code></li>
-                <li>Netos: <code>&lt;title&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, etc.</li>
-            </ul><br>
+            <h3>Exemplo prático<br></h3>
+            <pre><code>// Antes
+let x = 1; let y = 2; let z = x + y;
 
-            <h3>Exemplo prático</h3><br>
-            <pre><code>// Procurando elementos no DOM
-const exemplo01 = document.querySelector("#exemplo1");
-const mensagem01 = document.querySelector("#mensagem01");
-const pagina = document.querySelector("body");
-
-console.log(exemplo01);
-console.log(mensagem01);
-console.log(pagina);
+// Depois da refatoração
+let x = 1;
+let y = 2;
+let soma = x + y;
 </code></pre><br>
 
             <p><strong>Resumo:</strong><br>
-                O DOM transforma o HTML em uma árvore de objetos manipuláveis.<br>
-                Com ele, podemos selecionar, modificar e interagir com qualquer parte da página.<br>
-                É a ponte entre HTML (estrutura) e JavaScript (funcionalidade).<br>
+                Refatorar = deixar o código mais claro e organizado.<br>
+                Não muda o resultado final, apenas melhora a forma de escrever.<br>
             </p>
         </article>
 
-        <article id="seletores">
-            <h2>Seletores no DOM</h2><br>
+        <article id="metodos-de-classe">
+            <h2>Métodos de Classe: add, remove e toggle<br></h2>
 
             <p><strong>Explicação:</strong><br>
-                Para manipular o DOM, precisamos "apontar" para o elemento correto.<br>
-                Os seletores são ferramentas que nos ajudam a encontrar esses elementos.<br>
-            </p><br>
+                Esses métodos são usados para adicionar, remover ou alternar classes em elementos HTML.<br>
+                Imagine que as classes são "etiquetas" que grudamos em um objeto. Podemos ligar, desligar ou alternar
+                essas etiquetas.<br>
+            </p>
 
-            <h3>Tipos de Seletores</h3><br>
             <ul class="lista">
-                <li><code>querySelector()</code> → seleciona o primeiro elemento que corresponde ao seletor.</li>
-                <li><code>querySelectorAll()</code> → seleciona vários elementos.</li>
-                <li><code>getElementById()</code> → seleciona um elemento específico pelo ID.</li>
+                <li><strong>add:</strong> Liga (adiciona uma classe)</li>
+                <li><strong>remove:</strong> Desliga (remove uma classe)</li>
+                <li><strong>toggle:</strong> Alterna (liga ou desliga, dependendo do estado atual)</li>
             </ul><br>
 
-            <h3>Exemplo prático</h3><br>
-            <pre><code>// Selecionando diferentes formas
-const item = document.querySelector("p"); // primeiro parágrafo
-const lista = document.querySelectorAll("li"); // todos os itens de lista
-const titulo = document.getElementById("titulo-principal"); // por ID
+            <h3>Exemplo prático<br></h3>
+            <pre><code>const caixa = document.querySelector("#caixa");
+
+// Liga
+caixa.classList.add("ativo");
+
+// Desliga
+caixa.classList.remove("ativo");
+
+// Alterna
+caixa.classList.toggle("ativo");
 </code></pre><br>
 
             <p><strong>Resumo:</strong><br>
-                Os seletores permitem "encontrar" os elementos que queremos manipular.<br>
-                Podemos escolher por tag, classe, ID ou até combinações de seletores.<br>
+                add = ligar uma classe.<br>
+                remove = desligar uma classe.<br>
+                toggle = alternar entre ligar e desligar.<br>
             </p>
         </article>
 
-        <article id="eventos">
-            <h2>Eventos em JavaScript</h2><br>
+        <article id="dialog">
+            <h2>Dialog (Janela de Diálogo)<br></h2>
 
             <p><strong>Explicação:</strong><br>
-                Um evento é como um "sinal" de que algo aconteceu na página.<br>
-                Pode ser um clique, uma tecla pressionada, a rolagem ou o carregamento da página.<br>
-                O JavaScript permite "ouvir" esses eventos e reagir a eles.<br>
-            </p><br>
+                O elemento <code>&lt;dialog&gt;</code> é usado para criar janelas modais.<br>
+                É como uma caixa de recado que aparece na frente da página, pedindo atenção do usuário.<br>
+            </p>
 
-            <h3>Exemplos comuns de eventos</h3><br>
-            <ul class="lista">
-                <li>Clique do mouse</li>
-                <li>Pressionar teclas</li>
-                <li>Toque na tela</li>
-                <li>Rolagem da página</li>
-                <li>Carregamento da página</li>
-            </ul><br>
+            <h3>Exemplo prático<br></h3>
+            <pre><code>&lt;dialog id="janela"&gt;
+  &lt;p&gt;Bem-vindo!&lt;/p&gt;
+&lt;/dialog&gt;
 
-            <h3>Função para monitorar eventos</h3><br>
-            <pre><code>// Criando um evento de clique
-const exemplo01 = document.querySelector("#exemplo1");
+&lt;button id="abrir"&gt;Abrir&lt;/button&gt;
 
-exemplo01.addEventListener("click", function() {
-  alert("Você clicou no exemplo!");
+&lt;script&gt;
+const janela = document.querySelector("#janela");
+const abrir = document.querySelector("#abrir");
+
+abrir.addEventListener("click", () =&gt; {
+  janela.showModal();
 });
+&lt;/script&gt;
 </code></pre><br>
 
             <p><strong>Resumo:</strong><br>
-                Eventos são acontecimentos que disparam ações no código.<br>
-                O <code>addEventListener</code> é a forma mais comum de "ouvir" e reagir a esses eventos.<br>
-                Isso torna a página interativa e dinâmica.<br>
+                Dialog = janela de diálogo.<br>
+                Usada para mostrar informações ou pedir uma ação ao usuário.<br>
             </p>
         </article>
 
-        <article id="modo-noturno">
-            <h2>Exemplo: Criando um Modo Noturno</h2><br>
+        <article id="caixa-de-senha">
+            <h2>Caixa de Senha<br></h2>
 
             <p><strong>Explicação:</strong><br>
-                Podemos usar eventos para criar recursos práticos, como alternar entre modo claro e escuro em um
-                site.<br>
-                Usaremos o método <code>toggle()</code> para alternar uma classe no <code>body</code> sempre que um
-                botão for clicado.<br>
-            </p><br>
+                O campo de senha esconde os caracteres digitados para garantir privacidade.<br>
+                Podemos adicionar um botão para mostrar ou esconder a senha quando necessário.<br>
+            </p>
 
-            <h3>Exemplo prático</h3><br>
-            <pre><code>// Selecionando botão e body
-const botao = document.querySelector("#btn-noturno");
-const body = document.querySelector("body");
+            <h3>Exemplo prático<br></h3>
+            <pre><code>&lt;input type="password" id="senha"&gt;
+&lt;button id="mostrar"&gt;Mostrar senha&lt;/button&gt;
 
-// Criando evento de clique
-botao.addEventListener("click", function() {
-  body.classList.toggle("modo-escuro");
+&lt;script&gt;
+const senha = document.querySelector("#senha");
+const botao = document.querySelector("#mostrar");
+
+botao.addEventListener("click", () =&gt; {
+  if (senha.type === "password") {
+    senha.type = "text";
+  } else {
+    senha.type = "password";
+  }
 });
+&lt;/script&gt;
 </code></pre><br>
 
             <p><strong>Resumo:</strong><br>
-                O método <code>toggle()</code> alterna uma classe: se ela existir, remove; se não existir, adiciona.<br>
-                Esse é um jeito simples de criar o "modo noturno" em qualquer site.<br>
+                Caixa de senha esconde os caracteres.<br>
+                Podemos alternar entre "password" e "text" para mostrar ou ocultar a senha.<br>
+            </p>
+        </article>
+
+        <article id="caixa-de-busca">
+            <h2>Caixa de Busca<br></h2>
+
+            <p><strong>Explicação:</strong><br>
+                O campo de busca ajuda o usuário a encontrar algo dentro do site.<br>
+                É como uma lupa em um livro: você digita e ele procura pelo conteúdo desejado.<br>
+            </p>
+
+            <h3>Exemplo prático<br></h3>
+            <pre><code>&lt;input type="search" id="busca" 
+ placeholder="Buscar..."&gt;
+
+&lt;script&gt;
+const busca = document.querySelector("#busca");
+
+busca.addEventListener("input", () =&gt; {
+  console.log("Procurando por:", busca.value);
+});
+&lt;/script&gt;
+</code></pre><br>
+
+            <p><strong>Resumo:</strong><br>
+                Caixa de busca permite digitar termos para localizar informações.<br>
+                Usada em sites, lojas virtuais e aplicativos.<br>
             </p>
         </article>
 
