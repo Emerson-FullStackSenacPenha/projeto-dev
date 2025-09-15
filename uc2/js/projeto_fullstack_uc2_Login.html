@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../../images/logo_aba.png">
+    <link rel="stylesheet" href="../../css/uc2/js/projeto_fullstack_uc2_dom.css">
+
+    <title>Dom</title>
+</head>
+
+<body>
+
+    <header id="topo">
+
+        <img id="img_topo" src="../../images/Titulo Botão.png"
+            alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
+
+        <nav>
+
+            <ul>
+
+                <li id="menu">
+                    <a id="acesso" href="../../index.html">HOME</a>
+                    <a id="acesso" href="../../uc2/projeto_fullstack_uc2.html">UC2</a>
+                    <p>JS</p>
+                    <p>DOM</p>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section>
+
+        <article id="dom">
+            <h2>O que é o DOM (Modelo de objetos do documento)</h2><br>
+
+            <p><strong>Explicação:</strong><br>
+                O DOM é como uma "árvore genealógica" dos elementos de uma página HTML.<br>
+                Cada tag (como <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>) é tratada como
+                um objeto dentro dessa árvore.<br>
+                Isso permite que o JavaScript consiga acessar e manipular esses elementos, alterando conteúdo, estilos e
+                até criando novos nós.<br>
+            </p><br>
+
+            <h3>Estrutura do DOM</h3><br>
+            <ul class="lista">
+                <li>Raiz: <code>&lt;html&gt;</code></li>
+                <li>Filhos diretos: <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code></li>
+                <li>Netos: <code>&lt;title&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, etc.</li>
+            </ul><br>
+
+            <h3>Exemplo prático</h3><br>
+            <pre><code>// Procurando elementos no DOM
+const exemplo01 = document.querySelector("#exemplo1");
+const mensagem01 = document.querySelector("#mensagem01");
+const pagina = document.querySelector("body");
+
+console.log(exemplo01);
+console.log(mensagem01);
+console.log(pagina);
+</code></pre><br>
+
+            <p><strong>Resumo:</strong><br>
+                O DOM transforma o HTML em uma árvore de objetos manipuláveis.<br>
+                Com ele, podemos selecionar, modificar e interagir com qualquer parte da página.<br>
+                É a ponte entre HTML (estrutura) e JavaScript (funcionalidade).<br>
+            </p>
+        </article>
+
+        <article id="seletores">
+            <h2>Seletores no DOM</h2><br>
+
+            <p><strong>Explicação:</strong><br>
+                Para manipular o DOM, precisamos "apontar" para o elemento correto.<br>
+                Os seletores são ferramentas que nos ajudam a encontrar esses elementos.<br>
+            </p><br>
+
+            <h3>Tipos de Seletores</h3><br>
+            <ul class="lista">
+                <li><code>querySelector()</code> → seleciona o primeiro elemento que corresponde ao seletor.</li>
+                <li><code>querySelectorAll()</code> → seleciona vários elementos.</li>
+                <li><code>getElementById()</code> → seleciona um elemento específico pelo ID.</li>
+            </ul><br>
+
+            <h3>Exemplo prático</h3><br>
+            <pre><code>// Selecionando diferentes formas
+const item = document.querySelector("p"); // primeiro parágrafo
+const lista = document.querySelectorAll("li"); // todos os itens de lista
+const titulo = document.getElementById("titulo-principal"); // por ID
+</code></pre><br>
+
+            <p><strong>Resumo:</strong><br>
+                Os seletores permitem "encontrar" os elementos que queremos manipular.<br>
+                Podemos escolher por tag, classe, ID ou até combinações de seletores.<br>
+            </p>
+        </article>
+
+        <article id="eventos">
+            <h2>Eventos em JavaScript</h2><br>
+
+            <p><strong>Explicação:</strong><br>
+                Um evento é como um "sinal" de que algo aconteceu na página.<br>
+                Pode ser um clique, uma tecla pressionada, a rolagem ou o carregamento da página.<br>
+                O JavaScript permite "ouvir" esses eventos e reagir a eles.<br>
+            </p><br>
+
+            <h3>Exemplos comuns de eventos</h3><br>
+            <ul class="lista">
+                <li>Clique do mouse</li>
+                <li>Pressionar teclas</li>
+                <li>Toque na tela</li>
+                <li>Rolagem da página</li>
+                <li>Carregamento da página</li>
+            </ul><br>
+
+            <h3>Função para monitorar eventos</h3><br>
+            <pre><code>// Criando um evento de clique
+const exemplo01 = document.querySelector("#exemplo1");
+
+exemplo01.addEventListener("click", function() {
+  alert("Você clicou no exemplo!");
+});
+</code></pre><br>
+
+            <p><strong>Resumo:</strong><br>
+                Eventos são acontecimentos que disparam ações no código.<br>
+                O <code>addEventListener</code> é a forma mais comum de "ouvir" e reagir a esses eventos.<br>
+                Isso torna a página interativa e dinâmica.<br>
+            </p>
+        </article>
+
+        <article id="modo-noturno">
+            <h2>Exemplo: Criando um Modo Noturno</h2><br>
+
+            <p><strong>Explicação:</strong><br>
+                Podemos usar eventos para criar recursos práticos, como alternar entre modo claro e escuro em um
+                site.<br>
+                Usaremos o método <code>toggle()</code> para alternar uma classe no <code>body</code> sempre que um
+                botão for clicado.<br>
+            </p><br>
+
+            <h3>Exemplo prático</h3><br>
+            <pre><code>// Selecionando botão e body
+const botao = document.querySelector("#btn-noturno");
+const body = document.querySelector("body");
+
+// Criando evento de clique
+botao.addEventListener("click", function() {
+  body.classList.toggle("modo-escuro");
+});
+</code></pre><br>
+
+            <p><strong>Resumo:</strong><br>
+                O método <code>toggle()</code> alterna uma classe: se ela existir, remove; se não existir, adiciona.<br>
+                Esse é um jeito simples de criar o "modo noturno" em qualquer site.<br>
+            </p>
+        </article>
+
+    </section>
+
+    <footer>
+
+        <div class="bola">
+            <a href="../../uc2/projeto_fullstack_uc2.html"><img class="logo" src="../../images/logos/Left.png"
+                    alt="Voltar"></a>
+        </div>
+
+        <div class="bola">
+            <a href="../../index.html"><img class="logo" src="../../images/logos/Home.png" alt="Home"></a>
+        </div>
+
+        <div class="bola">
+            <a href="#topo"><img class="logo" src="../../images/logos/Up.png" alt="Topo"></a>
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>
