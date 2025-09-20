@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" href="../images/logo_aba.png">
     <link rel="stylesheet" href="../css/uc1/projeto_fullstack_uc1.css">
 
     <title>UC4 - Aplicações back-end</title>
 
 </head>
+
 <body>
-    
+
     <header id="topo">
 
-        <img id="img_topo" src="../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
+        <img id="img_topo" src="../images/Titulo Botão.png"
+            alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
 
         <nav>
 
@@ -34,7 +37,166 @@
 
     <section>
 
-        
+        <article>
+            <h2>Configurando o Ambiente de Desenvolvimento</h2><br>
+
+            <h3>XAMPP</h3>
+            <ul class="lista">
+                <li>Pacote que contém PHP, MySQL, Apache e Perl</li>
+                <li>Apache: simula um servidor web no computador</li>
+                <li>MySQL: banco de dados para armazenar informações</li>
+            </ul><br>
+
+            <h3>Preparando o Ambiente</h3>
+            <ul class="lista">
+                <li>Instalar o XAMPP e marcar todos os softwares durante a instalação</li>
+                <li>Criar a pasta do projeto: <br>C:\xampp\htdocs\introducao_php</li>
+                <li>Iniciar o Apache no XAMPP</li>
+                <li>Instalar extensão "Intelephense" no VS Code para entender PHP</li>
+                <li>Acessar pelo navegador: <br>http://localhost/introducao_php/ola_mundo.php</li>
+            </ul><br>
+
+            <h3>JavaScript x PHP</h3>
+            <ul class="lista">
+                <li>JavaScript: roda no navegador, código visível</li>
+                <li>PHP: roda no servidor, mais seguro e invisível ao usuário</li>
+            </ul><br>
+
+        </article>
+
+        <article>
+            <h2>JSON – Organização de Dados</h2><br>
+
+            <h3>O que é JSON?</h3>
+            <ul class="lista">
+                <li>JSON (JavaScript Object Notation) é uma forma de organizar dados</li>
+                <li>Permite que sistemas diferentes troquem informações de forma simples</li>
+                <li>É leve, fácil de ler e entender tanto para humanos quanto para máquinas</li>
+            </ul><br>
+
+            <h3>Estrutura do JSON</h3>
+            <ul class="lista">
+                <li>Baseado em chave-valor:</li>
+                <pre>
+{
+  "nome": "João",
+  "idade": 25
+}
+    </pre>
+                <li>Valores podem ser números, textos, arrays ou outros objetos</li>
+            </ul><br>
+
+            <h3>Exemplo de Array em JSON</h3>
+            <pre>
+{
+  "frutas": ["maçã", "banana", "laranja"]
+}
+  </pre><br>
+
+            <h3>Analogia</h3>
+            Imagine JSON como uma **caixa de organizador**:<br>
+            <ul class="lista">
+                <li>Cada chave é um compartimento com um rótulo</li>
+                <li>O valor é o objeto guardado dentro do compartimento</li>
+                <li>Facilita encontrar e trocar informações rapidamente</li>
+            </ul><br>
+
+            <h3>Uso Prático</h3>
+            <ul class="lista">
+                <li>APIs usam JSON para enviar dados entre sistemas</li>
+                <li>JavaScript e PHP conseguem ler e escrever JSON facilmente</li>
+                <li>Permite salvar dados temporários ou enviar informações para um servidor</li>
+            </ul>
+        </article>
+
+
+        <article>
+            <h2>Iniciando com PHP</h2><br>
+
+            <h3>Estrutura Básica</h3>
+            <pre>
+&lt;?php
+    // Código PHP aqui
+?&gt;
+  </pre><br>
+
+            <h3>Exemplos de Saída</h3>
+            <pre>
+&lt;?php 
+    echo "Olá!";
+?&gt;
+
+ou 
+
+&lt;?= "Olá!" ?&gt;
+  </pre><br>
+
+            <h3>Como o Apache Interage</h3>
+            <ul class="lista">
+                <li>Recebe pedidos do navegador</li>
+                <li>Envia os dados para o PHP processar</li>
+                <li>Retorna o resultado para o navegador</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Conceitos Fundamentais de Programação</h2><br>
+
+            <h3>Componentes de uma Linguagem</h3>
+            <ul class="lista">
+                <li>Entrada: organizar e entender os dados que chegam</li>
+                <li>Processamento: aplicar lógica e funções para resolver problemas</li>
+                <li>Abstração: transformar problemas reais em elementos que o computador entende</li>
+                <li>Saída: mostrar o resultado ao usuário, por exemplo, na tela</li>
+            </ul><br>
+
+            <h3>Analogia</h3>
+            Imagine a programação como uma fábrica:<br>
+            <ul class="lista">
+                <li>Entrada = Matéria-prima (dados)</li>
+                <li>Processamento = Máquinas que transformam os dados (funções e lógica)</li>
+                <li>Saída = Produto final entregue ao cliente (resultado na tela)</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Variáveis no PHP</h2><br>
+
+            <h3>Tipos de Variáveis</h3>
+            <ul class="lista">
+                <li>Simples: guarda um único valor (ex.: número ou texto)</li>
+                <li>Compostas: arrays que guardam múltiplos valores, podem ser indexados ou associativos</li>
+            </ul><br>
+
+            <h3>Características do PHP</h3>
+            <ul class="lista">
+                <li>Alto nível: fácil de entender, próximo da linguagem humana</li>
+                <li>Dínamico: não precisa declarar tipo da variável</li>
+                <li>Interpretado: roda sem precisar compilar</li>
+                <li>Tipagem fraca: tipo da variável pode mudar facilmente</li>
+                <li>Multi-paradigma: permite escrever de várias formas</li>
+                <li>Case sensitive: diferencia maiúsculas de minúsculas</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Fluxo de Programação</h2><br>
+
+            <h3>Resumo</h3>
+            <ul class="lista">
+                <li>Entrada: abstrair o problema e organizar dados</li>
+                <li>Processamento: aplicar lógica e resolver o problema</li>
+                <li>Saída: mostrar resultado ao usuário</li>
+            </ul><br>
+
+            <h3>Exemplo Prático</h3>
+            <pre>
+Entrada: número do usuário
+Processamento: calcular dobro
+Saída: mostrar resultado
+  </pre>
+        </article>
+
 
     </section>
 
@@ -51,4 +213,5 @@
     </footer>
 
 </body>
+
 </html>
