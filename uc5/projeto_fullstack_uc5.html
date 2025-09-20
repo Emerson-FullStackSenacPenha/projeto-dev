@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" href="../images/logo_aba.png">
     <link rel="stylesheet" href="../css/uc1/projeto_fullstack_uc1.css">
 
     <title>UC5 - Banco de dados para web</title>
 
 </head>
+
 <body>
-    
+
     <header id="topo">
 
-        <img id="img_topo" src="../images/Titulo Botão.png" alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
+        <img id="img_topo" src="../images/Titulo Botão.png"
+            alt="Foto de um botão com o texto Desenvolvedor Full-Stack no meio">
 
         <nav>
 
@@ -34,7 +37,318 @@
 
     <section>
 
-        
+        <article id="info_uc">
+
+            <h1>UC5 - Implementando banco de dados para web - 36h</h1>
+
+            <p>ensina os fundamentos e práticas de criação, configuração e gerenciamento de bancos de dados voltados
+                para aplicações web, abordando modelagem de dados, comandos SQL, integração com sistemas web e boas
+                práticas de armazenamento e recuperação de informações, capacitando o aluno a estruturar e manipular
+                dados de forma eficiente em projetos web.</p>
+
+            <div>
+
+                <figure id="infopro">
+
+                    <img id="foto" src="../images/tiago.png" alt="Professor Tiago Bezerra">
+
+                    <figcaption>Tiago Bezerra</figcaption>
+
+                </figure>
+
+            </div>
+
+        </article>
+
+        <article>
+            <h2>Conceito e Tipos de Dados</h2>
+            <p>Em programação, dados podem ser organizados de duas formas principais: Relacionais e Não Relacionais.</p>
+            <br>
+            <h3>Relacionais</h3>
+
+            <p>Organizados em tabelas, linhas e colunas. Cada linha + tabela forma um <strong>registro</strong>.</p>
+            <br>
+            <ul class="lista">
+                <li>Tabela: conjunto de registros</li>
+                <li>Linha: cada registro</li>
+                <li>Campo: nome de cada coluna (ex: nome, telefone, e-mail)</li>
+            </ul>
+            <br>
+            <h3>Não Relacionais</h3>
+            <p>Organização flexível, como arrays e objetos, podendo ter objetos dentro de objetos ou arrays.</p>
+            <br>
+            <ul class="lista">
+                <li>Ex: MongoDB</li>
+                <li>Redis</li>
+            </ul>
+            <br>
+            <p>Observação: sessões em PHP e JS armazenam dados temporariamente na máquina do usuário.</p>
+        </article>
+
+        <article>
+            <h2>Modelos de Banco de Dados</h2>
+            <br>
+            <p>No curso, estudamos principalmente o <strong>Modelo Relacional</strong>, que organiza os dados em
+                tabelas,
+                linhas e colunas. Cada tabela representa uma entidade, cada linha um registro, e cada coluna um
+                atributo.</p>
+            <p>Analogia: é como uma planilha do Excel, onde cada linha é um item e cada coluna uma característica.</p>
+            <br>
+            <h3>Outros Modelos Comuns</h3>
+            <br>
+            <ul class="lista">
+                <li><strong>Não Relacional (NoSQL):</strong> mais flexível, como objetos ou arrays dentro de objetos.
+                    Ex: MongoDB.</li>
+                <li><strong>Hierárquico:</strong> dados organizados em árvore, como pastas e subpastas.</li>
+                <li><strong>Em Rede:</strong> similar ao hierárquico, mas permite múltiplas conexões entre os registros.
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Modelagem de Dados</h2>
+            <p>Modelagem ajuda a organizar dados de forma lógica antes de criar o banco.</p>
+            <br>
+            <h3>Modelagem Conceitual</h3>
+            <p>Usa o MER (Modelo de Entidade e Relacionamento).</p>
+            <br>
+            <ul class="lista">
+                <li>Entidade: algo real, ex: Cliente</li>
+                <li>Atributos: características da entidade, ex: nome, telefone</li>
+                <li>Relacionamentos: como entidades se conectam, ex: Cliente faz Pedido</li>
+            </ul>
+            <br>
+            <h3>DER (Diagrama Entidade-Relacionamento)</h3>
+            <br>
+            <ul class="lista">
+                <li>Retângulo = Entidade</li>
+                <li>Elipse = Atributo</li>
+                <li>Losango = Relacionamento (pode ser uma tabela pivô)</li>
+                <li>Identificador = sublinhado (ex: ID)</li>
+            </ul>
+            <br>
+            <h3>Cardinalidade</h3>
+            <br>
+            <ul class="lista">
+                <li>1:1 = um para um</li>
+                <li>1:N = um para muitos</li>
+                <li>N:N = muitos para muitos</li>
+            </ul>
+            <br>
+            <p>Entidade associativa ajuda a representar relacionamentos N:N.</p>
+        </article>
+
+        <article>
+            <h2>Terminologias e Conceitos</h2>
+            <br>
+            <ul class="lista">
+                <li>Consulta/Query: comandos SQL para buscar dados</li>
+                <li>Comando SELECT: busca dados no banco</li>
+                <li>CRUD: Create, Read, Update, Delete – manipulação de dados</li>
+                <li>BackUp e Restauração: segurança dos dados</li>
+                <li>PDV = Ponto de Vendas</li>
+                <li>Diagrama = documentação do banco de dados</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Dicas de Ferramentas</h2>
+            <br>
+            <ul class="lista">
+                <li>Draw.io: criar diagramas de banco de dados de forma visual</li>
+                <li>Seguir convenções: Entidade em maiúsculo e singular</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Modelagem Lógica de Banco de Dados</h2><br>
+            <p>Modelagem lógica é como desenhar o mapa da sua cidade, mas no mundo dos dados.
+                Você define onde ficam as “casas” (tabelas) e como as “ruas” (relacionamentos) conectam essas casas.</p>
+            <br>
+
+            <h3>Entidades</h3>
+            <p>As entidades são as tabelas do banco de dados. Cada tabela representa algo que você quer guardar
+                informações.</p><br>
+
+            <h3>Atributos</h3>
+            <p>São as colunas das tabelas. Cada coluna tem um tipo de dado específico, como números ou texto.</p><br>
+
+            <h3>Relacionamentos</h3>
+            <p>São as conexões entre tabelas. Usamos chaves primárias e estrangeiras para criar esses vínculos.</p>
+        </article>
+
+        <article>
+            <h2>SQL e Tipagem</h2>
+            <br>
+            <p>SQL é a linguagem usada para conversar com o banco de dados, pense nela como a língua oficial da cidade
+                dos dados. É importante declarar variáveis e usar tipagem forte, ou seja, cada dado deve ter um tipo
+                específico.</p>
+            <br>
+            <h3>Tipos de Dados</h3>
+            <br>
+            <ul class="lista">
+                <li>Texto: varchar (Tamanho variável), char (tamanho fixo), text</li>
+                <li>Numéricos: int, decimal, float</li>
+                <li>Datas/Períodos: date, datetime, timestamp</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Chaves no Banco de Dados</h2><br>
+            <p>As chaves ajudam a organizar e conectar informações entre tabelas.</p><br>
+
+            <h3>Chave Primária (PK)</h3>
+            <p>É o identificador único da tabela. Exemplo: <strong>id</strong></p><br>
+
+            <h3>Chave Estrangeira (FK)</h3>
+            <p>É a referência para a chave primária de outra tabela, permitindo relacionamentos.</p>
+        </article>
+
+        <article>
+            <h2>Boas Práticas de Nomenclatura</h2><br>
+            <ul class="lista">
+                <li>Entidade: nome em minúsculo e no plural</li>
+                <li>Atributo: nome em minúsculo e no singular</li>
+                <li>Tipo de dado: maiúsculo</li>
+                <li>Not Null: define que o campo não pode ser nulo</li>
+                <li>AUTO_INCREMENT: o banco gera automaticamente um identificador</li>
+                <li>DECIMAL(10,2): 10 dígitos no total, sendo 2 dígitos para a parte decimal e 8 dígitos para a parte
+                    inteira.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Relacionamentos Avançados</h2>
+            <br>
+            <p>Quando duas tabelas precisam de uma ligação mais complexa, usamos chaves primárias compostas.</p>
+            <p>Exemplo: uma tabela de vendas que relaciona cliente e produto simultaneamente.</p>
+        </article>
+
+        <article>
+            <h2>Ferramentas e Ambientes</h2><br>
+            <p>MySQL é uma IDE (interface) que facilita escrever e executar SQL,
+                que é a linguagem usada para manipular os dados.</p>
+        </article>
+
+        <article>
+            <h2>Banco de Dados</h2><br>
+            <p>Um banco de dados é como um **armário organizado** onde guardamos informações.
+                Cada tipo de dado precisa de um "espaço" adequado:</p>
+            <br>
+            <h3>Tipos de dados importantes</h3>
+            <br>
+            <ul class="lista">
+                <li>INT = números inteiros<br></li>
+                <li>VARCHAR(255) = texto com tamanho variável, como nomes ou e-mails<br></li>
+                <li>CHAR = texto com tamanho fixo<br></li>
+                <li>TEXT = textos longos<br></li>
+                <li>DECIMAL = números com casas decimais, como preços<br></li>
+                <li>DATE, TIME, DATETIME = datas, horários ou ambos<br></li>
+                <li>ENUM('admin','editor') = lista de opções pré-definidas<br></li>
+                <li>BLOB = usado para guardar arquivos, como imagens ou PDFs<br></li>
+            </ul>
+
+        </article>
+
+        <article>
+            <h2>Armazenamento Seguro de Senhas em PHP</h2><br>
+
+            <h3>O que é Hash?</h3>
+            <p>
+                Um <strong>hash</strong> é como uma “impressão digital” da sua senha, ele transforma qualquer senha em uma sequência fixa de caracteres. Essa transformação é <strong>unidirecional</strong>, não dá para descobrir a senha original a partir do
+                hash.
+            </p>
+            <br>
+            <h3>Exemplo de Hash</h3>
+            <ul class="lista">
+                <li>Senha: 123456</li>
+                <li>Hash SHA-256: 8d969eef6ecad3c29a3a629280e686cff8fab...</li>
+            </ul>
+            <br>
+
+            <h3>Por que usar Hash?</h3>
+            <ul class="lista">
+                <li>Segurança: protege a senha real mesmo se o banco for acessado por terceiros.</li>
+                <li>Proteção contra vazamentos: difícil descobrir a senha original a partir do hash.</li>
+            </ul>
+            <br>
+
+            <h3>Armazenando Hash no Banco de Dados</h3>
+            <p>
+                Para armazenar hashes no MySQL, use uma coluna <strong>VARCHAR(255)</strong>. <br>
+                Isso garante que qualquer hash moderno, como os gerados por <code>password_hash()</code> no PHP, caiba
+                na coluna sem problemas.
+            </p>
+            <br>
+
+            <h3>Resumo Didático</h3>
+            <p>
+                <strong>Resumindo:</strong> nunca guarde senhas em texto puro. <br>
+                Sempre transforme a senha em hash e armazene em <code>VARCHAR(255)</code> no banco. <br>
+                Assim, mesmo em caso de ataque, suas senhas ficam protegidas.
+            </p>
+        </article>
+
+        <article>
+            <h2>Normalização de Banco de Dados</h2><br>
+            É como **arrumar uma prateleira de livros**: organizamos para não ter livros duplicados e facilitar futuras
+            alterações.
+            Benefícios:
+            <ul class="lista">
+                <li>Evita registros duplicados<br></li>
+                <li>Evita inconsistência de informações<br></li>
+                <li>Facilita futuras atualizações e manutenção<br></li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Modelagem Física em SQL</h2>
+            
+            <p>É o mapa real do banco de dados, onde transformamos a ideia (modelagem lógica) em algo que o computador
+            entende.</p>
+            <br>
+            <h3>SGBD - Sistema Gerenciador de Banco de Dados</h3>
+            <p>Programas que armazenam e organizam os dados, como MySQL, SQLite, PostgreSQL, SQL Server e Oracle.
+            Eles usam SQL (Linguagem de Consulta Estruturada) para trabalhar com os dados.</p>
+            <br>
+            <h3>Principais comandos SQL</h3>
+            <ul class="lista">
+                <li>DDL (Definição) = criar e alterar estruturas: CREATE, ALTER<br></li>
+                <li>DML (Manipulação) = trabalhar com dados: INSERT, UPDATE, DELETE<br></li>
+                <li>DQL (Consulta) = buscar dados: SELECT<br></li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Estrutura básica da modelagem física</h2>
+            <br>
+            <h3>Criar banco de dados</h3>
+            <pre>
+CREATE DATABASE nome_do_banco CHARACTER SET utf8mb4;
+  </pre>
+
+            <h3>Selecionar banco para uso</h3>
+            <pre>
+USE nome_do_banco;
+  </pre>
+
+            <h3>Criar tabela</h3>
+            <br>
+            Estrutura de tabela define **colunas, tipos de dados e restrições**:
+            <ul class="lista">
+                <li>Primary Key = identificador único<br></li>
+                <li>Foreign Key = referência a outra tabela<br></li>
+                <li>NOT NULL = campo obrigatório<br></li>
+            </ul>
+
+            <h3>Cuidados</h3>
+            <br>
+            <ul class="lista">
+                <li>Verificar regras de nomenclatura do SGBD<br></li>
+                <li>Escolher tipos de dados adequados<br></li>
+                <li>MySQL não diferencia maiúsculas de minúsculas na linguagem SQL<br></li>
+            </ul>
+        </article>
 
     </section>
 
@@ -51,4 +365,5 @@
     </footer>
 
 </body>
+
 </html>
