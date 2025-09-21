@@ -41,7 +41,7 @@
 
             <h1>UC5 - Implementando banco de dados para web - 36h</h1>
 
-            <p>ensina os fundamentos e práticas de criação, configuração e gerenciamento de bancos de dados voltados
+            <p>Ensina os fundamentos e práticas de criação, configuração e gerenciamento de bancos de dados voltados
                 para aplicações web, abordando modelagem de dados, comandos SQL, integração com sistemas web e boas
                 práticas de armazenamento e recuperação de informações, capacitando o aluno a estruturar e manipular
                 dados de forma eficiente em projetos web.</p>
@@ -61,13 +61,29 @@
         </article>
 
         <article>
-            <h2>Conceito e Tipos de Dados</h2>
-            <p>Em programação, dados podem ser organizados de duas formas principais: Relacionais e Não Relacionais.</p>
+            <h2>Banco de Dados</h2>
+            <p>Um banco de dados é como um <strong>armário organizado</strong> onde guardamos informações, cada tipo de
+                dado precisa de um espaço adequado:</p>
+            <br>
+            <h3>Tipos de dados importantes</h3>
+            <ul class="lista">
+                <li>INT = números inteiros</li>
+                <li>VARCHAR(255) = texto com tamanho variável</li>
+                <li>CHAR = texto com tamanho fixo</li>
+                <li>TEXT = textos longos</li>
+                <li>DECIMAL(10,2) = 10 casas, sendo 2 para decimais</li>
+                <li>DATE, TIME, DATETIME = datas, horários ou ambos</li>
+                <li>ENUM('admin','editor') = lista de opções pré-definidas</li>
+                <li>BLOB = usado para guardar arquivos, como imagens ou PDFs</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Conceito e Tipos de Bancos</h2>
+            <p>Os dados podem ser organizados de duas formas principais: Relacionais e Não Relacionais.</p>
             <br>
             <h3>Relacionais</h3>
-
-            <p>Organizados em tabelas, linhas e colunas. Cada linha + tabela forma um <strong>registro</strong>.</p>
-            <br>
+            <p>Organizados em tabelas, linhas e colunas, como em uma <strong>planilha do Excel</strong>.</p>
             <ul class="lista">
                 <li>Tabela: conjunto de registros</li>
                 <li>Linha: cada registro</li>
@@ -76,278 +92,229 @@
             <br>
             <h3>Não Relacionais</h3>
             <p>Organização flexível, como arrays e objetos, podendo ter objetos dentro de objetos ou arrays.</p>
-            <br>
             <ul class="lista">
-                <li>Ex: MongoDB</li>
+                <li>MongoDB</li>
                 <li>Redis</li>
             </ul>
-            <br>
-            <p>Observação: sessões em PHP e JS armazenam dados temporariamente na máquina do usuário.</p>
         </article>
 
         <article>
             <h2>Modelos de Banco de Dados</h2>
-            <br>
             <p>No curso, estudamos principalmente o <strong>Modelo Relacional</strong>, que organiza os dados em
-                tabelas,
-                linhas e colunas. Cada tabela representa uma entidade, cada linha um registro, e cada coluna um
-                atributo.</p>
-            <p>Analogia: é como uma planilha do Excel, onde cada linha é um item e cada coluna uma característica.</p>
+                tabelas, linhas e colunas, como em uma planilha.</p>
             <br>
             <h3>Outros Modelos Comuns</h3>
-            <br>
             <ul class="lista">
-                <li><strong>Não Relacional (NoSQL):</strong> mais flexível, como objetos ou arrays dentro de objetos.
-                    Ex: MongoDB.</li>
-                <li><strong>Hierárquico:</strong> dados organizados em árvore, como pastas e subpastas.</li>
-                <li><strong>Em Rede:</strong> similar ao hierárquico, mas permite múltiplas conexões entre os registros.
+                <li><strong>Não Relacional (NoSQL):</strong> mais flexível (Ex: MongoDB)</li>
+                <li><strong>Hierárquico:</strong> dados organizados em árvore, como pastas e subpastas</li>
+                <li><strong>Em Rede:</strong> similar ao hierárquico, mas permite múltiplas conexões entre registros
                 </li>
             </ul>
         </article>
 
         <article>
+
             <h2>Modelagem de Dados</h2>
-            <p>Modelagem ajuda a organizar dados de forma lógica antes de criar o banco.</p>
+            <p>A modelagem ajuda a organizar dados de forma estruturada antes de criar o banco, facilitando
+                implementação e manutenção.</p>
             <br>
-            <h3>Modelagem Conceitual</h3>
-            <p>Usa o MER (Modelo de Entidade e Relacionamento).</p>
-            <br>
-            <ul class="lista">
-                <li>Entidade: algo real, ex: Cliente</li>
-                <li>Atributos: características da entidade, ex: nome, telefone</li>
-                <li>Relacionamentos: como entidades se conectam, ex: Cliente faz Pedido</li>
-            </ul>
-            <br>
-            <h3>DER (Diagrama Entidade-Relacionamento)</h3>
+            <h3>Conceitual (MER - Modelo de Entidade-Relacionamento)</h3>
+            <p>Diagrama abstrato de entidades, atributos e relacionamentos, focado no entendimento do negócio. Pode ser
+                feito em ferramentas como <strong>Figma, FigJam</strong> ou até no papel.</p>
             <br>
             <ul class="lista">
-                <li>Retângulo = Entidade</li>
-                <li>Elipse = Atributo</li>
-                <li>Losango = Relacionamento (pode ser uma tabela pivô)</li>
-                <li>Identificador = sublinhado (ex: ID)</li>
+                <li><strong>Retângulo</strong> = representa uma <em>entidade</em>, ou seja, algo real que queremos
+                    armazenar (ex: Cliente, Produto)</li>
+                <li><strong>Elipse</strong> = representa um <em>atributo</em>, característica da entidade (ex: nome,
+                    telefone, preço)</li>
+                <li><strong>Losango</strong> = representa um <em>relacionamento</em> entre entidades (ex: Cliente faz
+                    Pedido)</li>
+                <li><strong>Sublinhado</strong> = indica o <em>identificador/atributo chave</em> da entidade (ex: ID)
+                </li>
             </ul>
             <br>
+            <h3>Lógico (DER - Diagrama Entidade-Relacionamento)</h3>
+            <p>A modelagem lógica transforma o modelo conceitual em estruturas que podem ser implementadas no banco de
+                dados. Ela define tabelas, colunas, tipos de dados e relacionamentos. Comparando com o modelo
+                conceitual:</p>
+            <br>
+            <ul class="lista">
+                <li><strong>Retângulo </strong> → <strong>Tabela </strong>: cada entidade vira uma
+                    tabela concreta no banco.</li>
+                <li><strong>Elipse </strong> → <strong>Coluna/Atributo </strong>: cada atributo da
+                    entidade vira uma coluna da tabela, com tipo de dado definido.</li>
+                <li><strong>Losango </strong> → <strong>Relacionamento (linha) </strong>: relações entre
+                    entidades se tornam chaves estrangeiras e, se necessário, tabelas associativas.</li>
+                <li><strong>Sublinhado </strong> → <strong>Primary Key </strong>: o identificador da
+                    entidade se torna a chave primária da tabela.</li>
+            </ul>
+            <br>
+            <h3>Físico (Implementação no Banco de Dados)</h3>
+            <p>Implementa o modelo lógico no SGBD real, como <strong>MySQL, PostgreSQL, SQLite ou Oracle</strong>,
+                utilizando SQL, índices e constraints.</p>
+            <br>
+            <ul class="lista">
+                <li><strong>Tabela</strong> = representa uma entidade concreta no banco
+                    <pre>CREATE TABLE Cliente (...);</pre>
+                </li><br>
+                <li><strong>Coluna</strong> = representa um atributo da tabela, com tipo de dado definido (ex: VARCHAR,
+                    INT, DATE)
+                    <pre>nome VARCHAR(100) NOT NULL;</pre>
+                </li><br>
+                <li><strong>Primary Key (PK)</strong> = identificador único da tabela (ex: id_cliente)
+                    <pre>id_cliente INT AUTO_INCREMENT PRIMARY KEY;</pre>
+                </li><br>
+                <li><strong>Foreign Key (FK)</strong> = referência a outra tabela para criar relacionamentos
+                    <pre>FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente);</pre>
+                </li><br>
+                <li><strong>Índice (INDEX)</strong> = acelera buscas e consultas no banco
+                    <pre>CREATE INDEX idx_nome ON Cliente(nome);</pre>
+                </li><br>
+                <li><strong>Constraints</strong> = regras de integridade, como NOT NULL, UNIQUE ou CHECK
+                    <pre>email VARCHAR(100) UNIQUE NOT NULL;</pre>
+                </li>
+            </ul>
+
+        </article>
+
+        <article>
+
             <h3>Cardinalidade</h3>
-            <br>
             <ul class="lista">
                 <li>1:1 = um para um</li>
                 <li>1:N = um para muitos</li>
                 <li>N:N = muitos para muitos</li>
             </ul>
             <br>
-            <p>Entidade associativa ajuda a representar relacionamentos N:N.</p>
+            <h3>Entidade associativa</h3>
+            <p>Uma tabela intermediária que conecta duas tabelas em um relacionamento N:N.</p>
+
         </article>
 
         <article>
-            <h2>Terminologias e Conceitos</h2>
+
+            <h2>SQL</h2>
+            <p>SQL é a linguagem usada para conversar com o banco, cada coluna deve ter um <strong>tipo de dado
+                    específico</strong>, o que garante consistência e precisão nas informações.</p>
             <br>
+            <h3>SGBD</h3>
+            <p>Programas que armazenam e organizam dados, como MySQL, SQLite, PostgreSQL, SQL Server e Oracle.</p>
+            <br>
+            <h3>Principais comandos SQL</h3>
             <ul class="lista">
-                <li>Consulta/Query: comandos SQL para buscar dados</li>
-                <li>Comando SELECT: busca dados no banco</li>
-                <li>CRUD: Create, Read, Update, Delete – manipulação de dados</li>
-                <li>BackUp e Restauração: segurança dos dados</li>
-                <li>PDV = Ponto de Vendas</li>
-                <li>Diagrama = documentação do banco de dados</li>
+                <li>DDL = criar e alterar estruturas (CREATE, ALTER)</li>
+                <li>DML = manipular dados (INSERT, UPDATE, DELETE)</li>
+                <li>DQL = consultar dados (SELECT)</li>
             </ul>
+
         </article>
 
         <article>
-            <h2>Dicas de Ferramentas</h2>
+            <h2>Chaves no Banco de Dados</h2>
+            <p>As chaves organizam e conectam informações entre tabelas.</p>
             <br>
-            <ul class="lista">
-                <li>Draw.io: criar diagramas de banco de dados de forma visual</li>
-                <li>Seguir convenções: Entidade em maiúsculo e singular</li>
-            </ul>
-        </article>
-
-        <article>
-            <h2>Modelagem Lógica de Banco de Dados</h2><br>
-            <p>Modelagem lógica é como desenhar o mapa da sua cidade, mas no mundo dos dados.
-                Você define onde ficam as “casas” (tabelas) e como as “ruas” (relacionamentos) conectam essas casas.</p>
-            <br>
-
-            <h3>Entidades</h3>
-            <p>As entidades são as tabelas do banco de dados. Cada tabela representa algo que você quer guardar
-                informações.</p><br>
-
-            <h3>Atributos</h3>
-            <p>São as colunas das tabelas. Cada coluna tem um tipo de dado específico, como números ou texto.</p><br>
-
-            <h3>Relacionamentos</h3>
-            <p>São as conexões entre tabelas. Usamos chaves primárias e estrangeiras para criar esses vínculos.</p>
-        </article>
-
-        <article>
-            <h2>SQL e Tipagem</h2>
-            <br>
-            <p>SQL é a linguagem usada para conversar com o banco de dados, pense nela como a língua oficial da cidade
-                dos dados. É importante declarar variáveis e usar tipagem forte, ou seja, cada dado deve ter um tipo
-                específico.</p>
-            <br>
-            <h3>Tipos de Dados</h3>
-            <br>
-            <ul class="lista">
-                <li>Texto: varchar (Tamanho variável), char (tamanho fixo), text</li>
-                <li>Numéricos: int, decimal, float</li>
-                <li>Datas/Períodos: date, datetime, timestamp</li>
-            </ul>
-        </article>
-
-        <article>
-            <h2>Chaves no Banco de Dados</h2><br>
-            <p>As chaves ajudam a organizar e conectar informações entre tabelas.</p><br>
-
             <h3>Chave Primária (PK)</h3>
-            <p>É o identificador único da tabela. Exemplo: <strong>id</strong></p><br>
-
+            <p>Identificador único da tabela. Exemplo: <strong>id</strong></p>
+            <br>
             <h3>Chave Estrangeira (FK)</h3>
-            <p>É a referência para a chave primária de outra tabela, permitindo relacionamentos.</p>
-        </article>
-
-        <article>
-            <h2>Boas Práticas de Nomenclatura</h2><br>
-            <ul class="lista">
-                <li>Entidade: nome em minúsculo e no plural</li>
-                <li>Atributo: nome em minúsculo e no singular</li>
-                <li>Tipo de dado: maiúsculo</li>
-                <li>Not Null: define que o campo não pode ser nulo</li>
-                <li>AUTO_INCREMENT: o banco gera automaticamente um identificador</li>
-                <li>DECIMAL(10,2): 10 dígitos no total, sendo 2 dígitos para a parte decimal e 8 dígitos para a parte
-                    inteira.</li>
-            </ul>
+            <p>Referência para a chave primária de outra tabela.</p>
         </article>
 
         <article>
             <h2>Relacionamentos Avançados</h2>
-            <br>
-            <p>Quando duas tabelas precisam de uma ligação mais complexa, usamos chaves primárias compostas.</p>
-            <p>Exemplo: uma tabela de vendas que relaciona cliente e produto simultaneamente.</p>
+            <p>Quando duas tabelas precisam de ligação mais complexa, usamos chaves primárias compostas.</p>
+            <p><strong>Exemplo:</strong> tabela de vendas que relaciona cliente e produto simultaneamente.</p>
         </article>
 
         <article>
-            <h2>Ferramentas e Ambientes</h2><br>
-            <p>MySQL é uma IDE (interface) que facilita escrever e executar SQL,
-                que é a linguagem usada para manipular os dados.</p>
-        </article>
-
-        <article>
-            <h2>Banco de Dados</h2><br>
-            <p>Um banco de dados é como um **armário organizado** onde guardamos informações.
-                Cada tipo de dado precisa de um "espaço" adequado:</p>
+            <h2>Normalização</h2>
+            <p>É como <strong>arrumar uma prateleira de livros</strong>: organizamos para não ter duplicação e facilitar
+                alterações.</p>
             <br>
-            <h3>Tipos de dados importantes</h3>
-            <br>
+            <h3>Benefícios</h3>
             <ul class="lista">
-                <li>INT = números inteiros<br></li>
-                <li>VARCHAR(255) = texto com tamanho variável, como nomes ou e-mails<br></li>
-                <li>CHAR = texto com tamanho fixo<br></li>
-                <li>TEXT = textos longos<br></li>
-                <li>DECIMAL = números com casas decimais, como preços<br></li>
-                <li>DATE, TIME, DATETIME = datas, horários ou ambos<br></li>
-                <li>ENUM('admin','editor') = lista de opções pré-definidas<br></li>
-                <li>BLOB = usado para guardar arquivos, como imagens ou PDFs<br></li>
+                <li>Evita registros duplicados</li>
+                <li>Evita inconsistência de informações</li>
+                <li>Facilita atualizações e manutenção</li>
             </ul>
+        </article>
+
+        <article>
+
+            <h2>Forma Normal</h2>
+            <p>São conjunto de regras usadas para organizar um banco de dados relacional, que são tipo de bancos que
+                organiza as informações em tabelas(linhas e colunas), podendo se relacionar com outras tabelas através
+                de chaves primárias e chaves. O objetivo é evitar repetições desnecessárias, deixar os dados corretos e
+                organizados de um jeito fácil de entender e usar. Existem seis formas normais principais reconhecidas na
+                teoria, mais a Forma Normal de Boyce-Codd que é uma variação da 3ª. As três primeiras são:</p>
+            <br>
+
+            <h3>1ª Forma Normal:</h3>
+            <p>Cada campo deve ter apenas um valor, sem listas ou repetições.</p>
+            <br>
+
+            <h3>2ª Forma Normal:</h3>
+            <p>Todos os campos dependem totalmente da chave primária, evitando duplicação em chaves compostas.</p>
+            <br>
+
+            <h3>3ª Forma Normal</h3>
+            <p>Não pode haver dependência de campos que não sejam chave, eliminando redundâncias entre atributos.</p>
 
         </article>
 
         <article>
-            <h2>Armazenamento Seguro de Senhas em PHP</h2><br>
+            <h2>Boas Práticas de Nomenclatura</h2>
+            <ul class="lista">
+                <li>Entidade: nome em minúsculo e no plural</li>
+                <li>Atributo: nome em minúsculo e no singular</li>
+                <li>Tipo de dado: em maiúsculo</li>
+                <li>NOT NULL: campo obrigatório</li>
+                <li>AUTO_INCREMENT: gera identificador automático</li>
+                <li>DECIMAL(10,2): 10 dígitos no total, 2 para decimais e 8 para inteiros</li>
+            </ul>
+        </article>
 
+        <article>
+            <h2>Terminologias e Conceitos</h2>
+            <ul class="lista">
+                <li>Consulta/Query: comandos SQL para buscar dados</li>
+                <li>CRUD: Create, Read, Update, Delete</li>
+                <li>Backup e Restauração: segurança dos dados</li>
+                <li>Diagrama: documentação do banco</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Armazenamento Seguro de Senhas em PHP</h2>
+            <br>
             <h3>O que é Hash?</h3>
-            <p>
-                Um <strong>hash</strong> é como uma “impressão digital” da sua senha, ele transforma qualquer senha em uma sequência fixa de caracteres. Essa transformação é <strong>unidirecional</strong>, não dá para descobrir a senha original a partir do
-                hash.
-            </p>
+            <p>Um <strong>hash</strong> é como uma “impressão digital” da senha, transformação unidirecional impossível de reverter.</p>
             <br>
-            <h3>Exemplo de Hash</h3>
-            <ul class="lista">
-                <li>Senha: 123456</li>
-                <li>Hash SHA-256: 8d969eef6ecad3c29a3a629280e686cff8fab...</li>
-            </ul>
-            <br>
-
             <h3>Por que usar Hash?</h3>
             <ul class="lista">
-                <li>Segurança: protege a senha real mesmo se o banco for acessado por terceiros.</li>
-                <li>Proteção contra vazamentos: difícil descobrir a senha original a partir do hash.</li>
+                <li>Protege a senha real mesmo em caso de invasão</li>
+                <li>Dificulta ataques e vazamentos</li>
             </ul>
             <br>
-
-            <h3>Armazenando Hash no Banco de Dados</h3>
-            <p>
-                Para armazenar hashes no MySQL, use uma coluna <strong>VARCHAR(255)</strong>. <br>
-                Isso garante que qualquer hash moderno, como os gerados por <code>password_hash()</code> no PHP, caiba
-                na coluna sem problemas.
+            <h3>Armazenando no Banco</h3>
+            <p>Use uma coluna <strong>VARCHAR(255)</strong> para guardar o hash (como os gerados por <code>password_hash()</code> no PHP).
             </p>
             <br>
-
-            <h3>Resumo Didático</h3>
-            <p>
-                <strong>Resumindo:</strong> nunca guarde senhas em texto puro. <br>
-                Sempre transforme a senha em hash e armazene em <code>VARCHAR(255)</code> no banco. <br>
-                Assim, mesmo em caso de ataque, suas senhas ficam protegidas.
-            </p>
+            <h3>Outras Boas Práticas de Segurança</h3>
+            <ul class="lista">
+                <li>Fazer backups regulares</li>
+                <li>Controlar permissões de acesso por usuário</li>
+            </ul>
+            <br>
+            <p><strong>Resumindo:</strong> nunca guarde senhas em texto puro.</p>
         </article>
 
         <article>
-            <h2>Normalização de Banco de Dados</h2><br>
-            É como **arrumar uma prateleira de livros**: organizamos para não ter livros duplicados e facilitar futuras
-            alterações.
-            Benefícios:
-            <ul class="lista">
-                <li>Evita registros duplicados<br></li>
-                <li>Evita inconsistência de informações<br></li>
-                <li>Facilita futuras atualizações e manutenção<br></li>
-            </ul>
-        </article>
-
-        <article>
-            <h2>Modelagem Física em SQL</h2>
-            
-            <p>É o mapa real do banco de dados, onde transformamos a ideia (modelagem lógica) em algo que o computador
-            entende.</p>
+            <h2>Ferramentas e Ambientes</h2>
             <br>
-            <h3>SGBD - Sistema Gerenciador de Banco de Dados</h3>
-            <p>Programas que armazenam e organizam os dados, como MySQL, SQLite, PostgreSQL, SQL Server e Oracle.
-            Eles usam SQL (Linguagem de Consulta Estruturada) para trabalhar com os dados.</p>
-            <br>
-            <h3>Principais comandos SQL</h3>
-            <ul class="lista">
-                <li>DDL (Definição) = criar e alterar estruturas: CREATE, ALTER<br></li>
-                <li>DML (Manipulação) = trabalhar com dados: INSERT, UPDATE, DELETE<br></li>
-                <li>DQL (Consulta) = buscar dados: SELECT<br></li>
-            </ul>
-        </article>
-
-        <article>
-            <h2>Estrutura básica da modelagem física</h2>
-            <br>
-            <h3>Criar banco de dados</h3>
-            <pre>
-CREATE DATABASE nome_do_banco CHARACTER SET utf8mb4;
-  </pre>
-
-            <h3>Selecionar banco para uso</h3>
-            <pre>
-USE nome_do_banco;
-  </pre>
-
-            <h3>Criar tabela</h3>
-            <br>
-            Estrutura de tabela define **colunas, tipos de dados e restrições**:
-            <ul class="lista">
-                <li>Primary Key = identificador único<br></li>
-                <li>Foreign Key = referência a outra tabela<br></li>
-                <li>NOT NULL = campo obrigatório<br></li>
-            </ul>
-
-            <h3>Cuidados</h3>
-            <br>
-            <ul class="lista">
-                <li>Verificar regras de nomenclatura do SGBD<br></li>
-                <li>Escolher tipos de dados adequados<br></li>
-                <li>MySQL não diferencia maiúsculas de minúsculas na linguagem SQL<br></li>
-            </ul>
+            <p><strong>MySQL</strong> é um SGBD para trabalhar de forma visual, que facilita a escrita e
+                execução de SQL.
+                Já o <strong>phpMyAdmin</strong> é uma ferramenta web muito usada em servidores e hospedagens.</p>
         </article>
 
     </section>
