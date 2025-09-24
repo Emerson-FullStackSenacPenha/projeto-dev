@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="../images/logo_aba.png">
-    <link rel="stylesheet" href="../css/uc1/projeto_fullstack_uc1.css">
+    <link rel="stylesheet" href="../css/uc4/projeto_fullstack_uc4.css">
 
     <title>UC4 - Aplicações back-end</title>
 
@@ -43,7 +43,11 @@
 
             <p>
 
-                Aprenda a configurar e utilizar o ambiente de desenvolvimento, programar em PHP para back-end com sintaxe, variáveis, estruturas de dados e lógica de programação, utilizar bibliotecas nativas, gerenciar memória com cookies e sessions, aplicar conceitos de orientação a objetos, garantir segurança da informação, integrar com front-end via requisições GET/POST e chamadas assíncronas em JSON/XML, versionar código e documentar programas com diagramas e fluxos.
+                Aprenda a configurar e utilizar o ambiente de desenvolvimento, programar em PHP para back-end com
+                sintaxe, variáveis, estruturas de dados e lógica de programação, utilizar bibliotecas nativas, gerenciar
+                memória com cookies e sessions, aplicar conceitos de orientação a objetos, garantir segurança da
+                informação, integrar com front-end via requisições GET/POST e chamadas assíncronas em JSON/XML,
+                versionar código e documentar programas com diagramas e fluxos.
 
             </p>
 
@@ -62,29 +66,43 @@
         </article>
 
         <article>
-            
+
             <h2>Como funciona um site</h2>
             <br>
             <h3>Front-End</h3>
             <p>
-                Funciona como a parte do restaurante que o cliente vê: mesas, cardápio, pratos bonitos e a decoração. O <b>HTML</b> seria a estrutura do restaurante, como paredes, mesas e cadeiras. O <b>CSS</b> seria a aparência e a decoração, definindo cores, fontes e o arranjo dos pratos, enquanto o <b>JavaScript</b> adiciona interatividade, como um cardápio digital que muda quando você toca ou botões tipo uma campainha para chamar o garçom.
+                Funciona como a parte do restaurante que o cliente vê: mesas, cardápio, pratos bonitos e a decoração. O
+                <b>HTML</b> seria a estrutura do restaurante, como paredes, mesas e cadeiras. O <b>CSS</b> seria a
+                aparência e a decoração, definindo cores, fontes e o arranjo dos pratos, enquanto o <b>JavaScript</b>
+                adiciona interatividade, como um cardápio digital que muda quando você toca ou botões tipo uma campainha
+                para chamar o garçom.
             </p>
             <br>
             <h3>Modem</h3>
             <p>
-                O modelo de internet, baseado em <b>HTTP</b>, funciona como o garçom que leva seu pedido à cozinha e traz a comida de volta. O pedido que você faz é a “request” e o protocolo HTTP garante que essa troca de informações siga as regras corretas, para que você receba exatamente o que pediu.
+                O modelo de internet, baseado em <b>HTTP</b>, funciona como o garçom que leva seu pedido à cozinha e
+                traz a comida de volta. O pedido que você faz é a “request” e o protocolo HTTP garante que essa troca de
+                informações siga as regras corretas, para que você receba exatamente o que pediu.
             </p>
             <br>
             <h3>Back-End</h3>
-            <p>O <b>servidor web</b>, como o <b>Apache</b>, representa a cozinha do restaurante, onde todos os pedidos são organizados e preparados. O Apache atua como o chefe da cozinha, garantindo que cada pedido seja tratado corretamente e enviado de volta para o cliente sem erros.</p>
+            <p>O <b>servidor web</b>, como o <b>Apache</b>, representa a cozinha do restaurante, onde todos os pedidos
+                são organizados e preparados. O Apache atua como o chefe da cozinha, garantindo que cada pedido seja
+                tratado corretamente e enviado de volta para o cliente sem erros.</p>
             <br>
 
             <h3>PHP</h3>
-            <p>Roda no servidor, é como o cozinheiro do restaurante. Ele prepara cada prato de acordo com o pedido do cliente, mas só entrega o prato se tudo estiver correto. Por exemplo, se o pedido for especial e exigir ingredientes específicos (como no caso de um pagamento online), o cozinheiro só prepara e entrega o prato se todos os ingredientes estiverem disponíveis e o pedido estiver correto. Se houver algum problema, ele não entrega o prato e avisa que não foi possível preparar.</p>
+            <p>Roda no servidor, é como o cozinheiro do restaurante. Ele prepara cada prato de acordo com o pedido do
+                cliente, mas só entrega o prato se tudo estiver correto. Por exemplo, se o pedido for especial e exigir
+                ingredientes específicos (como no caso de um pagamento online), o cozinheiro só prepara e entrega o
+                prato se todos os ingredientes estiverem disponíveis e o pedido estiver correto. Se houver algum
+                problema, ele não entrega o prato e avisa que não foi possível preparar.</p>
             <br>
 
             <h3>Banco de dados</h3>
-            <p>Funciona como o estoque da cozinha, armazenando todos os ingredientes que podem ser usados nos pratos. O cozinheiro (PHP) acessa o estoque sempre que precisa de algum ingrediente para montar o pedido e pode também guardar informações de volta, como pedidos antigos ou receitas.</p>
+            <p>Funciona como o estoque da cozinha, armazenando todos os ingredientes que podem ser usados nos pratos. O
+                cozinheiro (PHP) acessa o estoque sempre que precisa de algum ingrediente para montar o pedido e pode
+                também guardar informações de volta, como pedidos antigos ou receitas.</p>
 
         </article>
 
@@ -183,6 +201,119 @@ ou
                 <li>Case sensitive: diferencia maiúsculas de minúsculas</li>
             </ul>
         </article>
+
+        <article>
+            <h2>Tipos de Arrays em PHP</h2>
+            <br>
+            <h3>1. Array Associativo</h3>
+            <p>Em um <strong>array associativo</strong>, usamos chaves definidas por texto para identificar os valores.
+            </p>
+            <br>
+            <pre>
+$bandas = [
+    'autoral' => "The Licios",
+    'cover'   => "No escuro"
+];
+
+echo $bandas['cover']; // Resultado: No escuro
+    </pre>
+
+
+            <h3>2. Array Multidimensional</h3>
+            <p>Um <strong>array multidimensional</strong> contém outros arrays dentro dele. Podemos acessar valores
+                usando chaves ou índices aninhados.</p>
+            <br>
+            <pre>
+$theLicio = [
+    'vocal'    => "Jerms",
+    'guitarra' => ["Jerms", "Marcelo"],
+    'baixo'    => "Paiva",
+    'batera'   => "Léo"
+];
+
+echo $theLicio['guitarra'][1]; // Resultado: Marcelo
+    </pre>
+
+
+            <h3>3. Array Indexado</h3>
+            <p>Em um <strong>array indexado</strong>, os elementos são acessados por índices numéricos, geralmente
+                começando do 0.</p>
+            <br>
+            <pre>
+$integrantes = ['Jerms', 'Marcelo', 'Paiva', 'Léo'];
+
+echo $integrantes[3]; // Resultado: Léo
+    </pre>
+
+        </article>
+
+        <article>
+            <h2>Loopings em PHP</h2>
+
+            <h3>1. Loop <code>for</code> com <code>count()</code></h3>
+            <p>Útil para percorrer arrays indexados sabendo o tamanho.</p>
+            <p>Exemplo:</p>
+            <p><em>
+                    $integrantes = ['Jerms', 'Marcelo', 'Paiva', 'Léo'];<br>
+                    for ($i = 0; $i < count($integrantes); $i++) {<br>
+                        &nbsp;&nbsp;&nbsp;echo $integrantes[$i] . " ";<br>
+                        }
+                </em></p>
+
+            <h3>2. Loop <code>for</code> sem <code>count()</code></h3>
+            <p>Armazenando o tamanho do array em uma variável para melhorar performance.</p>
+            <p>Exemplo:</p>
+            <p><em>
+                    $tamanho = count($integrantes);<br>
+                    for ($i = 0; $i < $tamanho; $i++) {<br>
+                        &nbsp;&nbsp;&nbsp;echo $integrantes[$i] . " ";<br>
+                        }
+                </em></p>
+
+            <h3>3. Loop <code>while</code> com contador</h3>
+            <p>Enquanto a condição for verdadeira, o loop continua.</p>
+            <p>Exemplo:</p>
+            <p><em>
+                    $contador = 0;<br>
+                    while ($contador < count($integrantes)) {<br>
+                        &nbsp;&nbsp;&nbsp;echo $integrantes[$contador] . " ";<br>
+                        &nbsp;&nbsp;&nbsp;$contador++;<br>
+                        }
+                </em></p>
+
+            <h3>4. Loop <code>foreach</code> em array indexado</h3>
+            <p>Percorre todos os elementos sem precisar de índices.</p>
+            <p>Exemplo:</p>
+            <p><em>
+                    foreach ($integrantes as $item) {<br>
+                    &nbsp;&nbsp;&nbsp;echo $item . " ";<br>
+                    }
+                </em></p>
+
+            <h3>5. Loop <code>foreach</code> em array associativo</h3>
+            <p>Percorre chave e valor simultaneamente.</p>
+            <p>Exemplo:</p>
+            <p><em>
+                    $banda = [<br>
+                    &nbsp;&nbsp;&nbsp;'vocal' => "Jerms",<br>
+                    &nbsp;&nbsp;&nbsp;'baixo' => "Paiva"<br>
+                    ];<br>
+                    foreach ($banda as $cargo => $nome) {<br>
+                    &nbsp;&nbsp;&nbsp;echo "$cargo: $nome<br>";<br>
+                    }
+                </em></p>
+
+            <h3>6. Observação sobre <code>for in</code> e <code>for of</code></h3>
+            <p>PHP não tem exatamente <code>for in</code> ou <code>for of</code> como JavaScript, mas:</p>
+            <ul class="lista">
+                <li><strong>for each</strong> substitui <code>for of</code> em arrays.</li>
+                <li>Para percorrer chaves, usamos <code>foreach ($array as $key => $value)</code>, que funciona como
+                    <code>for in</code>.</li>
+            </ul>
+
+        </article>
+
+
 
         <article>
             <h2>Fluxo de Programação</h2><br>
