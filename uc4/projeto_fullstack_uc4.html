@@ -251,6 +251,7 @@ echo $integrantes[3]; // Resultado: Léo
             <h2>Loopings em PHP</h2>
 
             <h3>1. Loop <code>for</code> com <code>count()</code></h3>
+            <br>
             <p>Útil para percorrer arrays indexados sabendo o tamanho.</p>
             <p>Exemplo:</p>
             <p><em>
@@ -259,8 +260,9 @@ echo $integrantes[3]; // Resultado: Léo
                         &nbsp;&nbsp;&nbsp;echo $integrantes[$i] . " ";<br>
                         }
                 </em></p>
-
+            <br>
             <h3>2. Loop <code>for</code> sem <code>count()</code></h3>
+            <br>
             <p>Armazenando o tamanho do array em uma variável para melhorar performance.</p>
             <p>Exemplo:</p>
             <p><em>
@@ -269,8 +271,9 @@ echo $integrantes[3]; // Resultado: Léo
                         &nbsp;&nbsp;&nbsp;echo $integrantes[$i] . " ";<br>
                         }
                 </em></p>
-
+            <br>
             <h3>3. Loop <code>while</code> com contador</h3>
+            <br>
             <p>Enquanto a condição for verdadeira, o loop continua.</p>
             <p>Exemplo:</p>
             <p><em>
@@ -280,8 +283,9 @@ echo $integrantes[3]; // Resultado: Léo
                         &nbsp;&nbsp;&nbsp;$contador++;<br>
                         }
                 </em></p>
-
+            <br>
             <h3>4. Loop <code>foreach</code> em array indexado</h3>
+            <br>
             <p>Percorre todos os elementos sem precisar de índices.</p>
             <p>Exemplo:</p>
             <p><em>
@@ -289,8 +293,9 @@ echo $integrantes[3]; // Resultado: Léo
                     &nbsp;&nbsp;&nbsp;echo $item . " ";<br>
                     }
                 </em></p>
-
+            <br>
             <h3>5. Loop <code>foreach</code> em array associativo</h3>
+            <br>
             <p>Percorre chave e valor simultaneamente.</p>
             <p>Exemplo:</p>
             <p><em>
@@ -302,13 +307,15 @@ echo $integrantes[3]; // Resultado: Léo
                     &nbsp;&nbsp;&nbsp;echo "$cargo: $nome<br>";<br>
                     }
                 </em></p>
-
+            <br>
             <h3>6. Observação sobre <code>for in</code> e <code>for of</code></h3>
+            <br>
             <p>PHP não tem exatamente <code>for in</code> ou <code>for of</code> como JavaScript, mas:</p>
             <ul class="lista">
                 <li><strong>for each</strong> substitui <code>for of</code> em arrays.</li>
                 <li>Para percorrer chaves, usamos <code>foreach ($array as $key => $value)</code>, que funciona como
-                    <code>for in</code>.</li>
+                    <code>for in</code>.
+                </li>
             </ul>
 
         </article>
